@@ -1,7 +1,7 @@
 /*Links.css */
 		#wrap {width: 100%; margin: 0 auto; display: table;}
 		#left_col {float:left; width:33%;}
-		#mid_col {float:center; width:33%;}
+		#mid_col {margin-left: auto; margin-right: auto; width:33%;}
 		#right_col {float:right; width:33%;}
 		@media only screen and (max-width: 1000px){	#left_col {width:100%;}	#mid_col {width:100%;}	#right_col {width:100%;}}
 
