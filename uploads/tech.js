@@ -2161,6 +2161,7 @@ function pagelayer_reviews_slider(jEle){
 
 // Facebook App ID handler - Premium
 function pagelayer_fb_apps(jEle){
+	var pagelayer_facebook_id = "";
 	var app_id = jEle.find('.pagelayer-app-details').attr('pagelayer-app-id');
 	
 	if(pagelayer_empty(app_id) || app_id == "{{fb-app-id}}"){
