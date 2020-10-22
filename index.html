@@ -1,359 +1,199 @@
-	<!DOCTYPE html>
-	<html lang="en-US">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Highland Central Tech Info</title>
-<link rel="alternate" type="application/rss+xml" title="Highland Central Stake &raquo; Feed" href="#" />
-<meta name="author" content="Troy Mace" /><script>
-var pagelayer_ajaxurl = "/site-admin/admin-ajax.php?";
-var pagelayer_global_nonce = "e777721e03";
-var pagelayer_server_time = 1603140397;
-var pagelayer_is_live = "";
-var pagelayer_facebook_id = "";
-var pagelayer_settings = {"post_types":["post","page"],"enable_giver":"1","max_width":1170,"tablet_breakpoint":768,"mobile_breakpoint":360,"body_font":false,"body":false,"h1":false,"h2":false,"h3":false,"h4":false,"h5":false,"h6":false,"color":false,"sidebar":false};
-var pagelayer_recaptch_lang = "";
-</script><style id="pagelayer-global-styles" type="text/css">
-.pagelayer-row-stretch-auto > .pagelayer-row-holder, .pagelayer-row-stretch-full > .pagelayer-row-holder.pagelayer-width-auto{ max-width: 1170px; margin-left: auto; margin-right: auto;}
-@media (min-width: 769px){
-			.pagelayer-hide-desktop{
-				display:none !important;
-			}
-		}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
-		@media (max-width: 768px) and (min-width: 361px){
-			.pagelayer-hide-tablet{
-				display:none !important;
-			}
-		}
+<html><head>
+  <link rel="shortcut icon" href="favicon.ico" />
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="tech.css" />
+<base href="https://troyzfmace.github.io/" target="_blank">
+<script>
+//clock
+var d,h,m,s,animate;
 
-		@media (max-width: 360px){
-			.pagelayer-hide-mobile{
-				display:none !important;
-			}
-		}
-@media (max-width: 768px){
-	[class^="pagelayer-offset-"],
-	[class*=" pagelayer-offset-"] {
-		margin-left: 0;
+function init(){
+    d=new Date();
+    h=d.getHours();
+    m=d.getMinutes();
+    s=d.getSeconds();
+    clock();
+};
+function clock(){
+    s++;
+    if(s==60){
+        s=0;
+        m++;
+        if(m==60){
+            m=0;
+            h++;
+            if(h==24){
+                h=0;
+            }
+        }
+    }
+    $('sec',s);
+    $('min',m);
+    $('hr',h);
+    animate=setTimeout(clock,1000);
+};
+function $(id,val){
+    if(val<10){
+        val='0'+val;
+    }
+    document.getElementById(id).innerHTML=val;
+};
+window.onload=init;
+</script>  
+<base target="_blank">
+<style>
+.dropdown .dropbtnH {background-color: #fff;}
+.dropdown .dropbtnT {background-color: #aaa;}
+.dropdown .dropbtnD {background-color: #aaa;}
+.dropdown .dropbtnA {background-color: #aaa;}
+
+
+</style>
+</head>
+<body style="background-color: #eee; padding: 0px;">
+
+
+<!--START MENU-->
+<div class="header" id="myHeader">
+  <div>
+    <a href="mailto:highlandcentraltech@gmail.com">highlandcentraltech@gmail.com</a>
+	<div style="float:right"><a href="#">Highland Utah</a></div></br>
+    <h1><a href="/index.html"><strong>Highland Central Stake</strong></a></h1>
+  </div> 
+
+ <div class="navbar">
+  <div class="dropdown">
+	<a class="dropbtnH" href="index.html" target="_self" style="line-height: 150%;">&nbsp;HOME&nbsp;</a>
+  </div> 
+  
+  <div class="dropdown">
+	<a class="dropbtnT" href="tech.html" target="_self" style="line-height: 150%;">&nbsp;TECH&nbsp;</a>
+  </div>
+
+  <div class="dropdown">
+    <a class="dropbtnD" href="docs.html" target="_self"style="line-height: 150%;">&nbsp;DOCs&nbsp;</a>
+  </div>
+  
+  <div class="dropdown">
+	<a class="dropbtnA" href="about.html" target="_self" style="line-height: 150%;">&nbsp;&nbsp;ABOUT&nbsp;</a>
+  </div>
+ 
+  <div class="clock">
+     <span id="hr">00</span>
+     <span>:</span>
+     <span id="min">00</span>
+     <span>:</span>
+     <span id="sec">00</span>
+  </div>
+
+  <div class="dropdown" style="min-width: 50%; ">&nbsp;</div>
+ </div class="navbar">   
+</div class="header">
+	<script>
+	//copy buttons;
+	function myCopyFunctionE() {
+	  var copyText = document.getElementById("myEInput");
+	  copyText.select();
+	  document.execCommand("copy");
+	//  alert("Copied the text: " + copyText.value);
 	}
-
-	.pagelayer-row .pagelayer-col {
-		margin-left: 0;
-		width: 100%;
+	function myCopyFunctionB() {
+	  var copyText = document.getElementById("myBInput");
+	  copyText.select();
+	  document.execCommand("copy");
+	//  alert("Copied the text: " + copyText.value);
 	}
-	.pagelayer-row.pagelayer-gutters .pagelayer-col {
-		margin-bottom: 16px;
+	</script>
+	<script type="text/javascript">
+	//button sounds
+	a=new AudioContext()
+	function beep(vol, freq, duration){
+	 v=a.createOscillator()
+	 u=a.createGain()
+	 v.connect(u)
+	 v.frequency.value=freq
+	 v.type="square"
+	 u.connect(a.destination)
+	 u.gain.value=vol*0.01
+	 v.start(a.currentTime)
+	 v.stop(a.currentTime+duration*0.001)
 	}
-	.pagelayer-first-sm {
-		order: -1;
+	</script>
+	<script>
+	//scroll header- not used
+	window.onscroll = function() {myFunction()};
+	 var header = document.getElementById("myHeader");
+	 var sticky = header.offsetTop;
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
 	}
-	.pagelayer-last-sm {
-		order: 1;
-	}
-}
+	</script>
 
-</style><link rel='stylesheet' id='pagelayer-frontend-css'  href='/site-data/plugins/pagelayer-pro/css/givecss.php?give=pagelayer-frontend.css%2Cnivo-lightbox.css%2Canimate.min.css%2Cowl.carousel.min.css%2Cowl.theme.default.min.css%2Cfont-awesome5.min.css&#038;premium=%2Cpremium-frontend.css&#038;ver=1.3.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sitepad-style-css'  href='/sitepad-data/themes/techfix/style.css?ver=5.1.6' type='text/css' media='all' />
-<script type='text/javascript' src='/site-inc/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='/site-inc/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='/site-data/plugins/pagelayer-pro/js/givejs.php?give=pagelayer-frontend.js%2Cnivo-lightbox.min.js%2Cwow.min.js%2Cjquery-numerator.js%2CsimpleParallax.min.js%2Cowl.carousel.min.js&#038;premium=%2Cchart.min.js%2Cpremium-frontend.js%2Cshuffle.min.js&#038;ver=1.3.1'></script>
-<link rel='https://api.w.org/' href='/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/site-inc/wlwmanifest.xml" /> 
-<meta name="generator" content="SitePad 5.1.6" />
-<link rel="canonical" href="/" />
-<link rel='shortlink' href='/' />
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.highlandcentralutahstake.org%2F" />
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.highlandcentralutahstake.org%2F&#038;format=xml" />
-<script type="text/javascript">
+<!--END MENU-->
+<!--
 
-// Make $ is jQuery
-$ = jQuery;
+Start of real content
 
-</script>
-		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-			</head>
+-->
+<div class="content">
+  <table width="100%">
+    <tr>
+     <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; width: 50%; border-style: none solid solid solid; background-color: #fff; background-attachment: fixed; background-size: cover;" background="/uploads/mount-timpanogos-temple-lds-885511-wallpaper-1.jpg">
+		</br>
+	  <div id="full_col">
+		<div id="box">
+		<ul>
+			<li>Stake User Viewing Link: <a href="http://mywebcast.churchofjesuschrist.org/highlandutahcentralstake" target="_blank">http://mywebcast.churchofjesuschrist.org/highlandutahcentralstake</a></li>
+			<li>Stake Tech Dashboard Link: <a href="https://webcast.churchofjesuschrist.org/#/eventManager" target="_blank">https://webcast.churchofjesuschrist.org/#/eventManager</a></li>
+			<li>Stake Firewall/WiFi Link: <a href="https://tm.churchofjesuschrist.org/" target="_blank">https://tm.churchofjesuschrist.org/</a></li>
+		</ul>
+		</div>
 
-	<body class="home page-template-default page page-id-5 wp-embed-responsive pagelayer-body">
-		
-	<header class="pagelayer-header"><div pagelayer-id="LDIzhBi1iuT55MOm" class="pagelayer-post_props">
-			
-</div>
-<div pagelayer-id="1upo0xjgzgibdfpp" class="pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
-			<style pagelayer-style-id="1upo0xjgzgibdfpp">[pagelayer-id="1upo0xjgzgibdfpp"] .pagelayer-col-holder{padding: 10px}
-[pagelayer-id="1upo0xjgzgibdfpp"]>.pagelayer-row-holder .pagelayer-col{align-content: default}
-[pagelayer-id="1upo0xjgzgibdfpp"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-[pagelayer-id="1upo0xjgzgibdfpp"] .pagelayer-svg-top .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="1upo0xjgzgibdfpp"] .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
-[pagelayer-id="1upo0xjgzgibdfpp"] .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="1upo0xjgzgibdfpp"] .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
-[pagelayer-id="1upo0xjgzgibdfpp"]{background: #2ebaeb}
-</style>
-			
-			
-			
-			
-			<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-<div pagelayer-id="u6j9qug431ot96x3" class="pagelayer-col pagelayer-col-3">
-			<style pagelayer-style-id="u6j9qug431ot96x3">[pagelayer-id="u6j9qug431ot96x3"]{align-content: center !important}
-[pagelayer-id="u6j9qug431ot96x3"] .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
-[pagelayer-id="u6j9qug431ot96x3"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-</style>
-				
-				
-				
-				<div class="pagelayer-col-holder">
-<div pagelayer-id="84stpjn28wv644sp" class="pagelayer-email">
-			<style pagelayer-style-id="84stpjn28wv644sp">[pagelayer-id="84stpjn28wv644sp"] .pagelayer-email *, [pagelayer-id="84stpjn28wv644sp"] .pagelayer-email{color:#ffffff;font-family: Roboto; font-size: 14px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
-[pagelayer-id="84stpjn28wv644sp"] .pagelayer-email-icon{margin-right: 10px}
-[pagelayer-id="84stpjn28wv644sp"] .pagelayer-email-icon i{color:#ffffff;font-size: 24px}
-</style><div class="pagelayer-email-holder">
-			<span class="pagelayer-email-icon"><i class="fas fa-envelope"></i></span>
-			<span class="pagelayer-email">highlandcentraltech@gmail.com</span>
-				</div>
-			
-			</div>
-</div></div>
-<div pagelayer-id="758jt1i73lqwd93k" class="pagelayer-col pagelayer-col-4">
-			<style pagelayer-style-id="758jt1i73lqwd93k">[pagelayer-id="758jt1i73lqwd93k"] .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
-[pagelayer-id="758jt1i73lqwd93k"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-</style>
-				
-				
-				
-				<div class="pagelayer-col-holder">
-<div pagelayer-id="nghsn5vodyhtjskt" class="pagelayer-address">
-			<style pagelayer-style-id="nghsn5vodyhtjskt">[pagelayer-id="nghsn5vodyhtjskt"] .pagelayer-address *, [pagelayer-id="nghsn5vodyhtjskt"] .pagelayer-address{color:#ffffff;font-family: Roboto; font-size: 14px !important; font-style:  !important; font-weight: 600 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
-[pagelayer-id="nghsn5vodyhtjskt"] .pagelayer-address-holder{justify-content: flex-end}
-[pagelayer-id="nghsn5vodyhtjskt"] .pagelayer-address-icon{margin-right: 10px}
-[pagelayer-id="nghsn5vodyhtjskt"] .pagelayer-address-icon i{color:#ffffff;font-size: 24px}
-</style><div class="pagelayer-address-holder">
-			<span class="pagelayer-address-icon"><i class="fas fa-map-marker-alt"></i></span>
-			<span class="pagelayer-address">Highland Utah</span>
-		</div></div>
-</div></div>
-</div></div>
-<div pagelayer-id="dgqx3j84xupincr1" class="pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
-			<style pagelayer-style-id="dgqx3j84xupincr1">[pagelayer-id="dgqx3j84xupincr1"] .pagelayer-col-holder{padding: 10px}
-[pagelayer-id="dgqx3j84xupincr1"]>.pagelayer-row-holder .pagelayer-col{align-content: default}
-[pagelayer-id="dgqx3j84xupincr1"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-[pagelayer-id="dgqx3j84xupincr1"] .pagelayer-svg-top .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="dgqx3j84xupincr1"] .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
-[pagelayer-id="dgqx3j84xupincr1"] .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="dgqx3j84xupincr1"] .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
-[pagelayer-id="dgqx3j84xupincr1"]{background: #ffffff;padding-top: 15px; padding-right: 0px; padding-bottom: 15px; padding-left: 0px}
-</style>
-			
-			
-			
-			
-			<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-<div pagelayer-id="4yxwum6s8et4u0iv" class="pagelayer-col pagelayer-col-6">
-			<style pagelayer-style-id="4yxwum6s8et4u0iv">[pagelayer-id="4yxwum6s8et4u0iv"] .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
-[pagelayer-id="4yxwum6s8et4u0iv"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-</style>
-				
-				
-				
-				<div class="pagelayer-col-holder">
-<div pagelayer-id="kqw5j1x07exztico" class="pagelayer-wp_title">
-			<style pagelayer-style-id="kqw5j1x07exztico">[pagelayer-id="kqw5j1x07exztico"] .pagelayer-wp-title-heading{font-family: Roboto; font-size: 38px !important; font-style:  !important; font-weight: 500 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: 1.4em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important;color:#078273;text-align:left}
-</style><div class="pagelayer-wp-title-content">
-			<div class="pagelayer-wp-title-section">
-				<a href="" class="pagelayer-wp-title-link pagelayer-ele-link">
-					
-					<div class="pagelayer-wp-title-holder">
-						<div class="pagelayer-wp-title-heading">Highland Central Stake</div>
-						
-					</div>
-				</a>
-			</div>			
-		<div></div></div></div>
-</div></div>
-</div></div>
-<div pagelayer-id="o531h8xr4hu8r9gg" class="pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
-			<style pagelayer-style-id="o531h8xr4hu8r9gg">[pagelayer-id="o531h8xr4hu8r9gg"]>.pagelayer-row-holder .pagelayer-col{align-content: default}
-[pagelayer-id="o531h8xr4hu8r9gg"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-[pagelayer-id="o531h8xr4hu8r9gg"] .pagelayer-svg-top .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="o531h8xr4hu8r9gg"] .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
-[pagelayer-id="o531h8xr4hu8r9gg"] .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="o531h8xr4hu8r9gg"] .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
-[pagelayer-id="o531h8xr4hu8r9gg"]{background: #2ebaeb}
-</style>
-			
-			
-			
-			
-			<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-<div pagelayer-id="1vjsa8y3kql8a05q" class="pagelayer-col">
-			<style pagelayer-style-id="1vjsa8y3kql8a05q">[pagelayer-id="1vjsa8y3kql8a05q"] .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
-[pagelayer-id="1vjsa8y3kql8a05q"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-</style>
-				
-				
-				
-				<div class="pagelayer-col-holder">
-<div pagelayer-id="dh67jxvexuvlucwg" class="pagelayer-wp_menu">
-			<style pagelayer-style-id="dh67jxvexuvlucwg">[pagelayer-id="dh67jxvexuvlucwg"] ul{text-align:center}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp-menu-container li{list-style: none}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li a:first-child{color: #ffffff}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li>a:hover{color: #ffffff}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li.active-sub-menu>a:hover{color: #ffffff}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-menu-hover-background .pagelayer-wp_menu-ul>li:hover{background-color: #00e0c6}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li>a:hover:before{background-color: #00e0c6;border-color:#00e0c6}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li>a:hover:after{background-color: #00e0c6;border-color:#00e0c6}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li.active-sub-menu{background-color: #00e0c6}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li.current-menu-item>a{color: #ffffff}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li.current-menu-item{background-color: #00e0c6}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp-menu-container ul li a{font-family: Roboto !important; font-size: 16px !important; font-style:  !important; font-weight: 400 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform: Uppercase !important; letter-spacing: px !important; word-spacing: px !important}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-heading-holder{font-family: Roboto !important; font-size: 16px !important; font-style:  !important; font-weight: 400 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform: Uppercase !important; letter-spacing: px !important; word-spacing: px !important}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li a{padding-left: 14px;padding-right: 14px}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-ul>li>a{padding-top: 20px;padding-bottom	: 20px}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp-menu-container ul.sub-menu>li a{color: #ffffff}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp-menu-container ul.sub-menu{background-color: #3e8ef7}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp-menu-container ul.sub-menu li a{padding-left: 10px;padding-right: 10px;padding-top: 10px;padding-bottom	: 10px}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp-menu-container .sub-menu a{margin-left: 10px}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp-menu-container .sub-menu .sub-menu a{margin-left: calc(2 * 10px)}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-menu-type-horizontal .sub-menu{left:0px}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-menu-type-horizontal .sub-menu .sub-menu{left:unset;left:100% !important;top:0px}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-primary-menu-bar{text-align:center}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-primary-menu-bar i{background-color:rgba(62,142,247,0.31);font-size:30px}
-[pagelayer-id="dh67jxvexuvlucwg"] .pagelayer-wp_menu-close i{-webkit-transition: all 600ms !important; transition: all 600ms !important}
-</style><div class="pagelayer-wp-menu-holder" data-layout="horizontal" data-submenu_ind="caret-down" data-drop_breakpoint="{{drop_breakpoint}}">
-			<div class="pagelayer-primary-menu-bar"><i class="fa fa-bars"></i></div>
-			<div class="pagelayer-wp-menu-container pagelayer-menu-type-horizontal pagelayer-menu-hover-background slide {{slide_style}}" data-align="center">
-				<div class="pagelayer-wp_menu-close"><i class="fa fa-times"></i></div>
-				<div class="menu-header-menu-container"><ul id="22" class="pagelayer-wp_menu-ul"><li id="menu-item-10" class="home menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-10"><a href="/index.html" aria-current="page">Home</a></li>
-<li id="menu-item-123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="/tech.html">Technology</a></li>
-<li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="/docs/">Docs</a></li>
-<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="/contact/">Contact</a></li>
-<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="/about.html">About</a></li>
-</ul></div>
-			</div>
-		</div></div>
-</div></div>
-</div></div>
+	  </div>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br> 
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </td></tr></table>
+ <div class="pagelayer-copyright">
+	<a href="">
+	© 2020 Highland Central Stake <div style="float:right">This website is not affiliated with the Church of Jesus Christ of Latter-day Saints.</div>
+	</a>
+ </div>
+ <!--<p align="right"><cr><script language="javascript">var today = new Date();document.write(today);</script></cr></p>-->
 
-	</header>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		
-			
-<article id="post-5" class="post-5 page type-page status-publish hentry">
-	
-	<div class="entry-content">
-		<div pagelayer-id="4rHYFoZ6QhNXBeST" class="pagelayer-post_props">
-			
-</div>
-<div pagelayer-id="es34xaxzqkdluaaf" class="pagelayer-row pagelayer-row-stretch-auto pagelayer-height-fit">
-			<style pagelayer-style-id="es34xaxzqkdluaaf">[pagelayer-id="es34xaxzqkdluaaf"] .pagelayer-col-holder{padding: 10px}
-[pagelayer-id="es34xaxzqkdluaaf"]>.pagelayer-row-holder .pagelayer-col{align-content: default}
-[pagelayer-id="es34xaxzqkdluaaf"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-[pagelayer-id="es34xaxzqkdluaaf"] .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:10px}
-[pagelayer-id="es34xaxzqkdluaaf"] .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="es34xaxzqkdluaaf"] .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
-[pagelayer-id="es34xaxzqkdluaaf"]{background-color: #060606;background-image: url("mount-timpanogos-temple-lds-885511-wallpaper-1.jpg");background-attachment: fixed;background-position-x: center;background-position-y: center;background-repeat: no-repeat;background-size: cover;padding-top: 150px; padding-right: 0px; padding-bottom: 150px; padding-left: 0px}
-</style>
-			
-			
-			<div class="pagelayer-row-shape">
-				<div class="pagelayer-row-svg">
-					
-											
-				</div>
-			</div>
-			
-			<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-</div></div>
-<div pagelayer-id="PdCof1KlfEPHYe8k" class="pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
-			<style pagelayer-style-id="PdCof1KlfEPHYe8k">[pagelayer-id="PdCof1KlfEPHYe8k"] .pagelayer-col-holder{padding: 10px}
-[pagelayer-id="PdCof1KlfEPHYe8k"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-[pagelayer-id="PdCof1KlfEPHYe8k"] .pagelayer-svg-top .pagelayer-shape-fill{fill:#227bc3}
-[pagelayer-id="PdCof1KlfEPHYe8k"] .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
-[pagelayer-id="PdCof1KlfEPHYe8k"] .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#e44993}
-[pagelayer-id="PdCof1KlfEPHYe8k"] .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
-</style>
-			
-			
-			
-			
-			<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-</div></div>
-	</div><!-- .entry-content -->
-
-</article><!-- #post-## -->
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
-
-	<footer class="pagelayer-footer"><div pagelayer-id="ya6dd38olb84mgqo" class="pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
-			<style pagelayer-style-id="ya6dd38olb84mgqo">[pagelayer-id="ya6dd38olb84mgqo"] .pagelayer-col-holder{padding: 10px}
-[pagelayer-id="ya6dd38olb84mgqo"]>.pagelayer-row-holder .pagelayer-col{align-content: default}
-[pagelayer-id="ya6dd38olb84mgqo"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-[pagelayer-id="ya6dd38olb84mgqo"] .pagelayer-svg-top .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="ya6dd38olb84mgqo"] .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
-[pagelayer-id="ya6dd38olb84mgqo"] .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#fff}
-[pagelayer-id="ya6dd38olb84mgqo"] .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
-[pagelayer-id="ya6dd38olb84mgqo"]{background: #000000;padding-top: 20px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px}
-</style>
-			
-			
-			
-			
-			<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-<div pagelayer-id="wzAXOtc9kz44cArM" class="pagelayer-col pagelayer-col-6">
-			<style pagelayer-style-id="wzAXOtc9kz44cArM">[pagelayer-id="wzAXOtc9kz44cArM"] .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
-[pagelayer-id="wzAXOtc9kz44cArM"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-</style>
-				
-				
-				
-				<div class="pagelayer-col-holder">
-<div pagelayer-id="S31QkvfPOIKNg44k" class="pagelayer-text">
-			<div class="pagelayer-text-holder">
-
-
-<p><span style="color: rgb(153, 153, 153); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">This website is not affiliated with the Church of Jesus Christ of Latter-day Saints.</span></p></div></div>
-</div></div>
-<div pagelayer-id="tamfbbnhi9s34fa4" class="pagelayer-col pagelayer-col-6">
-			<style pagelayer-style-id="tamfbbnhi9s34fa4">[pagelayer-id="tamfbbnhi9s34fa4"] .pagelayer-col-holder > div:not(:last-child){margin-bottom: 15px}
-[pagelayer-id="tamfbbnhi9s34fa4"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-</style>
-				
-				
-				
-				<div class="pagelayer-col-holder">
-<div pagelayer-id="dsq001gempywwtl7" class="pagelayer-copyright">
-			<style pagelayer-style-id="dsq001gempywwtl7">[pagelayer-id="dsq001gempywwtl7"] .pagelayer-copyright *, [pagelayer-id="dsq001gempywwtl7"] .pagelayer-copyright{color:#ffffff;font-family: Roboto; font-size: 16px !important; font-style:  !important; font-weight: 400 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: em !important; text-transform: Uppercase !important; letter-spacing: px !important; word-spacing: px !important}
-[pagelayer-id="dsq001gempywwtl7"] .pagelayer-copyright{text-align: right}
-</style><div class="pagelayer-copyright">
-			<a href="">
-				© 2020 Highland Central Stake
-			</a>
-		</div></div>
-</div></div>
-</div></div>
-<div pagelayer-id="6KLIGFHB3T1B76xp" class="pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
-			<style pagelayer-style-id="6KLIGFHB3T1B76xp">[pagelayer-id="6KLIGFHB3T1B76xp"] .pagelayer-col-holder{padding: 10px}
-[pagelayer-id="6KLIGFHB3T1B76xp"] .pagelayer-background-overlay{-webkit-transition: all 400ms !important; transition: all 400ms !important}
-[pagelayer-id="6KLIGFHB3T1B76xp"] .pagelayer-svg-top .pagelayer-shape-fill{fill:#227bc3}
-[pagelayer-id="6KLIGFHB3T1B76xp"] .pagelayer-row-svg .pagelayer-svg-top{width:100%;height:100px}
-[pagelayer-id="6KLIGFHB3T1B76xp"] .pagelayer-svg-bottom .pagelayer-shape-fill{fill:#e44993}
-[pagelayer-id="6KLIGFHB3T1B76xp"] .pagelayer-row-svg .pagelayer-svg-bottom{width:100%;height:100px}
-</style>
-			
-			
-			
-			
-			<div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
-</div></div>
-
-	</footer><link rel='stylesheet' id='pagelayer-google-font-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C600&#038;ver=1.3.1' type='text/css' media='all' />
-<script type='text/javascript' src='/site-inc/js/wp-embed.min.js?ver=5.1.6'></script>
+</div class="content">
 </body>
-	</html>
+</html>
