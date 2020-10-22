@@ -9,7 +9,7 @@
 @media only screen and (max-width: 1000px){ #left_col {width:100%;}  #right_col {width:100%;} #mid_col {width:100%;}}
 
 #box  {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
-#Cbox  {align: center; margin: 0 auto; background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
+#Cbox  {text-align: center; margin: 0 auto; background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
 .boxleft {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
 .boxmid {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
 .boxright {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
@@ -20,6 +20,9 @@
 CB   	{color: blue;}
 CR   	{color: red; font-weight: bold;}
 H1		{background-color: #eee; text-align: center}
+H2		{color: white; font-size: 40px; -webkit-text-stroke: 1px #23430C; text-shadow: -1px 1px 2px #23430C, 1px 1px 2px #23430C, 1px -1px 0 #23430C, -1px -1px 0 #23430C; text-align: center}
+H4		{color: #000; text-align: center}
+H5		{color: #000; text-align: center}
 HRD  	{line-height: normal; background-color: red;}
 HG		{line-height: normal; background-color: #00FF99;}
 HY		{line-height: normal; background-color: yellow;}
@@ -28,11 +31,12 @@ HB		{line-height: normal; background-color: powderblue;}
 HP		{line-height: normal; background-color: pink;}
 M		{color: #326ca6; text-decoration: none; font-size: 20px; font-family: sans-serif; font-weight: bold;}
 /*SUB		{color: #444; font-family: tahoma; font-size: 8px; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: right;}*/
-A		{color: rgb(50, 108, 166); text-decoration: none; font-family: sans-serif;}
+a		{color: #008; text-decoration: none; font-family: sans-serif;}
 a		{transition: padding-left 100ms ease-out;-webkit-transition: padding-left 100ms ease-out;-moz-transition: padding-left 100ms ease-out;-o-transition: padding-left 100ms ease-out;}
 a:hover {padding-left: 5px; transition: padding-left 100ms ease-out}
 
 ul 		{padding: 0px 0px 0px 30px;}
+li		{color: #000; text-align: center;} 
 
 p		{margin: 0px; padding: 0px; cursor: default; border-collapse: separate; font-size: 20px; font-family: sans-serif; background-color:#efefef;border:solid 0px #666;}
 table	{border: 1px solid #ccc; margin: 0px; padding: 0px; cursor: default; border-collapse: collapse; font-size: 20px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; border-style: solid solid solid solid; }
