@@ -1,0 +1,54 @@
+Highland 12th - Stake Center
+11:30 AM (Mountain Time (US & Canada))
+
+Highland 5th - Stake Center
+10:00 AM (Mountain Time (US & Canada))
+
+Highland 28th - Stake Center
+08:30 AM (Mountain Time (US & Canada))
+
+===================================================
+
+Highland 6th - Day's Meadow
+11:30 AM (Mountain Time (US & Canada))
+rtmp://MHW-20-87885.westus.cloudapp.azure.com/169P
+2b05976fffab4c1c8
+rtmp://MHW-20-87885.westus.cloudapp.azure.com/169P/2b05976fffab4c1c8
+
+Highland 14th - Day's Meadow
+10:00 AM (Mountain Time (US & Canada))
+rtmp://MHW-20-87888.westus.cloudapp.azure.com/169P
+71107b66f9734fa3b
+rtmp://MHW-20-87888.westus.cloudapp.azure.com/169P/71107b66f9734fa3b
+
+Highland Strasburg - Day's Meadow
+08:30 AM (Mountain Time (US & Canada))
+rtmp://MHW-20-87893.westus.cloudapp.azure.com/169P
+5cf6408ba8074578b
+rtmp://MHW-20-87893.westus.cloudapp.azure.com/169P/5cf6408ba8074578b
+
+===================================================
+
+Highland 16th - Hollow Crest
+11:30 AM (Mountain Time (US & Canada))
+
+Highland 10th - Hollow Crest
+10:00 AM (Mountain Time (US & Canada))
+
+Highland 38th - Hollow Crest
+01:00 PM (Mountain Time (US & Canada))
+
+===================================================
+
+Highland 8th - Heritage Park
+10:00 AM (Mountain Time (US & Canada))
+rtmp://MHW-20-87890.westus.cloudapp.azure.com/169P
+b7e6235a49074eddb
+
+Single Adult -- Heritage Park
+12:00 PM (Mountain Time (US & Canada))
+rtmp://MHW-20-89630.westus.cloudapp.azure.com/169P
+baac0b2cab6147a1b
+rtmp://MHW-20-89630.westus.cloudapp.azure.com/169P/baac0b2cab6147a1b
+
+
