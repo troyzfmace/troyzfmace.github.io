@@ -126,5 +126,28 @@ td nav {color: #326ca6; cursor: pointer; font-size: 20px;}
 .fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
 .fa-download:before{content:"\f019"}
 */
+.pagelayer-bgimg-slider{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+}
 
+.pagelayer-bgimg-slide {
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+height: 100%;
+transition: all 1s ease-in-out;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0;
+}
+
+.pagelayer-slide-show {
+opacity: 1;
+}
 
