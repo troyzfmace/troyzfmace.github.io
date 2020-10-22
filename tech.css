@@ -9,6 +9,7 @@
 @media only screen and (max-width: 1000px){ #left_col {width:100%;}  #right_col {width:100%;} #mid_col {width:100%;}}
 
 #box  {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
+#Cbox  {align: center; margin: 0 auto; background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
 .boxleft {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
 .boxmid {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
 .boxright {background-color: #f9f9f9; min-width: 160px; border-radius: 6px; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); z-index: 1; padding: 10px 20px;}
