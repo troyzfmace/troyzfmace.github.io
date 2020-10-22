@@ -100,3 +100,11 @@ td nav {color: #326ca6; cursor: pointer; font-size: 20px;}
 .popupCloseButton:hover {background-color: #ccc;padding-left: 0px;}
 
 
+.pagelayer-ele-link{text-decoration:none;box-shadow:none !important;border:none;}
+.pagelayer-btn-holder{border-radius:5px;display:inline-block;line-height:1em;transition:all 0.3s;cursor: pointer;box-sizing:border-box;}
+.pagelayer-btn-large{ font-size: 18px; padding: 20px 40px;}
+.pagelayer-btn-icon-left .pagelayer-btn-icon:last-child{display: none;}
+.pagelayer-btn-icon-right .pagelayer-btn-icon:first-child{display: none;}
+.pagelayer-btn-icon-left .pagelayer-btn-icon{padding-left:0 !important;position: relative;z-index: 1;}
+.pagelayer-btn-icon-right .pagelayer-btn-icon{padding-right:0 !important;position: relative;z-index: 1;}
+
