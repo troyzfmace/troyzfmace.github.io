@@ -50,7 +50,27 @@ window.onload=init;
 .dropdown .dropbtnA {background-color: #aaa;}
 
 
+.pagelayer-row,
+.pagelayer-inner_row,
+.pagelayer-row-holder,
+.pagelayer-col,
+.pagelayer-col-holder{box-sizing: border-box;display: flex;flex: 1 0 auto;flex-direction: row;flex-wrap: wrap;width:100%;align-content: stretch;position: relative	;}
+.pagelayer-col,
+.pagelayer-col-holder{align-content: flex-start;}
+.pagelayer-col-holder>div{width: 100%;}
+.pagelayer-bgimg-slider{position: absolute;top: 0;left: 0;height: 100%;width: 100%;}
+.pagelayer-bgimg-slide {position: absolute;width: 100%;top: 0;left: 0;height: 100%;transition: all 1s ease-in-out;background-position: center center;background-repeat: no-repeat;background-size: cover;opacity: 0;}
+.pagelayer-slide-show {opacity: 1;}
+.pagelayer-heading-holder *,
+.pagelayer-text-holder *{padding: 0;margin: 0;overflow-wrap: break-word;}
+.pagelayer-timeline-content .pagelayer-heading-holder *{margin:0px;}
+
+
+@font-face {font-family: 'Roboto';font-style: normal;font-weight: 500;src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
 </style>
+<script type='text/javascript' src='/uploads/tech.js'></script>
+
 </head>
 <body style="background-color: #eee; padding: 0px;">
 
@@ -145,8 +165,10 @@ Start of real content
 
   <table width="100%">
     <tr>
-     <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; width: 50%; border-style: none solid solid solid; background-color: #fff; background-attachment: fixed; background-size: cover;" background="/uploads/mount-timpanogos-temple-lds-885511-wallpaper-1.jpg">
-		</br>
+     <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; width: 50%; border-style: none solid solid solid; background-color: #fff; background-attachment: fixed; background-size: cover;"> 
+
+	 <!--background="/uploads/mount-timpanogos-temple-lds-885511-wallpaper-1.jpg">-->
+
 	  <!--<div id="full_col">
 		<div id="box">
 		<ul>
@@ -157,27 +179,31 @@ Start of real content
 		</div>
 
 	  </div>-->
- </br>
+			<div pagelayer-id="fHipv0kKLvXNRcvf" class="pagelayer-row ">
+				<!--imagesize-->
+				<style pagelayer-style-id="fHipv0kKLvXNRcvf">
+				[pagelayer-id="fHipv0kKLvXNRcvf"]{background-image: url("/uploads/mount-timpanogos-temple-lds-885511-wallpaper-1.jpg");background-attachment: fixed;background-position-x: center;background-position-y: center;background-repeat: no-repeat;background-size: cover;padding-top: 220px; padding-right: 0px; padding-bottom: 220px; padding-left: 0px}
+				</style>
+			   <div class="pagelayer-bgimg-slider" data-speed="2000">
+				<div class="pagelayer-bgimg-slide" style="background-image:url('/uploads/Broadcast-and-Media-Header-Rohde-und-Schwarz-2880x1620px.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('/uploads/5G_Broadcast_Main_Future_Business_Cases_w1300_hX.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('/uploads/in-memory-computing.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('/uploads/techandsuccess.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('/uploads/bg-space-tech-2.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('/uploads/AdobeStock_100000042-2-1024x576.jpeg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('/uploads/1184meg_e11d22113f60ffb.jpg')"></div>
+			   </div>
+			 <div class="pagelayer-col-holder">
+			  <div pagelayer-id="FZdRN3TnlQoS5s7J" class="pagelayer-heading" align="center">
+				<!--textformat-->
+				<style pagelayer-style-id="FZdRN3TnlQoS5s7J">
+				[pagelayer-id="FZdRN3TnlQoS5s7J"]{text-align: center}
+				[pagelayer-id="FZdRN3TnlQoS5s7J"] .pagelayer-heading-holder{color:#ffffff;font-family: Roboto !important; font-size: 40px !important; font-style:  !important; font-weight: 100 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: 1em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+				</style>
+			  <div class="pagelayer-heading-holder">
+				HOME
+			  	
+			  </div>
+			 </div>
+			</div>
 
- </br>
- </br>
- </br>
- </br>
- </br>
- </br> 
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
- </br>
+
+ <br />
+ <br />
  </td></tr></table>
  <div class="pagelayer-copyright">
 	<a href="">

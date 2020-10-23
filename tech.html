@@ -54,12 +54,12 @@ li {text-align: left;}
 .pagelayer-inner_row,
 .pagelayer-row-holder,
 .pagelayer-col,
-.pagelayer-col-holder{box-sizing: border-box;display: flex;flex: 1 0 auto;flex-direction: row;flex-wrap: wrap;width:100%;align-content: stretch;position: float;}
+.pagelayer-col-holder{box-sizing: border-box;display: flex;flex: 1 0 auto;flex-direction: row;flex-wrap: wrap;width:100%;align-content: stretch;position: relative	;}
 .pagelayer-col,
 .pagelayer-col-holder{align-content: flex-start;}
 .pagelayer-col-holder>div{width: 100%;}
-.pagelayer-bgimg-slider{position: float;top: 0;left: 0;height: 100%;width: 100%;}
-.pagelayer-bgimg-slide {position: float;width: 100%;top: 0;left: 0;height: 100%;transition: all 1s ease-in-out;background-position: center center;background-repeat: no-repeat;background-size: cover;opacity: 0;}
+.pagelayer-bgimg-slider{position: absolute;top: 0;left: 0;height: 100%;width: 100%;}
+.pagelayer-bgimg-slide {position: absolute;width: 100%;top: 0;left: 0;height: 100%;transition: all 1s ease-in-out;background-position: center center;background-repeat: no-repeat;background-size: cover;opacity: 0;}
 .pagelayer-slide-show {opacity: 1;}
 .pagelayer-heading-holder *,
 .pagelayer-text-holder *{padding: 0;margin: 0;overflow-wrap: break-word;}
@@ -164,10 +164,10 @@ Start of real content
 <div class="content">
   <table width="100%">
     <tr>
-     <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; width: 50%; border-style: none solid solid solid; background-color: #fff; background-attachment: fixed; background-size: cover;" ><!--background="/uploads/bg-space-tech-2-1024x427.jpg">-->
-
+     <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; width: 50%; border-style: none solid solid solid; background-color: #fff; background-attachment: fixed; background-size: cover; background="/uploads/bg-space-tech-2-1024x427.jpg">
+<!--
 			<div pagelayer-id="fHipv0kKLvXNRcvf" class="pagelayer-row ">
-				<!--imagesize-->
+
 				<style pagelayer-style-id="fHipv0kKLvXNRcvf">
 				[pagelayer-id="fHipv0kKLvXNRcvf"]{background-image: url("https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/1184meg_e11d22113f60ffb.jpg");background-attachment: fixed;background-position-x: center;background-position-y: center;background-repeat: no-repeat;background-size: cover;padding-top: 120px; padding-right: 0px; padding-bottom: 120px; padding-left: 0px}
 				</style>
@@ -176,7 +176,7 @@ Start of real content
 			   </div>
 			 <div class="pagelayer-col-holder">
 			  <div pagelayer-id="FZdRN3TnlQoS5s7J" class="pagelayer-heading" align="center">
-				<!--textformat-->
+
 				<style pagelayer-style-id="FZdRN3TnlQoS5s7J">
 				[pagelayer-id="FZdRN3TnlQoS5s7J"]{text-align: center}
 				[pagelayer-id="FZdRN3TnlQoS5s7J"] .pagelayer-heading-holder{color:#ffffff;font-family: Roboto !important; font-size: 20px !important; font-style:  !important; font-weight: 100 !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style: Solid !important; line-height: 1em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
@@ -197,7 +197,7 @@ Start of real content
 			  </div>
 			 </div>
 			</div>
-
+-->
 		<br />
 <!--
 	  <div id="full_col">
