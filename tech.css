@@ -161,6 +161,6 @@ opacity: 1;
 		#hpframe { width: 49.5%; height: 100vh; overflow: auto; border: 0; }
 		#hcframe { width: 49.5%; height: 100vh; overflow: visible; border: 0; }
 		#dmframe { width: 49.5%; height: 100vh; overflow: scroll; border: 0; }
-		#framecont { background-color: #dee; width: 100%; height: 400vh; padding: 0; overflow: hidden;}
+		#framecont { background-color: #dee; width: 100%; height: 200vh; padding: 0; overflow: hidden;}
 		#miniframe { width: 43vw; height: 40vh; overflow: scroll; border: 0; } 
 		#miniframecont { background-color: #dee; width: 43vw; height: 40vh; padding: 0; overflow: hidden;}
