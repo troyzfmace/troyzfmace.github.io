@@ -157,6 +157,7 @@ opacity: 1;
 
 /*frame*/
 		#myframe { width: 100%; height: 120vh; overflow: scroll; border: 0; }/*-ms-transform: scale(2.25); -moz-transform: scale(2.25); -o-transform: scale(2.5); -webkit-transform: scale(1); transform: scale(1); -ms-transform-origin: 0 0; -moz-transform-origin: 0 0; -o-transform-origin: 0 0; -webkit-transform-origin: 0 0; transform-origin: 0 0;}*/
+		#mywcframe { width: 99.5%; height: 100vh; overflow: hidden; border: 0; }
 		#stakeframe { width: 49.5%; height: 100vh; overflow: hidden; border: 0; }
 		#hpframe { width: 49.5%; height: 100vh; overflow: auto; border: 0; }
 		#hcframe { width: 49.5%; height: 100vh; overflow: visible; border: 0; }
