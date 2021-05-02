@@ -1,149 +1,49 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>  
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
   <link rel="shortcut icon" href="favicon.ico" />
 <title>Technology</title>
 <link rel="stylesheet" type="text/css" href="tech.css" />
-<base href="https://troyzfmace.github.io/" target="_blank">
-<script>
-//clock
-var d,h,m,s,animate;
-
-function init(){
-    d=new Date();
-    h=d.getHours();
-    m=d.getMinutes();
-    s=d.getSeconds();
-    clock();
-};
-function clock(){
-    s++;
-    if(s==60){
-        s=0;
-        m++;
-        if(m==60){
-            m=0;
-            h++;
-            if(h==24){
-                h=0;
-            }
-        }
-    }
-    $('sec',s);
-    $('min',m);
-    $('hr',h);
-    animate=setTimeout(clock,1000);
-};
-function $(id,val){
-    if(val<10){
-        val='0'+val;
-    }
-    document.getElementById(id).innerHTML=val;
-};
-window.onload=init;
-</script>  
+<base href="https://www.highlandcentralutahstake.org/" target="_blank">
 <base target="_blank">
 <style>
 .dropdown .dropbtnH {background-color: #aaa;}
 .dropdown .dropbtnT {background-color: #fff;}
+.dropdown .dropbtnV {background-color: #aaa;}
 .dropdown .dropbtnS {background-color: #aaa;}
 .dropdown .dropbtnD {background-color: #aaa;}
 .dropdown .dropbtnA {background-color: #aaa;}
+.dropdown .dropbtnW {background-color: #aaa;}
+.blinking {animation:blinkingText 1.2s infinite;}
+@keyframes blinkingText{
+    0%{    color: #000;}
+    20%{    color: #000;}
+    40%{    color: transparent;}
+    60%{    color: #000;}
+    80%{    color: #000;}
+    100%{   color: #000;}
+}
+
 li {text-align: left;}
 
+#left_col {float:left; width:30%;}
+#space_col {float:left; width:1%;}
+#right_col {float:right; width:30%;}
+#left_mid {margin-left: 25%; width:24%;} 
+#right_mid {margin-right: 25%; width:24%;}
+#mid_col {margin-left: auto; margin-right: auto; width:30%;}
 
 </style>
-<script type='text/javascript' src='/uploads/tech.js'></script>
-
 </head>
 <body style="background-color: #eee; padding: 0px;">
 
-
 <!--START MENU-->
-<div class="header" id="myHeader">
-  <div>
-    <a href="mailto:highlandcentraltech@gmail.com">highlandcentraltech@gmail.com</a>
-	<div style="float:right"><a href="#">Highland Utah</a></div><br />
-    <h2><a href="/index.html">Highland Central Stake<br />Technology</a></h2>
-  </div>  
-
- <div class="navbar">
-  <div class="dropdown">
-	<a class="dropbtnH" href="index.html" target="_self" style="line-height: 150%;">&nbsp;HOME&nbsp;</a>
-  </div> 
-  
-  <div class="dropdown">
-	<a class="dropbtnT" href="tech.html" target="_self" style="line-height: 150%;">&nbsp;TECH&nbsp;</a>
-  </div>
-
-  <div class="dropdown">
-    <a class="dropbtnD" href="docs.html" target="_self"style="line-height: 150%;">&nbsp;DOCs&nbsp;</a>
-  </div>
-  
-  <div class="dropdown">
-	<a class="dropbtnA" href="about.html" target="_self" style="line-height: 150%;">&nbsp;&nbsp;ABOUT&nbsp;</a>
-  </div>
-
-  <div class="dropdown">
-	<a class="dropbtnS" href="stat.html" target="_self" style="line-height: 150%;">&nbsp;&nbsp;STATs&nbsp;</a>
-  </div>
-
- 
-  <div class="clock">
-     <span id="hr">00</span>
-     <span>:</span>
-     <span id="min">00</span>
-     <span>:</span>
-     <span id="sec">00</span>
-  </div>
-
-  <div class="dropdown" style="min-width: 50%; ">&nbsp;</div>
- </div class="navbar">   
-</div class="header">
-	<script>
-	//copy buttons;
-	function myCopyFunctionE() {
-	  var copyText = document.getElementById("myEInput");
-	  copyText.select();
-	  document.execCommand("copy");
-	//  alert("Copied the text: " + copyText.value);
-	}
-	function myCopyFunctionB() {
-	  var copyText = document.getElementById("myBInput");
-	  copyText.select();
-	  document.execCommand("copy");
-	//  alert("Copied the text: " + copyText.value);
-	}
-	</script>
-	<script type="text/javascript">
-	//button sounds
-	a=new AudioContext()
-	function beep(vol, freq, duration){
-	 v=a.createOscillator()
-	 u=a.createGain()
-	 v.connect(u)
-	 v.frequency.value=freq
-	 v.type="square"
-	 u.connect(a.destination)
-	 u.gain.value=vol*0.01
-	 v.start(a.currentTime)
-	 v.stop(a.currentTime+duration*0.001)
-	}
-	</script>
-	<script>
-	//scroll header- not used
-	window.onscroll = function() {myFunction()};
-	 var header = document.getElementById("myHeader");
-	 var sticky = header.offsetTop;
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-	</script>
-
+<script src="menu.js" type="text/javascript" defer></script>
+<menu-component></menu-component>
 <!--END MENU-->
 <!--
 
@@ -151,17 +51,18 @@ Start of real content
 
 -->
 <div class="content">
+
   <table width="100%">
     <tr>
-     <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; width: 50%; border-style: none solid solid solid; background-color: #fff; background-attachment: fixed; background-size: cover;" background="/uploads/bg-space-tech-2.jpg">
+     <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; width: 90%; border-style: none solid solid solid; background-color: #fff; background-attachment: fixed; background-size: cover;" background="/uploads/bg-space-tech-2.jpg">
 <!--
 			<div pagelayer-id="fHipv0kKLvXNRcvf" class="pagelayer-row ">
 
 				<style pagelayer-style-id="fHipv0kKLvXNRcvf">
-				[pagelayer-id="fHipv0kKLvXNRcvf"]{background-image: url("https://troyzfmace.github.io/sitepad-data/uploads//2020/09/1184meg_e11d22113f60ffb.jpg");background-attachment: fixed;background-position-x: center;background-position-y: center;background-repeat: no-repeat;background-size: cover;padding-top: 120px; padding-right: 0px; padding-bottom: 120px; padding-left: 0px}
+				[pagelayer-id="fHipv0kKLvXNRcvf"]{background-image: url("https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/1184meg_e11d22113f60ffb.jpg");background-attachment: fixed;background-position-x: center;background-position-y: center;background-repeat: no-repeat;background-size: cover;padding-top: 120px; padding-right: 0px; padding-bottom: 120px; padding-left: 0px}
 				</style>
 			   <div class="pagelayer-bgimg-slider" data-speed="2000">
-				<div class="pagelayer-bgimg-slide" style="background-image:url('https://troyzfmace.github.io/sitepad-data/uploads//2020/09/Broadcast-and-Media-Header-Rohde-und-Schwarz-2880x1620px.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://troyzfmace.github.io/sitepad-data/uploads//2020/09/5G_Broadcast_Main_Future_Business_Cases_w1300_hX.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://troyzfmace.github.io/sitepad-data/uploads//2020/09/in-memory-computing.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://troyzfmace.github.io/sitepad-data/uploads//2020/09/techandsuccess.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://troyzfmace.github.io/sitepad-data/uploads//2020/09/bg-space-tech-2.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://troyzfmace.github.io/sitepad-data/uploads//2020/09/AdobeStock_100000042-2-1024x576.jpeg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://troyzfmace.github.io/sitepad-data/uploads//2020/09/1184meg_e11d22113f60ffb.jpg')"></div>
+				<div class="pagelayer-bgimg-slide" style="background-image:url('https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/Broadcast-and-Media-Header-Rohde-und-Schwarz-2880x1620px.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/5G_Broadcast_Main_Future_Business_Cases_w1300_hX.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/in-memory-computing.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/techandsuccess.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/bg-space-tech-2.jpg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/AdobeStock_100000042-2-1024x576.jpeg')"></div><div class="pagelayer-bgimg-slide" style="background-image:url('https://www.highlandcentralutahstake.org/sitepad-data/uploads//2020/09/1184meg_e11d22113f60ffb.jpg')"></div>
 			   </div>
 			 <div class="pagelayer-col-holder">
 			  <div pagelayer-id="FZdRN3TnlQoS5s7J" class="pagelayer-heading" align="center">
@@ -188,13 +89,17 @@ Start of real content
 			</div>
 -->
 		<br />
+    
 
 	  <div id="full_col">
 		<div id="box">
 		<ul>
-			<li>Stake User Viewing Link: <a href="http://mywebcast.churchofjesuschrist.org/highlandutahcentralstake" target="_blank">http://mywebcast.churchofjesuschrist.org/highlandutahcentralstake</a></li>
-			<li>Stake Tech Dashboard Link: <a href="https://webcast.churchofjesuschrist.org/#/eventManager" target="_blank">https://webcast.churchofjesuschrist.org/#/eventManager</a></li>
-			<li>Stake Firewall/WiFi Link: <a href="https://tm.churchofjesuschrist.org/" target="_blank">https://tm.churchofjesuschrist.org/</a></li>
+			<li><a href="http://mywebcast.churchofjesuschrist.org/highlandutahcentralstake" target="_blank">Stake Member Viewing Broadcast List</a></li>
+			<hr>
+			<li><a href="https://webcast.churchofjesuschrist.org/#/eventManager" target="_blank">Webcast Event Manager</a></li>
+			<li><a href="https://tm.churchofjesuschrist.org/" target="_blank">Technology Manager</a></li>
+			<li><a href="https://www.highlandcentralutahstake.org/stat.html" target="_blank">Stake Monitor Page</a></li>
+			
 		</ul>
 		</div>
 	  </div>
@@ -202,22 +107,21 @@ Start of real content
 
 	  <br />
 		<div class="pagelayer-text">
-			<a href="/uploads/WardBroadcastSchedule110120.txt" target="_blank" class="pagelayer-button white">
-			<img src="/uploads/download.ico" width="20" height="20"> Download Ward Broadcast Schedule (Nov 1)</a>
+			<a href="/uploads/WardBroadcastSchedule.txt" target="_blank" class="pagelayer-button white"><img src="/uploads/download.ico" width="20" height="20"> Download Ward Broadcast Schedule <span class="blinking">(Mar +)</span></a>
 		</div>
 		
 	    <!--<a href="/uploads/WardBroadcastSchedule101820.txt" target="_blank" class="pagelayer-btn-holder pagelayer-ele-link pagelayer-btn-default pagelayer-btn-large" >Download Ward Broadcast Schedule (Oct )</a>-->
 <br /><hr>	  
 
 	  <br />
-	  <div id="wrap"><center><h2>Stake Center</h2><h9>Building Tech: Richard Stauffer</h9></center>
+	  <div id="wrap"><center><h2>Stake Center</h2><h9><b>Building Tech: Richard Stauffer</b></h9></center>
 	  <div id="left_col">
 		<div id="Cbox">
 
 
 		<img src="/uploads/Chapel.ico" style="width:50px;height:50px;" />
 		<h4>Highland 28th ward - 8:30am<br />
-		Ward Tech:<br /><span>&nbsp;</span></h4>
+		Kenton McDaniel<br /><span>&nbsp;</span></h4>
 
 
 
@@ -248,13 +152,13 @@ Start of real content
 	  </div>
 
  </div>
- <div id="wrap"><center><h2>Day's Meadow</h2><h9>Building Tech: Randy Graham</h9></center>
+ <div id="wrap"><center><h2>Day's Meadow</h2><h9><b>Building Tech: Randy Graham</b></h9></center>
 	  <div id="left_col">
 		<div id="Cbox">
 
 		<img src="/uploads/Chapel.ico" style="width:50px;height:50px;" />
 		<h4>Highland Strasburg - 8:30am
-		<br />Spencer Mecham<br /><span>&nbsp;</span></h4>
+		<br />Spencer Mecham<br /><span>Cody Campbell</span></h4>
 
 		</div>
 	  <br />
@@ -279,7 +183,7 @@ Start of real content
 
 		<img src="/uploads/Chapel.ico" style="width:50px;height:50px;" />
 		<h4>Highland 14th ward - 10:00am
-		<br />Ward Tech:<br /><span>&nbsp;</span></h4>
+		<br />Randy Graham<br /><span>&nbsp;</span></h4>
 
 		
 		
@@ -288,7 +192,7 @@ Start of real content
 	  </div>
 
  </div>
- <div id="wrap"><center><h2>Hollow Crest</h2><h9>Building Tech: Daniel Larsen</h9></center>
+ <div id="wrap"><center><h2>Hollow Crest</h2><h9><b>Building Tech: Daniel Larsen</b></h9></center>
 	  <div id="left_col">
 		<div id="Cbox">
 
@@ -307,7 +211,7 @@ Start of real content
 
 		<img src="/uploads/Chapel.ico" style="width:50px;height:50px;" />
 		<h4>Highland 16th ward - 11:30am
-		<br />Ward Tech:<br /><span>&nbsp;</span></h4>
+		<br />Mark Allen<br /><span>Shaelynn Steed</span></h4>
 		
 		
 		</div>
@@ -319,7 +223,7 @@ Start of real content
 
 		<img src="/uploads/Chapel.ico" style="width:50px;height:50px;" />
 		<h4>Highland 10th ward - 10:00am<br />
-		Michael Monson<br /><span>&nbsp;</span></h4>
+		Kent Eggett<br /><span>&nbsp;</span></h4>
 
 		
 		
@@ -328,13 +232,13 @@ Start of real content
 	  </div>
 
  </div>
- <div id="wrap"><center><h2>Heritage Park</h2><h9>Building Tech: Peter Dill</h9></center>
+ <div id="wrap"><center><h2>Heritage Park</h2><h9><b>Building Tech: Peter Dill</b></h9></center>
 	  <div id="left_col">
 		<div id="Cbox">
 
 		<img src="/uploads/Chapel.ico" style="width:50px;height:50px;" />
 		<h4>&nbsp;<br />
-		&nbsp;<br /><span>&nbsp;</span></h4>
+		&nbsp;<br />&nbsp;</h4>
 
 
 
@@ -360,7 +264,7 @@ Start of real content
 
 		<img src="/uploads/Chapel.ico" style="width:50px;height:50px;" />
 		<h4>Highland 8th ward - 10:00am<br />
-		Corb Heath<br /><span>&nbsp;</span></h4>
+		Bill Snell<br /><span>Stefan Arriscorreta</span></h4>
 
 		
 		
@@ -372,12 +276,10 @@ Start of real content
 
  <br />
  </td></tr></table>
- <div class="pagelayer-copyright">
-	<a href="">&#169; 2020 Highland Central Stake <div style="float:right">This website is not affiliated with the Church of Jesus Christ of Latter-day Saints.</div>
-	</a>
- </div>
- <!--<p align="right"><cr><script language="javascript">var today = new Date();document.write(today);</script></cr></p>-->
-
 </div class="content">
+<!--START FOOTER-->
+<script src="footer.js" type="text/javascript" defer></script>
+<footer-component></footer-component>
+<!--END FOOTER-->
 </body>
 </html>

@@ -1,0 +1,64 @@
+Highland 28th - Stake Center
+	Date/Time: 2021-1-17 @ 08:30 AM
+
+Highland 5th - Stake Center
+	Date/Time: 2021-1-17 @ 10:00 AM
+
+Highland 12th - Stake Center
+	Date/Time: 2021-1-17 @ 11:30 AM
+
+===================================================
+
+Highland Strasburg - Day's Meadow
+	Date/Time: 2021-1-17 @ 08:30 AM
+	
+	rtmp://MHW-20-140201.westus.cloudapp.azure.com/169P/
+	b7c9dc98fe0a42519
+	
+	rtmp://MHW-20-140201.westus.cloudapp.azure.com/169P/b7c9dc98fe0a42519
+
+Highland 14th - Day's Meadow
+	Date/Time: 2021-1-17 @ 10:00 AM
+	
+	rtmp://MHW-20-140779.westus.cloudapp.azure.com/169P/
+	7d217d4ff0194dff8
+	
+	rtmp://MHW-20-140779.westus.cloudapp.azure.com/169P/7d217d4ff0194dff8
+
+Highland 6th - Day's Meadow
+	Date/Time: 2021-1-17 @ 11:30 AM
+	
+	rtmp://MHW-20-141422.westus.cloudapp.azure.com/169P/
+	42025640b0f64e1da
+	
+	rtmp://MHW-20-141422.westus.cloudapp.azure.com/169P/42025640b0f64e1da
+
+===================================================
+
+Highland 10th - Hollow Crest
+	Date/Time: 2021-1-17 @ 10:00 AM
+
+Highland 16th - Hollow Crest
+	Date/Time: 2021-1-17 @ 11:30 AM
+
+Highland 38th - Hollow Crest
+	Date/Time: 2021-1-17 @ 01:00 PM
+
+===================================================
+
+Highland 8th - Heritage Park
+	Date/Time: 2021-1-17 @ 10:00 AM
+	
+	rtmp://MHW-20-140776.westus.cloudapp.azure.com/169P/
+	503f8f1421e54e0db
+	
+	rtmp://MHW-20-140776.westus.cloudapp.azure.com/169P/503f8f1421e54e0db
+
+Single Adult -- Heritage Park
+	Date/Time: 2021-1-17 @ 12:00 PM
+	
+	rtmp://MHW-20-141245.westus.cloudapp.azure.com/169P/
+	3b892080c956494d8
+	
+	rtmp://MHW-20-141245.westus.cloudapp.azure.com/169P/3b892080c956494d8
+
