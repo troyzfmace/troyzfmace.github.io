@@ -35,9 +35,7 @@ var structure = [{
   }, {
     name: '111520/SA.txt'
   }, {
-    name: '111520/strasburg.txt'
-	{
-    name: 'folder 1/1',
+    name: '111520/strasburg.txt',
     type: Tree.FOLDER,
     children: [{
       name: 'folder 1/1/1',
