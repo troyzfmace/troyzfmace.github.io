@@ -6,6 +6,10 @@ var tree = new Tree(document.getElementById('tree'), {
 });
 
 var structure = [{
+  name: 'file 1'
+}, {
+  name: 'file 2'
+}, {
   name: '111520',
   open: false,
   type: Tree.FOLDER,
