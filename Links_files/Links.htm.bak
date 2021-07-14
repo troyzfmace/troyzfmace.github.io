@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head>
+
+  <link rel="shortcut icon" href="favicon.ico" />
+<title>My Links</title></head>
+<body>
+<h2><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/TroyMaceWorkspace:Links">Links</a></h2>
+<span style="color: rgb(68, 68, 68); font-family: tahoma; font-size: 11px; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">Last modified October 16,2017 6:35 PM by<span>&nbsp;</span></span><a title="Troy Mace" onclick="getContactInfo('334B:3BF0:user:2469DB817EC54EAAB93D569455C5FA9B000000010335'); return false;" style="color: rgb(0, 0, 153); text-decoration: none; font-family: tahoma; font-size: 11px; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); cursor: pointer;">Troy Mace</a><span style="color: rgb(68, 68, 68); font-family: tahoma; font-size: 11px; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">. Version 284</span>
+<table id="sortable_advanced_table" class="mceItemTable" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 0px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;" width="100%">
+ <tbody>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">General</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://confluence.oraclecorp.com/confluence/pages/viewpage.action?pageId=316424371" >PE&amp;O Erna's page</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://proddev-peo-mgd-cloud.slack.com/messages/@slackbot/" >Slack</a></li>
+	  <li class="bki-li"> <strong class="bki-strong"> <a target="_blank" href="https://pdit-document-repository.oraclecorp.com/users/viewmyfavourites.action" >CSS Confluence (URLs, Apps, etc)</a> - <a target="_blank" href="https://pdit-document-repository.oraclecorp.com/users/viewmyfavourites.action" >MyFavConf</a> - <a target="_blank" href="https://confluence.oraclecorp.com/confluence/users/viewmyfavourites.action" >MyFavALMConf</a></strong></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="white-space: pre;" style="line-height: normal; white-space: pre;"> </span><a target="_blank" href="https://confluence.oraclecorp.com/confluence/display/PECO/Cloud+Access+Checklist" >Cloud Access CheckList</a> - <a target="_blank" href="https://confluence.oraclecorp.com/confluence/pages/viewpage.action?pageId=459756074">Cloud on-call</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://people.us.oracle.com/pls/oracle/f?p=8000:2:17589219900780::::PERSON_ID:403659393616575" >Aria</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://emdsap.oraclecorp.com/analytics/saw.dll?Dashboard" >EMDS Server Inventory</a></li>
+	  <li class="bki-li"> <strong class="bki-strong"><a target="_blank" href="http://slce26vm067.us.oracle.com/" >EMS Environments</a></strong></li>
+	  <li class="bki-li"> <strong class="bki-strong"> <a target="_blank" href="https://pdit-document-repository.oraclecorp.com/display/ASS/MOS+Application+URLs" >MOS URLs</a></strong></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/" >BUG</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://eas.oraclecorp.com/launchpad/MOS.html" >MOS Launch</a></li>
+	  <li class="bki-li"><br></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #99cc00;" style="line-height: normal; background-color: rgb(153, 204, 0);"> <strong class="bki-strong"><a target="_blank" href="https://global-ebusiness.oraclecorp.com/" >Self Service Apps</a> </strong></span></li>
+	  <li class="bki-li"><a target="_blank" href="http://ssit.oraclecorp.com/planning" >Weekly Planning tool</a></li>
+	  <li class="bki-li"> <strong class="bki-strong"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=11765:35:3422888929244138" >KDM</a></strong></li>
+	  <li class="bki-li"><br></li>
+	  <li class="bki-li"> <strong class="bki-strong"><a target="_blank" href="http://opam.oraclecorp.com/" >OPAM</a></strong> - <a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:PDIT_OPAM" >wiki</a></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"> <strong class="bki-strong"><a target="_blank" href="https://emcc.us.oracle.com/em/faces/sdk/nonFacesWrapper?=&target=MOS_PROD_NOTIFY&_em.coBM=%2Fconsole%2Ftarget%2Fsystem%2FsystemDashboard%3F%26target%3DMOS_PROD_NOTIFY%26type%3Dcomposite%26sDashCaller%3DEM%26ctxType%3DGroups&type=composite" _mcd_href="https://emcc.us.oracle.com/em/faces/sdk/nonFacesWrapper?_em.coBM=%2Fconsole%2Freports%2Frender%3Fevent%3Drefresh%26action%3Dgenerate%26reportID%3DFB1704522C2C6D44E043C336548C2DC7" >EMCC</a> </strong><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em;" style="line-height: normal; font-size: 12.1px; letter-spacing: 0.019em;"> <a target="_blank" href="https://emcc.us.oracle.com/em/faces/core-groups-sysDashBoard?Adf-Page-Id=1&amp;amp;target=MOS_PROD_NOTIFY&amp;amp;type=composite" >EMCC</a> <strong class="bki-strong"><a target="_blank" href="https://emcc.us.oracle.com/em/faces/sdk/nonFacesWrapper?_em.coBM=%2Fconsole%2Ftarget%2Fsystem%2FsystemDashboard%3Ftarget%3DCSS_SCPBI_MNA_PROD_NOTIFY%26type%3Dcomposite%26ctxType%3DGroups&target=CSS_SCPBI_MNA_PROD_NOTIFY&type=composite" >PE&amp;O-EMCC</a> </strong></span></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"> <strong class="bki-strong"> <a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=PDIT%20MOS%20-%20Open%20EM%20PROD%20P1%20Bugs&fcont_arr=9776&fid_arr=1&fcont_arr=111&fid_arr=2&fcont_arr=EM-PROD&fid_arr=55&fcont_arr=70&fid_arr=42&fcont_arr=1&fid_arr=5&fcont_arr=%3D&fid_arr=159&fcont_arr=&fid_arr=122&fcont_arr=AND&fid_arr=136&fcont_arr=&fid_arr=138&fcont_arr=INTERNAL%25&fid_arr=200&fcont_arr=off&fid_arr=157&cid_arr=2&cid_arr=8&cid_arr=7&cid_arr=9&cid_arr=3&cid_arr=46&cid_arr=47&cid_arr=13&f_count=11&c_count=8&query_type=2" >BUG Prod P1</a></strong></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"> <strong class="bki-strong"><a target="_blank" href="https://emcc.us.oracle.com/em/faces/sdk/nonFacesWrapper?_em.coBM=/console/reports/render%3Faction%3Drestore%26versionID%3Dlatest_copy%26reportID%3D1008D2B08A1F046CE053C336548C57C0&amp;amp;_afrLoop=6293963636590776&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%21%40%40%3Ftarget%3DCustomer%2520Support%2520Services%26_em.coBM%3D%2Fconsole%2Freports%2Frender%253FinstanceInvolved%253Dinstance0%2526sysdashrefresh%253Dtrue%2526target%253DCustomer%252520Support%252520Services%2526action%253Dgenerate%2526type%253Dcomposite%2526reportID%253D1008D2B08A1F046CE053C336548C57C0%26type%3Dcomposite%26_adf.ctrl-state%3D1bdjl27nby_35" > EIS dashboard</a></strong></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"><a target="_blank" href="https://emcc.us.oracle.com/em/public/reports/render?action=restore&amp;amp;versionID=latest_copy&amp;amp;reportID=D83270E5407A6D34E0404598A24BFD8D" >SLM dashboard</a><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em;" style="line-height: normal; font-size: 12.1px; letter-spacing: 0.019em;">- </span><strong class="bki-strong"><a target="_blank" href="https://emcc.us.oracle.com/em/public/reports/render?action=restore&versionID=latest_copy&reportID=D88184AC169B0E68E0404598A24B7C49" >Online SLM</a> </strong></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"> <strong class="bki-strong"><a target="_blank" href="https://entrueiadc.us.oracle.com/ruei/" >RUEI</a></strong></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"> <strike class="bki-strike"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=22345:2:10984231714665" >Handover App</a></strike></span><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"><strong class="bki-strong"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=18417:13:106019004403656::NO:::" > New handover App</a></strong> - <span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"><strike class="bki-strike"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=18417:29:102318777497665::NO:::" >Handover Dashboard</a></strike></span></span></li>
+	  <li class="bki-li"> <strong class="bki-strong"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=28343:2:105900702322024:::::" >Internal Tools</a></strong></li>
+	  <li class="bki-li"><a target="_blank" href="https://adit.oraclecorp.com/apex/f?p=113:HOME:104113800233202:::::" >P-Track</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://emcc.us.oracle.com/nonsso" >EMCC-no sso</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://secure-ausomxnsa.crmondemand.com/OnDemand/user/ServiceRequestList?ServiceRequestList.LAYOUTID=ANSA-OYQ9F&amp;amp;OMTGT=ServiceRequestList&amp;amp;OMTHD=PdqListMethod&amp;amp;ServiceRequestList.EDITFLAG=Y&amp;amp;ServiceRequestList.LAYOUT=Service%20Request%20List%20PDITMINF%20-%20Open%20P1%20SRs" >MySR</a><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> - <a target="_blank" href="http://my.oracle.com/myhelp/secure/index.html?srtype=createsr&amp;amp;cat=Server&amp;amp;area=DevOps&amp;amp;prevUrl=&amp;amp;a_id=249&amp;amp;session=VgTqiVmm" >MyHelp</a> - <a target="_blank" href="https://login.oracle.com/oamfed/idp/initiatesso?providerid=pdit-service-requests" >new OSvC Help client</a></span></li>
+	  <li class="bki-li"><a target="_blank" href="https://paging.oraclecorp.com/" >TAS</a> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"><span class="bki-span" _mce_style="background-color: #ff0000;" style="line-height: normal; background-color: rgb(255, 0, 0);"><span class="bki-span" _mce_style="background-color: #ff6600;" style="line-height: normal; background-color: rgb(255, 102, 0);"><span class="bki-span" _mce_style="background-color: #99cc00;" style="line-height: normal; background-color: rgb(153, 204, 0);"><a target="_blank" href="https://gmp.oracle.com/captcha/" >ORCL WIFI</a></span></span></span></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"><span class="bki-span" _mce_style="background-color: #ff0000;" style="line-height: normal; background-color: rgb(255, 0, 0);"><span class="bki-span" _mce_style="background-color: #ff6600;" style="line-height: normal; background-color: rgb(255, 102, 0);"><a target="_blank" href="http://uno.oraclecorp.com/" >Uno (system management)</a></span></span></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #33cccc;" style="line-height: normal; background-color: rgb(51, 204, 204);"><a target="_blank" href="https://oracle.zoom.us/my/gwhicker" >Gary Zoom - Team meeting</a><span class="bki-span" _mce_style="background-color: #ffffff;" style="line-height: normal; background-color: rgb(255, 255, 255);"> 9128023751</span></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #33cccc;" style="line-height: normal; background-color: rgb(51, 204, 204);"><span class="bki-span" _mce_style="background-color: #ffffff;" style="line-height: normal; background-color: rgb(255, 255, 255);"><a target="_blank" href="http://oracle.zoom.us/my/andrea.kim" >Extended Team meeting</a></span></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #33cccc;" style="line-height: normal; background-color: rgb(51, 204, 204);"><a target="_blank" href="https://oracle.zoom.us/my/trmace" >My Zoom</a> </span>- <a target="_blank" href="https://oracle.zoom.us/my/trmace" >https://oracle.zoom.us/my/trmace</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://cloudemtools.us1.oraclecloud.com/ords/f?p=CLOUDEM:HOME:123528765994110:::::" >Cloud EM</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://pdit-document-repository.oraclecorp.com/display/PMS/Quiet+Period+and+Oracle+Open+World+Freeze" >Freeze Schedule </a></li>
+	  <li class="bki-li"><a target="_blank" href="https://occn-jira.oraclecorp.com/" >JIRA -ITAS replacment</a><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> - </span><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT+BAS+Public:Change+Management+Jira+Tool" >JIRA -documentation</a><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> </span></li>
+	  <li class="bki-li"><a target="_blank" href="http://ss-ams.us.oracle.com/" >ICR -AMS</a> - Architect request</li>
+	  <li class="bki-li"><a target="_blank" href="https://sems.oraclecorp.com/" >SEMS</a> - GIS</li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:BSA+Training+Courses" >BSA essential training</a><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em;" style="line-height: normal; font-size: 12.1px; letter-spacing: 0.019em;"> </span></li>
+	  <li class="bki-li"><a target="_blank" href="https://aps-legacy.oraclecorp.com/" >APS</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://oim.oraclecorp.com/" >OIM</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://oradocs-corp.documents.us2.oraclecloud.com/documents/home/nameasc" >Oracle Docs</a><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> </span></li>
+	  <li class="bki-li"><a target="_blank" href="https://rmdc-twvpn-2.oraclevpn.com/" >VPN</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://rmdc-twvpn-2.oraclevpn.com/+CSCO+0075676763663A2F2F727A70702E68662E62656E7079722E70627A++/em/faces/sdk/nonFacesWrapper?target=MOS_PRODUCTION&amp;amp;_em.coBM=%2Fconsole%2Freports%2Frender%3F%26type%3Dgeneric_system%26reportID%3DD967EC804FF6AF4CE0404598A24BD0E8%26event%3DRefresh%26UIX_MAGIC_KEY%3Dd38e56515071e38044dd10f03ba6d85bcc47cada%26target%3DMOS_PRODUCTION%26action%3Dgenerate%26Help%3Djavascript%253AhelpTopicWindowLaunch%2528%2527info_pub_gc_cs_ob_smd%2527%2529%253B&amp;amp;type=generic_system&amp;amp;_adf.ctrl-state=mi3tehtu2_1739&amp;amp;_afrLoop=30814685845334254&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=mi3tehtu2_721" >VPN EMCC</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://social.oracle.com/stosn/web/?conversation=316506715" >OSN backup MOS Warroom</a><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> </span></li>
+	  <li class="bki-li"><a target="_blank" href="https://social.oracle.com/stosn/web/#group:groupId=316644496&amp;amp;m=WALL" >PDIT CSS team news</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://rms.us.oracle.com/analytics/saw.dll?Dashboard&amp;amp;PortalPath=%2Fshared%2FPDIT%20EAS%3AMOS%2F_portal%2FMOS&amp;amp;Page=Overview&amp;amp;PageIdentifier=d2p14l9qft32tkhi&amp;amp;BookmarkState=rpjirtusi9h4od3o3db9l94g6i&amp;amp;options=-" >Dave team Bugs</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/MOS+Deployments:MOS+Application+Glossary" >Team Application Lists-Glossary</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:CSS+Team+Application+Ownership" >Team Application ownership</a><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em;" style="line-height: normal; font-size: 12.1px; letter-spacing: 0.019em;"> </span></li>
+	  <li class="bki-li"><a target="_blank" href="https://ssit.oraclecorp.com/" >SSIT</a> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=18053:2:2624429537475:::::" >Ric BUGFTP report</a></li>
+	  <li class="bki-li"></li>
+	 </ul>
+   </td>
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">KM</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1596841.1" >BUG KM</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/secure/mykm/reports/DocumentQuery.jspx" >MOS Query</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1297169.1" >PDIT KM</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1524516.1" >ARU KM</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1611698.1" >NGCCR</a> <a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=2028856.1" >NGCCR master doc</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1495231.1" >BUGSFTP KM</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1590346.1" >BEACON KM</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1580722.1" >EMCC Beacon test KM</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=780007.1" >Debug OHS to WLS proxy plug-in</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="background-color: #ffff00;" style="line-height: normal; background-color: rgb(255, 255, 0);"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1554832.1" >QUICK LINKS</a> (Doc ID 1554832.1)</span></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1938906.1" >SOP: MOS - How to request support with Akamai issues</a> (Doc ID 1938906.1)</li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="font-family: arial, helvetica, sans-serif;" style="line-height: normal; font-family: arial,helvetica,sans-serif;"><span class="bki-span" _mce_style="font-size: 12px;" style="line-height: normal; font-size: 12px;"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=2208240.1" >SOP: How to request MOS server Access</a>. (Doc ID 2208240.1)</span></span></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="font-family: arial, helvetica, sans-serif;" style="line-height: normal; font-family: arial,helvetica,sans-serif;"><span class="bki-span" _mce_style="font-size: 12px;" style="line-height: normal; font-size: 12px;"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=2017148.1" >SOP: How to request SLS access to MOS</a> (Doc ID 2017148.1)</span></span></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1466687.1" >SOP : How to respond to Availability alerts on EMCC SLM dashboard</a> (Doc ID 1466687.1) <a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT+EAS+EM+Workspace:Maintain+Daily+Availability+Report" >wiki</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1466687.1" >SOP EMCC SLM dashboard</a> (1466687.1)</li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1404111.1" >SOP MOSCLT</a> (1404111.1)</li>
+	  <li class="bki-li"><strike class="bki-strike"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1556017.1" >SOP passwdtool KM</a>(1556017.1)</strike></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1600006.1" >SOP MOS Weblogic Server down KM</a>(1600006.1)</li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1466687.1" >SOP Retro Blackout</a> (1466687.1)</li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1466687.1" >SOP How to fix SLM Dashboard alert</a> (1466687.1) </li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1317356.1" >SOP for splashpages</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1630488.1" >SOP SSL AdminServer Console</a><span class="bki-span" _mce_style="font-size: 12.1px; letter-spacing: 0.019em;" style="line-height: normal; font-size: 12.1px; letter-spacing: 0.019em;"> (1630488.1)</span></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1592574.1" >SOP AC in DR</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1909295.1" >SOP: XNS services Start/Stop Procedure</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1602368.1" >ALERT: $NGCCR</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1959082.1" >NGCCR RFM Job</a> (1959082.1) <a target="_blank" href="https://amomv0163.oracle.com:7799/em/" >https://amomv0163.oracle.com:7799/em/</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1629531.1" >ORA-XXX error list</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1420868.1" >CP/EP Cache</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1618724.1" >Arch Diag 6.8/14.1</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1664155.1" >Arch Diag 14.2</a> / <a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=2069060.1" >15.4</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1670756.1" >MOS CORE: Inquira General Troubleshooting (Doc ID 1670756.1)</a> : </li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1605263.1" >MOS CORE: Inquira Falure Alert (Doc ID 1605263.1) </a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1300136.1" >MOS CORE: Siebel Call Center Alert Cheat Sheet (Doc ID 1300136.1)</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1300120.1" >MOS CORE: BPEL_WSM_AQ Alert Cheat Sheet (Doc ID 1300120.1)</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1497255.1" >MOS CORE: Metric Extension ME$ details for MOS-GSI Key Metrics (Doc ID 1497255.1)</a></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;">- </span><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:Inquira+Scheduler" >Inquira Scheduler</a><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> </span></li>
+	  <li class="bki-li">- <a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:MOS+INQUIRA+OPERATIONS" >Inquira Operations</a> </li>
+	  <li class="bki-li">- <a target="_blank" href="https://stbeehive.oracle.com/content/dav/st/TNT-BAT-HAT%20Administration/Documents/ToasterAdminGuide.html#overview" >Toaster</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1554832.1" >PDIT MOS: Data Services Quick Links (Doc ID 1554832.1)</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1588349.1" >CLA issues found on some servers</a> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1344029.1" >Osuggest start/stop</a> - <a target="_blank" href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1344002.1" >TimesTen start/stop</a></li>
+    </ul>
+   </td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Workspaces</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/MOS+in+EMS+Operations" >MOS in EMS</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:MOS+EMS" >MOS EMS</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://isd.us.oracle.com/help/EMS/ems_schema_move_help.html" >EMS Schema</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:SSL+Console+Admin+URL+-+UAT" >UAT console URLs</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:Architecture+Diagrams+Initiative" >Arch Diag Init</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/MOS+Collaboration:Hermes+High+Level+Architecture" >HERMES</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/index/PDIT-MOS+Core+Services?tab=all" >Core team</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:SSL+access+to+WLS+AdminServer" >SSL Admin Console</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/TroyMaceWorkspace:SSL+Console+URLs" >SSL Console URLs</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:WLS_Monitoring" >WLS monitoring</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:PDIT_Mercury_Project" >Mercury</a> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><span class="bki-span" _mce_style="font-size: 11.0pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;" style="line-height: normal; font-size: 11pt; font-family: Calibri,sans-serif;"><a target="_blank" href="https://stbeehive.oracle.com/content/dav/st/PDIT%20EAS%20MOS%20Support%20Public/Public%20Documents/MOS%20Application%20Support%20Handbook/welcome-index.html" >MOS Application Support Team Handbook</a></span> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/content/dav/st/PDIT-MOS%20Mid-Tier%20Team/Documents/Orion%20Passwords.exe" >wiki password doc</a> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/overview/MOS+Disaster+Recovery" >MOS DR</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">BUG</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://rms.us.oracle.com/analytics/saw.dll?Dashboard&amp;amp;PortalPath=%2Fshared%2FPDIT%20EAS%3AMOS%2F_portal%2FMOS&amp;amp;Page=UI%20%2B%20Core%20Services&amp;amp;PageIdentifier=3blhi35qrbq22use&amp;amp;BookmarkState=nqb2suj41jorl8cd59bhcjc3ra&amp;amp;options=-" >TEAM BUG REPORT</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=PDIT_MOS_STABILITY&amp;amp;fid_arr=121&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=&amp;amp;fid_arr=10&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;fcont_arr=EOTD&amp;amp;fid_arr=125&amp;amp;fcont_arr=2&amp;amp;fid_arr=100&amp;amp;cid_arr=2&amp;amp;cid_arr=3&amp;amp;cid_arr=9&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=30&amp;amp;cid_arr=11&amp;amp;cid_arr=6&amp;amp;cid_arr=5&amp;amp;cid_arr=51&amp;amp;cid_arr=13&amp;amp;f_count=10&amp;amp;c_count=11&amp;amp;query_type=2" >EOTD bugs</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=PDIT%20MOS%20-%20Open%20EM%20PROD%20P1%20Bugs&amp;amp;fcont_arr=9776&amp;amp;fid_arr=1&amp;amp;fcont_arr=111&amp;amp;fid_arr=2&amp;amp;fcont_arr=EM-PROD&amp;amp;fid_arr=55&amp;amp;fcont_arr=70&amp;amp;fid_arr=42&amp;amp;fcont_arr=1&amp;amp;fid_arr=5&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;cid_arr=2&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=9&amp;amp;cid_arr=3&amp;amp;cid_arr=46&amp;amp;cid_arr=47&amp;amp;cid_arr=13&amp;amp;f_count=11&amp;amp;c_count=8&amp;amp;query_type=2" >Open EM Prod P1</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.Saved_Search?id=228595080414053957" >EM Prod P1s today</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=PDIT%20MOS%20-%20Open%20EM%20PROD%20Bugs&amp;amp;fcont_arr=9776&amp;amp;fid_arr=1&amp;amp;fcont_arr=111&amp;amp;fid_arr=2&amp;amp;fcont_arr=EM-PROD&amp;amp;fid_arr=55&amp;amp;fcont_arr=70&amp;amp;fid_arr=42&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=&amp;amp;fid_arr=10&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;fcont_arr=2&amp;amp;fid_arr=100&amp;amp;cid_arr=2&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=9&amp;amp;cid_arr=3&amp;amp;cid_arr=46&amp;amp;cid_arr=47&amp;amp;cid_arr=13&amp;amp;f_count=12&amp;amp;c_count=8&amp;amp;query_type=2" >Open EM Prod</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=PDIT%20MOS%20-%20Open%20EM%20NON%20PROD%20Bugs&amp;amp;fcont_arr=9776&amp;amp;fid_arr=1&amp;amp;fcont_arr=111&amp;amp;fid_arr=2&amp;amp;fcont_arr=EM-NON-PROD&amp;amp;fid_arr=55&amp;amp;fcont_arr=70&amp;amp;fid_arr=42&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=&amp;amp;fid_arr=10&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;fcont_arr=2&amp;amp;fid_arr=100&amp;amp;cid_arr=2&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=9&amp;amp;cid_arr=3&amp;amp;cid_arr=46&amp;amp;cid_arr=47&amp;amp;cid_arr=13&amp;amp;f_count=12&amp;amp;c_count=8&amp;amp;query_type=2" >Open EM non-Prod</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.Saved_Search?id=246037170714120816" >CSS Team Bugs</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.Saved_Search?id=331308191015105359" >UI Team Bugs</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.Saved_Search?id=201796121113084918" >Bugs I Created</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/webbug_reports.my_open_bugs" >My Open Bugs</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=PDIT%20MOS%20EMS%20-%20Open%20Bugs&amp;amp;fcont_arr=9449&amp;amp;fid_arr=1&amp;amp;fcont_arr=SYSTEMS&amp;amp;fid_arr=2&amp;amp;fcont_arr=EMS&amp;amp;fid_arr=55&amp;amp;fcont_arr=70&amp;amp;fid_arr=42&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=&amp;amp;fid_arr=10&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;fcont_arr=4&amp;amp;fid_arr=100&amp;amp;cid_arr=2&amp;amp;cid_arr=15&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=14&amp;amp;cid_arr=9&amp;amp;cid_arr=44&amp;amp;cid_arr=3&amp;amp;cid_arr=46&amp;amp;cid_arr=47&amp;amp;cid_arr=13&amp;amp;f_count=12&amp;amp;c_count=11&amp;amp;query_type=2" >Open EMS Bugs</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=&amp;amp;fcont_arr=PDIT_MOS_STABILITY&amp;amp;fid_arr=121&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=2&amp;amp;fid_arr=100&amp;amp;cid_arr=2&amp;amp;cid_arr=3&amp;amp;cid_arr=9&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=30&amp;amp;cid_arr=11&amp;amp;cid_arr=6&amp;amp;cid_arr=5&amp;amp;cid_arr=51&amp;amp;cid_arr=13&amp;amp;f_count=6&amp;amp;c_count=11&amp;amp;query_type=2" >STABILITY Bugs</a></li></ul><strong class="bki-strong">Misc Bugs</strong><ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=Gary+Staff+Assigned+Bugs&fcont_arr=2542%2C9449%2C9776&fid_arr=1&fcont_arr=70&fid_arr=42&fcont_arr=%3D&fid_arr=159&fcont_arr=GARY.WHICKER&fid_arr=145&fcont_arr=&fid_arr=122&fcont_arr=AND&fid_arr=136&fcont_arr=&fid_arr=138&fcont_arr=INTERNAL%25&fid_arr=200&fcont_arr=&fid_arr=10&fcont_arr=off&fid_arr=157&fcont_arr=N&fid_arr=161&fcont_arr=2&fid_arr=100&cid_arr=2&cid_arr=7&cid_arr=13&cid_arr=6&cid_arr=15&cid_arr=9&cid_arr=12&cid_arr=14&cid_arr=46&cid_arr=47&f_count=12&c_count=10&query_type=2" >Gary's weekly bug list</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=&amp;amp;fcont_arr=29&amp;amp;fid_arr=43&amp;amp;fcont_arr=40&amp;amp;fid_arr=42&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=DAVID.P.MILLER&amp;amp;fid_arr=144&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=&amp;amp;fid_arr=10&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;fcont_arr=2&amp;amp;fid_arr=100&amp;amp;cid_arr=2&amp;amp;cid_arr=14&amp;amp;cid_arr=3&amp;amp;cid_arr=9&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=30&amp;amp;cid_arr=11&amp;amp;cid_arr=6&amp;amp;cid_arr=5&amp;amp;cid_arr=51&amp;amp;cid_arr=13&amp;amp;f_count=11&amp;amp;c_count=12&amp;amp;query_type=2" >Dave Miller Team bugs over 30 days</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=DR%20Prod%20Oct%20Test%20-%20Open%20Bugs&amp;amp;fcont_arr=9449%2C%202542&amp;amp;fid_arr=1&amp;amp;fcont_arr=6.7DR&amp;amp;fid_arr=3&amp;amp;fcont_arr=90&amp;amp;fid_arr=42&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=DRPROD&amp;amp;fid_arr=10&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;fcont_arr=2&amp;amp;fid_arr=100&amp;amp;cid_arr=2&amp;amp;cid_arr=6&amp;amp;cid_arr=15&amp;amp;cid_arr=13&amp;amp;cid_arr=9&amp;amp;cid_arr=8&amp;amp;cid_arr=7&amp;amp;cid_arr=14&amp;amp;cid_arr=3&amp;amp;cid_arr=67&amp;amp;f_count=11&amp;amp;c_count=10&amp;amp;query_type=2" >DR Prod Oct Test - Open Bugs</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=MOS%206.8%2F14.1%20-%20Prod%20Open%20Bugs%20by%20Sev%2FTest%20Priority&amp;amp;fcont_arr=2542%2C%209449%2C%201408%2C%209206%2C%2010261%2C%2010219%2C%201057%2C%201967%2C%2010701&amp;amp;fid_arr=1&amp;amp;fcont_arr=6.8%25&amp;amp;fid_arr=3&amp;amp;fcont_arr=11%2C%2040%2C%2030%2C%2026&amp;amp;fid_arr=4&amp;amp;fcont_arr=%3D&amp;amp;fid_arr=159&amp;amp;fcont_arr=&amp;amp;fid_arr=122&amp;amp;fcont_arr=AND&amp;amp;fid_arr=136&amp;amp;fcont_arr=&amp;amp;fid_arr=138&amp;amp;fcont_arr=01%2F31%2F2014&amp;amp;fid_arr=8&amp;amp;fcont_arr=INTERNAL%25&amp;amp;fid_arr=200&amp;amp;fcont_arr=&amp;amp;fid_arr=10&amp;amp;fcont_arr=off&amp;amp;fid_arr=157&amp;amp;fcont_arr=10&amp;amp;fid_arr=100&amp;amp;fcont_arr=40&amp;amp;fid_arr=101&amp;amp;fcont_arr=8&amp;amp;fid_arr=102&amp;amp;fcont_arr=14&amp;amp;fid_arr=103&amp;amp;cid_arr=2&amp;amp;cid_arr=6&amp;amp;cid_arr=15&amp;amp;cid_arr=13&amp;amp;cid_arr=9&amp;amp;cid_arr=8&amp;amp;cid_arr=50&amp;amp;cid_arr=20&amp;amp;cid_arr=7&amp;amp;cid_arr=12&amp;amp;cid_arr=5&amp;amp;cid_arr=11&amp;amp;cid_arr=67&amp;amp;cid_arr=3&amp;amp;cid_arr=81&amp;amp;f_count=15&amp;amp;c_count=15&amp;amp;query_type=2" >MOS 6.8 - All Bugs </a> </li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Other</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="http://my.oracle.com/content/web/cnt1373548?d=3" >Training</a> </li>
+	  <li class="bki-li"><a target="_blank" href="http://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-getting-started-1863613.html" >APEX</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://primavera-et-pdit.oracleindustry.com/SiteWand/Submission/F_KS9XSVL94WD9MZOeqruRuERIsJNiaDiirbJXqi?pagename=HomePage" >Projects</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=15379:1:7171541822527" >RCAs</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="http://netadm.us.oracle.com/networks" >Network VLans</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/content/dav/st/PDIT%20Network%20Security%20and%20Infrastructure%20Services/Public%20Documents/Load-Balancer-Information/pdit-eis-mt-to-lb-subnet-map.html" >Load Balancer VIPs</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Other</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="http://amomv0017.us.oracle.com:7001/console/console.portal?_nfpb=true&amp;amp;_pageLabel=WebAppModuleMonitorPage&amp;amp;WebAppModuleMonitorRunningPortletsortby=openSessionsCurrentCount&amp;amp;WebAppModuleMonitorRunningPortletsortdir=1" >MOSCP Active Session monitor</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://emcc.us.oracle.com/em/faces/sdk/nonFacesWrapper?target=amomv0017.us.oracle.com&amp;amp;_em.coBM=%2Fconsole%2Fmonitoring%2FuserDefinedMetrics%24target%3Damomv0017.us.oracle.com%24type%3Dhost&amp;amp;type=host&amp;amp;_adf.ctrl-state=7xj9o2dhj_82&amp;amp;_afrLoop=12580338758596221&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=7xj9o2dhj_79" >MOSCP failed logins EMCC</a> and <a target="_blank" href="https://emcc.us.oracle.com/em/faces/sdk/nonFacesWrapper?target=amomv0017.us.oracle.com&amp;amp;_em.coBM=%2Fconsole%2Fmonitoring%2FuserDefinedMetrics%24target%3Damomv0017.us.oracle.com%24type%3Dhost&amp;amp;type=host&amp;amp;_adf.ctrl-state=7xj9o2dhj_82&amp;amp;_afrLoop=27192186254607709&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%40%3F_em.coBM%3D%2Fconsole%2Freports%2FrenderRequest%253Faction%253Drestore%2526versionID%253Dlatest_copy%2526reportID%253DC5BB9F9B11854DE5E040018AC4A170E2%26_adf.ctrl-state%3D36x1up6d7_270" >Report</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS+Mid-Tier+Team:Weblogic+User+Password+Change+Steps" >Weblogic User Password Change Steps</a> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://confluence.oraclecorp.com/confluence/display/PEMS/PDIT+EAS+MOS+Support" >Confluence - Support team links</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Beehive</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/zimbra/?skin=waves#6" >Zimbra</a><span class="bki-span" _mce_style="letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; letter-spacing: 0.019em;"> </span></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/bcentral/action?page=emailsettings" >Beehive Central</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/workspaces?show=my" >Workspaces</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/bconf" >Beehive web conf</a> </li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive-admin.oraclecorp.com/" >BAT - Beehive admin</a></li>
+	  <li class="bki-li"></li>
+	  <li class="bki-li"><a target="_blank" href="https://pdit-document-repository.oraclecorp.com/display/ZWC/Zoom+Web+Conferencing" >ZOOM web conf</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Cloud</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://ssp.oracle-ocna.com/" >Self Service Password</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://pdit-document-repository.oraclecorp.com/display/BASB/Epantoni+Org+-+Cloud+Access+Status" >Cloud Access Status</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://pdit-document-repository.oraclecorp.com/display/BASB/SaaS+access+Quick+Reference" >SaaS Access Quick Reference</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://confluence.oraclecorp.com/confluence/display/CSECOPS/Requesting+Oracle+Cloud+Network+Access" >Requesting Cloud Access</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">BigIP</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li">External</li>
+	  <li class="bki-li"><a target="_blank" href="https://adcq12z19-lb14a.us.oracle.com/" >https://adcq12z19-lb14a.us.oracle.com</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://adcq12z19-lb14b.us.oracle.com/" >https://adcq12z19-lb14b.us.oracle.com</a></li>
+	  <li class="bki-li">Internal</li>
+	  <li class="bki-li"><a target="_blank" href="http://adcq12z19-lb13a.us.oracle.com/" >http://adcq12z19-lb13a.us.oracle.com</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://adcq12z19-lb13b.us.oracle.com/" >http://adcq12z19-lb13b.us.oracle.com</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">EMS</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="http://adcgew12.us.oracle.com/farm/index.php" >Farm map</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://emsprod.us.oracle.com/" >EMSProd</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/MOS+in+EMS+Operations:EMS+OPS+-+Frequently+Performed+Tasks" >Frequent Performed Tasks</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/MOS+in+EMS+Operations" >MOS in EMS</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:MOS+EMS" >MOS EMS</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/MOS+in+EMS+Operations:Autoconfig+-+How+to+Run+-+Version+6.8" >EMS run autoconfig</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">WLS Console</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://amomv0017.us.oracle.com:7501/console" >MOSCP-prod</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://amomv0018.us.oracle.com:7501/console" >MOSEP-prod</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Projects</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:SSL+access+to+WLS+AdminServer" >SSL access to WLS AdminServer</a></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/TroyMaceWorkspace:SSL+Console+URLs" >SSL Console URLs </a> <br><br></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/teamcollab/wiki/PDIT-MOS:PDIT_Mercury_Project" >PDIT_Mercury_Project</a> </li>
+	  <li class="bki-li"><a target="_blank" href="https://apex.oraclecorp.com/pls/apex/f?p=18053:2:102309291999901:::::" >BUGSFTP</a> </li>
+	  <li class="bki-li"><a target="_blank" href="http://apex.oraclecorp.com/pls/apex/f?p=4550:1:::::F4550_P1_COMPANY:DATASERVICESREPORTING" >APEX</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Toaster</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/content/dav/st/TNT-BAT-HAT%20Administration/Documents/Toaster.html" >User documentation</a><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> - </span></li>
+	  <li class="bki-li"><a target="_blank" href="https://stbeehive.oracle.com/content/dav/st/TNT-BAT-HAT%20Administration/Documents/ToasterAdminGuide.html" >Administration Guide</a><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> - </span></li>
+	  <li class="bki-li"><a target="_blank" href="https://tnt2.oraclecorp.com/webtools/main.jsp" >Toaster Search UI</a><span class="bki-span" _mce_style="font-size: 12.1000003814697px; letter-spacing: 0.019em; line-height: 1.5em;" style="line-height: 1.5em; font-size: 12.1px; letter-spacing: 0.019em;"> - </span></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">URLs</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="http://support.oracle.com/" >MOSCP</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://support-lite.oracle.com/" >MOSCP-lite</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://mosemp.us.oracle.com/" >MOSEP</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://mosemp-lite.us.oracle.com/" >MOSEP-lite</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://support.us.oracle.com/" >ISP</a> </li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(120, 120, 120);" align="left" valign="top">
+   <td _mce_style="text-align: left; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">16.2Dev URLs</strong>
+    <ul class="bki-ul">
+	  <li class="bki-li"><a target="_blank" href="http://umems578.us.oracle.com:7777/" >BUG</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems484.us.oracle.com:7777/cloud/faces/index.jspx" >Cloud Support Portal</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems742.us.oracle.com:7779/confluence" >Confluence</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems722.us.oracle.com:7777/" >Internal Support Portal</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems714.us.oracle.com:7779/iss/faces/launch" >ISS Viewer</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems746.us.oracle.com:7779/" >JIRA</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems700.us.oracle.com:7777/kmlite/faces/KMSearch" >KMLite External</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems585.us.oracle.com:7777/kmlite/faces/KMSearch" >KMLite Internal</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems484.us.oracle.com:7777/" >MOS Customer Portal</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems713.us.oracle.com:7779/MMOS/faces/welcome.jspx" >MOS Employee Mobile</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems713.us.oracle.com:7779/" >MOS Employee Portal</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems484.us.oracle.com:7777/MMOS/faces/welcome.jspx" >MOS Mobile</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems713.us.oracle.com:7779/mosspui/src/main/container/index.html" >MOS Support Portal</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems692.us.oracle.com:8001/search/query/" >Secure Enterprise Search - Query</a></li>
+	  <li class="bki-li"><a target="_blank" href="http://umems585.us.oracle.com:7777/kmlite/faces/ui/sp/SRViewer.jspx" >SRLite</a></li>
+	  <li class="bki-li"></li>
+    </ul>
+   </td>
+   <td _mce_style="text-align: center; vertical-align: top;" style="border: 1px solid rgb(127, 127, 127); margin: 0px; padding: 10px; cursor: default; border-collapse: separate; font-size: 11px; font-family: sans-serif; -x-border-x-spacing: 0px; -x-border-y-spacing: 0px; letter-spacing: 0.2299px; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;"><strong class="bki-strong">Password Change</strong>
+    <ul class="bki-ul">
+      <li class="bki-li"><a target="_blank" href="https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=8556127&amp;nextUrl=/identity" >https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=8556127&amp;nextUrl=/identity</a><br>Network Access Account (VPN) 120days</li>
+      <li class="bki-li"><a target="_blank" href="https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=10463957&amp;nextUrl=/identity" >https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=10463957&amp;nextUrl=/identity</a><br>Enterprise Systems Account (Linux, BigIP) 60days</li>
+      <li class="bki-li"><a target="_blank" href="https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;userId=98038&amp;nextUrl=/identity" >https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;userId=98038&amp;nextUrl=/identity</a><br>Corp SSO (SSO) 90days</li>
+      <li class="bki-li"><a target="_blank" href="https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=596810&amp;nextUrl=/identity" >https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=596810&amp;nextUrl=/identity</a><br>Windows Unified Domain (ORADEV, Laptop) 90days</li>
+      <li class="bki-li"><a target="_blank" href="https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=5690753&amp;nextUrl=/identity" >https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=5690753&amp;nextUrl=/identity</a><br>LDAP DSEE and PDIT NIS UNIX/Linux (My Linux Server) 180days</li>
+      <li class="bki-li"><a target="_blank" href="https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=11458810&amp;nextUrl=/identity%3C/span%3E%3Cspan" >https://oim.oraclecorp.com/identity/faces/flow?tf=resetpasswd&amp;accountId=11458810&amp;nextUrl=/identity</a><br>OPC Cloud Server Account (Cloud) 60days</li>
+      <br>Need to change settings in pstart for putty 
+      <br>Need to change opam.cmd
+      <br>Need to change include.ahk
+	</ul>
+   </td>
+  </tr>
+ </tbody>
+</table>
+</body>
+</html>
