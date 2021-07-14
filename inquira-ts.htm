@@ -1,0 +1,279 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MOS KM Operations > Wiki > Inquira Troubleshooting</title>
+<style>
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:10;padding:10;}
+ul,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+table{font-size:inherit;font:100%;}
+
+body{text-align:center;}
+
+ul.bki-ul{display:block;list-style-position:outside;list-style-type:disc;overflow:visible;padding-left:2.5em;margin-left:0;margin-bottom:1em;}
+ol.bki-ol{display:block;list-style-position:outside;list-style-type:decimal;overflow:visible;margin-left:0;padding-left:2.5em;margin-bottom:1em;}
+li.bki-li{display:list-item;-moz-float-edge:margin-box;margin-left:.5em;}
+li.bki-li ul.bki-ul,li.bki-li ol.bki-ol{overflow:hidden!important;}
+ul.bki-ul ul.bki-ul,ul.bki-ul ol.bki-ol,ul.bki-ul dl.bki-dl,ol.bki-ol ul.bki-ul,ol.bki-ol ol.bki-ol,ol.bki-ol dl.bki-dl,dl.bki-dl ul.bki-ul,dl.bki-dl ol.bki-ol,dl.bki-dl dl.bki-dl{margin-top:0;margin-bottom:0;}
+ol.bki-ol ul.bki-ul,ul.bki-ul ul.bki-ul{list-style-type:circle;}
+ol.bki-ol ol.bki-ol ul.bki-ul,ol.bki-ol ul.bki-ul ul.bki-ul,ul.bki-ul ol.bki-ol ul.bki-ul,ul.bki-ul ul.bki-ul ul.bki-ul{list-style-type:square;}
+
+h1{margin-bottom:8px;}
+h2{font-size:115%;font-weight:bold;padding-top:8px;padding-left:3px;margin-bottom:8px;}
+h3{font-size:115%;font-weight:bold;padding-left:20px;padding-right:20px;margin-bottom:8px;margin-top:20px;border-bottom:thin;border-bottom-color:#000;border-bottom-style:solid;}
+h4,h5{margin-bottom:8px;}
+
+a{color:#009;text-decoration:none;}
+a:hover{color:#009;text-decoration:underline;}
+a:visited{color:#009;}
+a:active{outline:none;}
+a:focus{-moz-outline-style:none;}
+
+tbody{outline:none;-moz-outline-style:none;}
+td{font-size:100%;font-family:tahoma;font-weight:normal;}
+th{font-size:100%;font-family:tahoma;font-weight:normal;}
+
+th.bki-th{font-weight:bold;text-align:center;}
+th.bki-th,td.bki-td{border:1px solid #000;padding:.5em;}
+
+.bki-table table{table-layout:fixed;}
+.bki-table{padding:0;width:90%;position:center;}
+
+</style>
+</head>
+
+<body class="yui-skin-sam">
+
+<h2 class="bki-h2" id="NOTE.3A+THIS+INFORMATION+WILL+BE+MAINTAINED+IN+THE+KNOWLEDGE+IN+THE+FUTURE.">NOTE: THIS INFORMATION WILL BE MAINTAINED IN THE KNOWLEDGE IN THE FUTURE.</h2>
+<p class="bki-p"><a href="https://mosemp.us.oracle.com/epmos/faces/DocContentDisplay?id=1670756.1" class="bki-a" target="_blank">Inquira General Troubleshooting (Doc ID 1670756.1)</a></p>
+
+ <h2 class="bki-h2" id="Scheduler+and+workers">Scheduler and workers</h2>
+  <h3 class="bki-h3" id="Crawl+and+index+jobs">Crawl and index jobs</h3>
+   <table class="bki-table"> 
+    <tr class="bki-tr"><th class="bki-th">Job</th><th class="bki-th">Description</th></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">ALL_INC</td>
+	 <td class="bki-td">Regular (daily) job which crawls and indexes incremental document changes</td></tr>
+	<tr class="bki-tr">
+	 <td class="bki-td">ALL_FULL</td>
+	 <td class="bki-td">Job which fully re-crawls the content data. It deletes any previously collected data and indexes and starts from scratch.<br />This  job is usually required after environment refreshes, including a DB  data refresh, or during MOS cut-over in case of crawler changes.</td></tr>
+	<tr class="bki-tr">
+	 <td class="bki-td">ALL_IDX</td>
+	 <td class="bki-td">Job  which fully re-indexes the content data. It will create new index data  based on the crawl content in the content store and the inquira dictionary.<br />This job is usually required after kit deployments which include a new PropagationBundle (dictionary data).</td></tr>
+	<tr class="bki-tr">
+	 <td class="bki-td">Sync only</td>
+	 <td class="bki-td">Job which transfers the index data files from the scheduler to the runtime hosts.<br />As part of the job, the runtime applications have to switch to use the new index data, and the job has to cleanup the old index data.</td></tr>
+	<tr class="bki-tr">
+	 <td class="bki-td">Sync Synchgroup1/2</td>
+	<td class="bki-td">Job which transfers the index data files only to the runtimes of Synchgroup1 or 2.<br />This is sometimes required if we have to avoid downtime, so we can still run with half capacity.</td></tr>
+   </table>
+   <p class="bki-p"></p>
+  <h3 class="bki-h3" id="General+troubleshooting">General troubleshooting</h3>
+   <ul class="bki-ul">
+    <li class="bki-li">System Manager
+	 <ul class="bki-ul">
+	  <li class="bki-li">In case of issues System Manager shows the job in a Failure status and shows which Task failed (see task list in table below). </li>
+	  <li class="bki-li">In order to investigate further you have to go to the log file of the relevant application. (The job screen contains links to show log information. These aren&#39;t very useful.)</li></ul></li>
+	<li class="bki-li">How to read scheduler logs
+	 <ul class="bki-ul">
+	  <li class="bki-li">In MOS inquira, go to /inquiralog/server directory to see server logs, In other general inquira installation, go to application directory ($OKH/instances/&lt;app name&gt;) and check current log file (usually Inquira-&lt;app name&gt;_production.log) </li>
+	  <li class="bki-li">Installation directories:
+	   <ul class="bki-ul">
+	    <li class="bki-li">OKH=/app/oracle/knowledge/8500</li>
+		<li class="bki-li">Middleware home = /app/oracle/product/fmw</li></ul></li>
+	  <li class="bki-li">go to the end, search for term &quot;FAILURE&quot; backwards, then page up until you see where the problems started</li>
+	  <li class="bki-li">typical errors: SCHEDULER_FORCE_FAILURE, SCHEDULER_TASK_FAILURE, SCHEDULER_INTERNAL_ERROR</li>
+	  <li class="bki-li">if there is an indication that there is an issue with a worker, then check worker log file</li></ul></li>
+	<li class="bki-li">How to read Worker logs: 
+	 <ul class="bki-ul">
+	 <li class="bki-li">go to the end, search for terms &quot;FAILURE&quot;, Exception backwards or try with the timestamp that you see in scheduler log</li></ul></li></ul>
+
+  <h3 class="bki-h3" id="General+Job+Task+failures">General Job Task failures</h3>
+   <table class="bki-table">
+    <tr class="bki-tr"><th class="bki-th">Task</th><th class="bki-th">General issues</th></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Any task</td>
+     <td class="bki-td">Job seems to be stuck or extremely slow<br />To be sure whether job is stuck or just slow, tail the scheduler log for a while (/app/oracle/knowledge/8500/instances/idx, Inquira-idx_production.log). If you see activity, usually with details for the different tasks, like document ID, etc, then it is still progressing. If you see Exceptions, or the same event again and again, or no activity at all, then it would look like it is stuck.<br />If job is stuck, first try with a restart of scheduler and workers and start the job again. If that doesn&#39;t help, then check for environment issues (memory, connections,..)<br />If job is slow at a certain step, then it really depends on the specific task. One thing to check is that the workers are active for Conversion and Index tasks, see Job view: Workclient column</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Status Reset</td>
+     <td class="bki-td">Description: Reset of collection status in the Content Store DB.<br />Failures: If this task fails immediately, then very likely there is a problem to connect to the Content Store (Inquira DB). Check log.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Content Reset</td>
+     <td class="bki-td">Description: Deletion of crawl data in the Content Store DB<br />Failures: No common issues. Check log.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Content Update</td>
+     <td class="bki-td">Description: Crawling/reading data from a data source and store data into the Content Store DB.<br />Failures: If this task fails, then very likely there is a problem to connect to the relevant data source (i.e. SURE DB, or a file system). Check log for FAILURE.<br /> Typical error: UNABLE_TO_CRAWL</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Document Conversion</td>
+     <td class="bki-td">Description: Conversion of crawl data into a specific xml format required for indexing, and storing xml files in Content Store DB.<br />Failures: Some large documents can cause issues for the scheduler or any worker.<br />1. Check scheduler log<br />2. If there is indication that a worker had issues, check relevant worker log.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Index</td>
+     <td class="bki-td">Description: Reads xml files from Content Store DB and creates index files on disk in /inquirashare.<br />Failures: No common issues. Check log of scheduler and worker if required.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Collection Maintenance</td>
+     <td class="bki-td">Description: Create final index data which was created by scheduler and workers.<br />Failures: No common issues. Check log of scheduler.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Classification</td>
+     <td class="bki-td">Description: Tagging of content with attributes.<br />Failures: No common issues. In this case, usually one of the previous tasks had an issue. Check log of scheduler.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Global Maintenance</td>
+     <td class="bki-td">Description: ...<br />Failures: No common issues. Check log of scheduler.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Mark Revisions for Synchronization</td>
+     <td class="bki-td">Description: ...<br />Failures: No common issues. Check log of scheduler.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Synchronization (Cleanup)</td>
+     <td class="bki-td">Description:<br />#Transfer of new index data into /inquirashare by connecting to Controller runtime<br />#Each search runtime picks up new index data<br />#Old index data cleanup<br />Failures:<br />1. Check scheduler log first<br />2. If required, check that relevant runtime applications are running or check their logs if they didn&#39;t start correctly<br />Typical errors: REVISION_EXISTS_ALREADY, REVISION_CONTACT_REMOTE_INSTANCE_FAILED</td></tr></table><h3 class="bki-h3" id="Specific+Job+task+failures">Specific Job task failures</h3><table class="bki-table">
+    <tr class="bki-tr"><th class="bki-th">Scheduler or Worker issue</th><th class="bki-th">Symptoms and Fix</th></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Scheduler issue</td>
+     <td class="bki-td">Scheduler jobs show INVALID_DOMAIN_LIST null errors in logs and search results might be odd</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">1. restart scheduler app and tail the log, in order to see when checkout finishes<br />Related solution: Why indexer throws (INVALID_DOMAIN_LIST null) exception during crawling? [ID 1040559.1]</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Scheduler issue</td>
+     <td class="bki-td">Scheduler (or Runtime) Application doesn&#39;t start and log shows this error:<br />&lt;Jan 10, 2014 7:42:23 AM CST&gt; &lt;Critical&gt; &lt;WebLogicServer&gt; &lt;BEA-000362&gt;&lt;Server failed. Reason: [Management:141266]Parsing Failure in config.xml: failed to find method MethodName{methodName=&#39;setCacheInAppDirectory&#39;, paramTypes=[boolean]} on class weblogic.management.configuration.AppDeploymentMBeanImpl&gt;</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">You hit Bug 17719341 - TECH BUG - &lt;CACHE-IN-APP-DIRECTORY&gt; TAG IN CONFIG.XML CAUSES BUILD TO FAIL<br /> Follow the workaround given there (remove &lt;cache-in-app-directory&gt;false&lt;/cache-in-app-directory&gt; tag from config.xml)</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Worker issue</td>
+     <td class="bki-td">Scheduler doesn&#39;t assign tasks to workers. you see scheduler running a job and not assigning jobs to certain workers or not to any worker. The tasks show a pending status.<br /></td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">1. Restart relevant workers<br />2. If 1 doesn&#39;t help: cleanup worker directories<br />a) stop scheduler and workers<br />b) ci (cd $OKH/instances)<br />rm -rf wk*/tmp wk*/oittmp wk*/development/content<br />c) start scheduler, then start workers<br />3. If 1 and 2 don&#39;t help, run a full crawl.</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Job failure</td>
+     <td class="bki-td">Content Job fails and Scheduler log doesn&#39;t contain details, but worker log contains &quot;Unable to connect to content store (IQ_CONTENT_STORE)&quot;</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">1. Fix connection issue with content store. <br />Or: 2. restart workers</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Job failure</td>
+     <td class="bki-td">Content Job doesn&#39;t seem to move anymore and taking &gt;10h. Indexer log shows many entries like this:<br />[1638010 SocketResponseHandler /10.241.121.92:12212(30725)] Event(Code=RECEIVE_EVENT, id=#285B0I30725P30724) received at 1/14/14 7:14 AM: Invoking public abstract com.inquira.scheduler.workclient.WorkClientResponse com.inquira.scheduler.SynchronousSchedulerService.requestWork(com.inquira.scheduler.workclient.WorkClientDefinition) throws java.lang.Exception of service scheduler on SocketTransport: scheduler for default with event 2e03798f..</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">This issue could be caused by environment issues, i.e. Filer issues, memory issues, or simply the Application being in an odd state. In any case, first fix any env issue, if they exists, then follow these steps:<br />1. System Manager: stop job<br />2. Restart Scheduler<br />3. System Manager: start job from failure</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Scheduler VM</td>
+     <td class="bki-td">scheduler VM severly corrupted</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">Use failover snapshot. change /etc/hosts to use same hostname and IP as previous VM</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Conversion issue</td>
+     <td class="bki-td">System Manager shows 1000s of warnings, and conversion task fails or partially continues and then shows issue during indexing.<br />scheduler log shows IOExceptions: java.io.IOException: No such file or directory<br /> at java.io.UnixFileSystem.createFileExclusively(Native Method)<br /> at java.io.File.checkAndCreate(File.java:1704)</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">Stop job and start another job with only 2 tasks: 1. Status reset<br />2. Full document conversion (Subcoll)<br />Once this completes successfully, then continue with previous job, start at indexing task now, no update or conversion required anymore</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Index issue</td>
+     <td class="bki-td">Indexing job shows 1000s of warnings in System Manager<br />SYMPTOMS: log file shows: FindDB Loaded RULE/ANSWER/TEMPLATE in 0.0010 sec [529 Scheduler-updater (15)] DEBUG: Unhandled, ignored com.inquira.dictionary.DictionaryException: [Scheduler-updater @ Fri May 03 08:55:32 CDT 2013] ([Scheduler-updater @ Fri May 03 08:55:32 CDT 2013] (INVALID_DOMAIN_LIST null))         at com.inquira.dictionary.DictionaryServiceAdapter.getAll(DictionaryServiceAdapter.java:98)         at com.inquira.dictionary.DictionaryServiceAdapter.getAll(DictionaryServiceAdapter.java:79)         at com.inquira.dictionary.rules.RuleServiceImpl.getAliasLists(RuleServiceImpl.java:160)...</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">It could be that a propagation bundle wasn&#39;t applied successfully<br /> FIX: restart indexer. No luck, then reapply propagation bundle</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Index issue</td>
+     <td class="bki-td">Index task fails and show this in Scheduler log:<br />[1956601 DeployerThread(418398)] Event(Code=LOG_STORE_EXCEPTION, id=#116B1I418398P418397) occurred at 4/23/14 6:09 PM: java.io.IOExceptionDO_NOT_ADDcom.inquira.infra<br />[1956601 DeployerThread (1)] UNKNOWN MESSAGE ID &quot;CREATE_TEMP_FILE_EXCEPTION&quot; called with: &quot;iqtemp&quot; &quot;null&quot; &quot;/app/oracle/knowledge/8500/instances/Devidx/tmp/2a38f2d7-44f4-40ac-b9c3-16e834f25aee&quot; &quot;false&quot; &quot;false&quot; &quot;java.io.IOException: No such file or directory&quot;<br />java.io.IOException: No such file or directory<br /> at java.io.UnixFileSystem.createFileExclusively(Native Method)</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">1. Check if sufficient memory is available<br />2. restart indexer and rerun job from start</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Classification issue</td>
+     <td class="bki-td">Job shows error for Classification task in System Manager and scheduler log has error stack:<br />Local Workclient-default-taskrun (...)] Workclient ALL_FULL handled exception for task Classification. Exception: Local Workclient com.inquira.retrieve.newIndex.UnstructuredDataException: [Local Workclient-default-taskrun @ Mon May 02 18:15:49 PDT 2016 - Classification] (DOCUMENT NOT FOUND ...)<br />In most cases some of the previous tasks, especially Document Conversion had an issue. Please check log further up for errors.<br />Recent bug <strong class="bki-strong">Bug 25526105/26113311 - MOS PROD DOC Inquira ALL_FULL crawl keep getting &quot;DOCUMENT NOT FOUND&quot; error shows possible errors &amp; alternative correction steps to omit certain collections and/or run</strong> <strong class="bki-strong"> </strong>full document conversion and possibly a full index</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">Find the collection with bad doc:<br /><br />grep &quot;Unable to index document&quot;/inquiralog/&lt;host&gt;/*wk*.log.[12345] <br /><br />Look for errors like:<br />Unable to index document &lt;docid&gt; in collection &lt;COLLECTION&gt;, since the IQXML is<br />invalid. Cause: java.lang.StackOverflowError<br /> <br /><br />Sample output=[test INQSWKBCM:oracle@umomv4323 umomv4323]$ grep &quot;Unable to index document&quot; *wk*.log<br />Inquira-wk1_production.log:[1170509 wk1-wk1-taskrun(230954)] Event(Code=INDEXER_BAD_IQXML, id=#48B0I230954P230953) occurred at 11/16/17 11:17 AM: Unable to index document 3,426 in collection KB_ADVISOR_DOCS (2020713.2), since the IQXML is invalid. Cause: java.lang.StackOverflowError<br /><br /><br />Solution:<br /><br />1. Try this step first:<br /><br />Start a new job with only the following tasks and collections:<br /><br />Click on Show all tasks<br /><br />Check only:<br />Status reset<br />Full Document Conversion (Subcoll)<br /><br />Collections:<br />Only the collection that shows documents that failed to index<br /><br />Once complete, try to run ALL_FULL again as usual<br /><br />2. Second try if above does not work:<br /><br />Start ALL_FULL and select Temporarily modify job before starting<br />Click on Show all tasks<br /><br />Uncheck Increment Document Converstion (Subcoll)<br />Check Full Document Conversion (Subcoll)<br /><br />Uncheck Incremental index (Subcoll)<br />Check Full Index (Subcoll)</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Synchronization failure</td>
+     <td class="bki-td">scheduler log contains: com.inquira.revision.RevisionStoreException SYMPTOMS: [1755 Scheduler (138)] UNKNOWN MESSAGE ID &quot;SCHEDULER_INTERNAL_ERROR&quot; called with: &quot;com.inquira.revision.RevisionStoreException: [Scheduler @ Mon May 06 02:17:11 CDT 2013 - Indexing] (REVISION_EXISTS_ALREADY 3504 /app/oracle/knowledge/8500/instances/PRODidx/production/content/data/revision/default/revision/00003504.xml)&quot; com.inquira.revision.RevisionStoreException: [Scheduler @ Mon May 06 02:17:11 CDT 2013 - Indexing] (REVISION_EXISTS_ALREADY 3504 /app/oracle/knowledge/8500/instances/PRODidx/production/content/data/revision/default/revision/00003504.xml)         at com.inquira.revision.RevisionStoreImpl.createRevision(RevisionStoreImpl.java:143)         at com.inquira.revision.RevisionManagerImpl._createRevision(RevisionManagerImpl.java:211)         at com.inquira.revision.RevisionManagerImpl.createRevision(RevisionManagerImpl.java:197)...</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Synchronization failure</td>
+     <td class="bki-td">scheduler log contains:<br />com.inquira.revision.RevisionStoreIdMismatchException: [SocketResponseHandler /10.241.16.243:64567 @ Tue Jan 07 21:07:05 CST 2014] (REVISION_STORE_ID_MISMATCH default 605e8fd2-4398-4cfd-9bc9-a9a620c2d45e 6d3e3271-9175-4d80-9999-286701bb3f9e)       at com.inquira.revision.RevisionManagerImpl.validateStoreId(RevisionManagerImpl.java:5027)</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Synchronization failure</td>
+     <td class="bki-td">Scheduler log:<br />[179 DeployerThread(77)] UNKNOWN MESSAGE ID &quot;FORMAT_RECORD_EVENT_WITH_STATUS&quot; called with: &quot;INSTANCE_STARTUP_FAILED&quot; &quot;#1B0I77P76&quot; &quot;5/8/14 5:40 AM&quot; &quot;FAILURE&quot;UNKNOWN MESSAGE ID &quot;INSTANCE_STARTUP_FAILED&quot; called with: &quot;BTrt2&quot; &quot;java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 28572&quot; &quot;null&quot;<br />java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 28572<br />java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 28572<br />at gnu.trove.TIntArrayList.get(TIntArrayList.java:238)<br />at com.inquira.retrieve.index.RangeEntryLite.getRangeStart(RangeEntryLite.java:396)<br />at com.inquira.retrieve.newIndex.CollectionDataStore.createFacetVectors(CollectionDataStore.java:1370)</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix<br />for 3 issues above</td>
+     <td class="bki-td">Asummption: you tried to restart restart job from failure or rerun sync, but still doesn&#39;t work.<br />In this case only an index data cleanup of /inquirashare can help, but this requires downtime! <br />NOTE: IF YOU DELETE INDEX DATA, THEN SEARCH DOESN&#39;T WORK ANYMORE! ONLY APPLY THIS TO ONE SYNC GROUP AT A TIME, SO YOU HAVE HALF CAPACITY LEFT.<br />1. stop runtimes<br />2. cd /inquirashare/production (or /app/inquirashare/production or /app/inquirashare/development)<br />3. mv runtime runtimeSAVE<br />4. start runtimes (wait 3 min)<br />5. run Sync job<br />6. if everything works, you can remove runtime SAVE folder<br />see:  How to resolve a RevisionStoreIdMismatchException or REVISION_STORE_ID_MISMATCH message when synching to a new runtime? [ID 1040136.1]</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Synchronization failure</td>
+     <td class="bki-td">Scheduler log:<br />REVISION_CONTACT_REMOTE_INSTANCE_FAILED Error found at 12/23/13 10:22 PM ====<br />/app/oracle/knowledge/8500/instances/UATidx/Inquira-UATidx_production.log-[888 Local Workclient-default-taskrun(142)] Event(Code=LOG_STORE_EXCEPTION, id=#2B1I142P134) occurred at 12/23/13 10:22 PM: com.inquira.infra.trnsp.TransportConnectExceptionDO_NOT_ADDcom.inquira.event</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">There was a connection problem. If there was a temporary issue, then <br />a) try to rerun &quot;Sync only&quot; task, <br />b) if it still fails, restart the failing runtime, and check that it is starting fine, <br />c) if nothing helps, then there must be a permanent connect issue (environment, ports?)</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Synchronization failure</td>
+     <td class="bki-td">Scheduler log:<br />[9524554 Local Workclient-default-taskrun(422720)] Event(Code=SYNCH_FAILURE_WITH_STATUS, id=#521B0I422720P417298) ... (SYNCH_GATEWAY_TIMEOUT com.inquira.infra.gateway.GatewayTimeoutException: [SocketResponseHandler /152.68.178.192:52847 @ Thu Mar 27 10:57:48 CDT 2014] ... Unable to wait for all request(s) to complete in a timely manner ({0}ms). This will cause the outstanding request(s) to fail with stack traces but the request consumers will recover to process the next requests properly...[GATEWAY_QUEUES_EMPTY_TIMEOUT]  null) ...<br />...<br />InstanceStatus:PRODrt42 Acting Instance:default Steps:2:success<br /> InstanceStatus:PRODrt43 Acting Instance:default Steps:2:success<br /> InstanceStatus:PRODrt44 Acting Instance:default Steps:2:failed:com.inquira.revision.RevisionException: Event (6cd2067e-0225-4959-ab7c-cbbcd077f083#62B0I1225483P1225482): [SocketResponseHandler /152.68.178.192:29755 @ Wed Apr 16 08:57:02 CDT 2014] (SYNCH_GATEWAY_TIMEOUT com.inquira.infra.gateway.GatewayTimeoutException</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">Not 100% sure about the cause. It seems to happen when there is heavy load on runtimes, maybe related to memory. The log might indicate which runtime application failed.<br />Workaround: Re-run the job with a restart from Failure</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Synchronization failure<br /> /inquirashare full</td>
+     <td class="bki-td">check cache files:<br />cd /inquirashare/production/runtime/applications/default/unstructured/collections<br />ls -lh KB_ACTIVE_DOCS/maintenance/index/revision/*/cache/*rt*/query.cachedat<br />Usually KB_ACTIVE_DOCS is the largest one. To be sure, you can check the others as well:<br />ls -lh */maintenance/index/revision/*/cache/*rt*/query.cachedat</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">Purge cache files:<br />A. Remove old cache: Identify the older revision, usually there are 2 of them like .../revision/00041499, and can you delete the cache files from the older revision with this command:<br />$ rm KB_ACTIVE_DOCS/maintenance/index/revision/&lt;OLD REVISION&gt;/cache/*rt*/*<br />B. If A doesn&#39;t free up enough space, then in an emergency case, remove current cache as well. (THIS REQUIRES DOWNTIME OF RUNTIMES. Best to apply to one syncgroup after the other)<br />1. stop runtime apps of one syncgroup<br />2. delete cache on related inquirashare<br />3. start runtime apps</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Scheduler issue</td>
+     <td class="bki-td">UNKNOWN MESSAGE ID in inquira logs SYMPTOMS: Many UNKNOWN MESSAGE ID in any inquira logs</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">CAN BE IGNORED:UNKNOWN MESSAGE ID is for  free style messages</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Scheduler issue</td>
+     <td class="bki-td">Scheduler log shows many exceptions like:<br />com.inquira.scheduler.workclient.WorkClientResponse throws java.lang.Exception SYMPTOMS: [2637567 SocketResponseHandler /152.68.178.194:55097(454393)] Event(Code=RECEIVE_EVENT, id=#428B0I454393P454392) received at 4/7/13 <br />5:05 AM: Invoking public abstract<br />com.inquira.scheduler.workclient.WorkClientResponse<br />com.inquira.scheduler.SynchronousSchedulerService.requestWork(com.inquira.scheduler.workclient.WorkClientDefinition) throws java.lang.Exception of service scheduler on SocketTransport</td></tr>
+    <tr class="bki-tr">
+     <td class="bki-td">Fix</td>
+     <td class="bki-td">CAN BE IGNORED: Inquira Dev: I don&#39;t think you should be seeing those, however the workclients and scheduler try to communicate with eachother and keep in-sync, so if you restart the inquirawb app, but you do not restart the workclients, then you will see these kinds of errors in the workclient as the connection drops, and they may continue until the workclient is restarted even if it appears to be working.</td></tr></table><h3 class="bki-h3" id="Specific+Workbench+issues">Specific Workbench issues</h3><table class="bki-table">
+    <tr class="bki-tr"><th class="bki-th">Workbench issue</th><th class="bki-th">Symptoms and Fix</th></tr>
+    <tr class="bki-tr"><th class="bki-th">Login issue</th>
+     <td class="bki-td">Workbench svn errors when logging in: workbench reports errors like &quot;svn: Working copy path &#39;RULE/5d6094a7-1b89-490d-b315-9e25e8bc80fe&#39; does not exist in repository&quot;</td></tr>
+    <tr class="bki-tr"><th class="bki-th">Fix</th>
+     <td class="bki-td">cleanup userdata directory for your user i.e. user: admin <br /> $ cd &lt;index dir&gt;  (i.e. PRODidx) <br /> $ find . name admin <br /> $ cd ./production/content/applications/default/userdata/users/internal <br /> $ rm -rf admin <br /> Now login to workbench again (it will take 10-15min to login the first time now)</td></tr></table>
+  <h2 class="bki-h2" id="Runtime+application">Runtime application</h2>
+   <ul class="bki-ul">
+    <li class="bki-li">How to read runtime application logs
+     <ul class="bki-ul">
+      <li class="bki-li">Go to application directory ($OKH/instances/&lt;app name&gt;) and check current log file (usually Inquira-&lt;app name&gt;_production.log) </li>
+      <li class="bki-li">It is difficult to find the relevant exceptions, because the logs contain the search queries which are full of error terms.</li>
+      <li class="bki-li">Start at the end of the log and search backwards for &quot;Exception&quot; or use timestamp if you know it. Look for an Inquira exception stack, multiple lines starting with:
+       <ul class="bki-ul">
+        <li class="bki-li"> at com.inquira....... </li></ul></li></ul></li></ul>
+
+  <h3 class="bki-h3" id="Specific+Runtime+issues">Specific Runtime issues</h3>
+   <table class="bki-table">
+    <tr class="bki-tr"><th class="bki-th">Runtime issue</th><th class="bki-th">Symptoms and Fix</th></tr>
+    <tr class="bki-tr"><th class="bki-th">Search issue</th>
+     <td class="bki-td">no results returned<br />All these searches work fine in Test drive on scheduler instance</td></tr>
+    <tr class="bki-tr"><th class="bki-th">Search issue</th>
+     <td class="bki-td">odd search results:<br />- double quote searches return results<br />- inquira rules don&#39;t work (okdm version)<br />- All these searches work fine in Test drive on scheduler instance</td></tr>
+    <tr class="bki-tr"><th class="bki-th">Fix for both issues above</th>
+     <td class="bki-td">Re-deploy runtime applications. <br />1. stop all runtime apps (OK.sh stop all)<br />2. Stop Weblogic (ASFunctions.sh stop), and start<br />3. start all runtime apps (OK.sh start all)<br />4. Wait 2 min and then test search using quicksearchtest tool (/app/oracle/product/quicksearchtest/runtest.sh</td></tr>
+    <tr class="bki-tr"><th class="bki-th">Memory issue</th>
+     <td class="bki-td">High memory consumption on Runtime VM, or heap space errors in logs</td></tr>
+    <tr class="bki-tr"><th class="bki-th">Fix</th>
+     <td class="bki-td">restart runtime applications</td></tr>
+    <tr class="bki-tr"><th class="bki-th">Managed server fails to start<br /></th>
+     <td class="bki-td">Issue: after a VM crash or Weblogic crash, you cannot start the managed server anymore, due to this error:<br />&lt;Oct 14, 2014 9:37:23 AM CDT&gt; &lt;Critical&gt; &lt;WebLogicServer&gt; &lt;BEA-000362&gt; &lt;Server failed. Reason: Could not obtain an exclusive lock to the embedded LDAP data files directory: /app/oracle/admin/domains/knowledge/servers/PRODrt73_Server/data/ldap/ldapfiles because another WebLogic Server is already using this directory. Ensure that the first WebLogic Server is completely shutdown and restart the server.&gt;<br />&lt;Oct 14, 2014 9:37:23 AM CDT&gt; &lt;Notice&gt; &lt;WebLogicServer&gt; &lt;BEA-000365&gt; &lt;Server state changed to FAILED&gt;<br />&lt;Oct 14, 2014 9:37:23 AM CDT&gt; &lt;Error&gt; &lt;WebLogicServer&gt; &lt;BEA-000383&gt; &lt;A critical service failed. The server will shut itself down&gt;<br />&lt;Oct 14, 2014 9:37:23 AM CDT&gt; &lt;Notice&gt; &lt;WebLogicServer&gt; &lt;BEA-000365&gt; &lt;Server state changed to FORCE_SHUTTING_DOWN&gt;<br /><br />Initializing WebLogic Scripting Tool (WLST) ...<br /><br />Problem invoking WLST - java.lang.ExceptionInInitializerError<br />Shutdown failed: Timed out waiting for signal from JVM.<br />Dumping JVM state.</td></tr>
+    <tr class="bki-tr"><th class="bki-th">Fix<br /></th>
+     <td class="bki-td">1. Step weblogic, and ensure that no WL process is running<br />2. Move the managed server directory: /app/oracle/admin/domains/knowledge/servers/&lt;xxxxx_Server&gt; <br />to: /app/oracle/admin/xxxxx_ServerOLD<br />3. Start weblogic and managed server xxxxx<br />it should create a new &lt;xxxxx_Server&gt; directory<br />4. now you can remove the OLD copy</td></tr>
+   </table>
+
+
+
+
+
+
+</body>
+</html>

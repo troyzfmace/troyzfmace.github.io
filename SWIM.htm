@@ -1,0 +1,2895 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html><head>
+  <link rel="shortcut icon" href="favicon.ico" />
+<title>My Links</title>
+<link rel="stylesheet" type="text/css" href="Links.css" />
+
+<script>
+//clock
+var d,h,m,s,animate;
+
+function init(){
+    d=new Date();
+    h=d.getHours();
+    m=d.getMinutes();
+    s=d.getSeconds();
+    clock();
+	myVersion();
+};
+function clock(){
+    s++;
+    if(s==60){
+        s=0;
+        m++;
+        if(m==60){
+            m=0;
+            h++;
+            if(h==24){
+                h=0;
+            }
+        }
+    }
+    $('sec',s);
+    $('min',m);
+    $('hr',h);
+    animate=setTimeout(clock,1000);
+};
+function $(id,val){
+    if(val<10){
+        val='0'+val;
+    }
+    document.getElementById(id).innerHTML=val;
+};
+window.onload=init;
+</script>  
+
+<base target="_blank">
+<style>
+.dropdown .dropbtnS {background-color: #aaa;}
+.dropdown .dropbtnSW {background-color: #fff;}
+.dropdown .dropbtnK {background-color: #aaa;}
+.dropdown .dropbtnC {background-color: #aaa;}
+.dropdown .dropbtnL {background-color: #aaa;}
+.dropdown .dropbtnNT {background-color: #aaa;}
+</style>
+</head>
+<body style="background-color: #eee; padding: 0px;">
+
+
+<!--START MENU-->
+<div class="header" id="myHeader">
+  <div>
+    <img  src="links_files/o_logo.gif">
+    <a href="https://stbeehive.oracle.com/teamcollab/wiki/TroyMaceWorkspace:Links" ><strong> My Links</strong></a>
+  </div> 
+
+ <div class="navbar">
+  <div class="dropdown">
+	<a class="dropbtnL" href="Links.htm" target="_self" style="line-height: 150%;">&nbsp;HOME&nbsp;</a>
+<!--    <div class="dropdown-content">
+	<a href="Links.htm" target="_self"><strong>&nbsp;&nbsp;&nbsp;HOME</strong></a>
+	<ul>
+		<li><a href=#console target="_self">WLS Console</a></li>
+		<li><a href=#mosurl target="_self">MOS URLs</a></li>
+		<li><a href=#bigip target="_self">BigIP</a></li>
+	</ul>
+   </div> -->
+  </div> 
+  
+  <div class="dropdown">
+	<a class="dropbtnE" href="http://emcc.us.oracle.com/em/console/reports/render?event=refresh&action=generate&reportID=87703147C96FA480E053CE36548C645F" style="line-height: 150%;">&nbsp;EMCC&nbsp;</a>
+  </div>
+  
+  <div class="dropdown">
+    <a class="dropbtnSW" href="SWIM.htm" target="_self"style="line-height: 150%;">&nbsp;SWIM&nbsp;</a>
+  </div>
+<!--  <div class="dropdown" >
+    <a class="dropbtnNT" href="doc.html" target="_self"style="line-height: 150%;">&nbsp;Notes&nbsp;</a>
+  </div> 
+
+  <div class="dropdown" >
+    <a class="dropbtnS" href="#" target="_self" style="line-height: 150%;">&nbsp;Top Links&nbsp;&#9662;</a>
+    <div class="dropdown-content">
+	<strong><strong>Top Links</strong>
+	  <li style="list-style: disc;"><a href="https://occn-jira.oraclecorp.com/secure/RapidBoard.jspa?rapidView=2206&view=planning&selectedIssue=EMW-152&epics=visible">Aqua Scrum</a></li>
+	  <li style="list-style: disc;"><a href="ssh://trmace@den01fhy.us.oracle.com"><hyb>My Dev VM</hyb></a></li>
+	  <li style="list-style: disc;"><a href="ssh://trmace@amts514.us.oracle.com"><hyb>Patch VM</hyb></a></li>
+	  <li style="list-style: disc;"><a href="ssh://trmace@aingv0008.us.oracle.com">esps getxxx VM</a></li>
+	  <li style="list-style: disc;"><a href="ssh://trmace@aingv0007.us.oracle.com">esps verify VM</a></li>
+	  <li style="list-style: disc;"><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/ESPS+Environments+Contact+Summary"><hyb>Env Contacts</hyb></a></li>
+	  <li style="list-style: disc;"><a href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.Saved_Search?id=529341290319020748"><hyb>MOS Bugs</hyb></a></li>
+	  <li style="list-style: disc;"><a href="https://entrueiadc.us.oracle.com/ruei/"><hyb>MOS RUEI</hyb></a></li>
+	  <li style="list-style: disc;"><a href="https://app.thousandeyes.com/dashboard/?dashboardId=5c94f93347656f0050640b27">ThounsandEyes</a></li>
+	  <li style="list-style: disc;"><a href="https://oracle.pagerduty.com/"><hyb>PagerDuty</hyb></a></li>
+    </div>
+  </div> -->
+  <div class="dropdown" >
+    <a class="dropbtnS" href="#" target="_self" style="line-height: 150%;">&nbsp;Top&nbsp;&#9662;</a>
+    <div class="dropdown-content" style="width: 650px; height: 600px; ">
+	  <table style="width: 100%; border: 1px solid #ccc; border-style: solid solid solid solid; " >
+	  <tr>
+	  <td style="width: 40%";><strong>Top Links</strong><hr>
+	  <a href="https://occn-jira.oraclecorp.com/secure/RapidBoard.jspa?rapidView=2206&view=planning&selectedIssue=EMW-152&epics=visible"><hbb>Old Aqua Scrum</hbb></a>
+	  <a href="https://jira.oraclecorp.com/jira/secure/RapidBoard.jspa?rapidView=295314&projectKey=OITEAAW&view=planning&selectedIssue=OITEAAW-21&epics=visible&issueLimit=100"><hbb>Aqua Sprint</hbb></a>
+	  <a href="ssh://trmace@den01fhy.us.oracle.com"><hyb>My Dev VM</hyb></a>
+	  <a href="ssh://trmace@amts514.us.oracle.com"><hyb>Patch VM</hyb></a>
+	  <a href="ssh://trmace@aingv0008.us.oracle.com">getxxx VM</a>
+	  <a href="ssh://trmace@aingv0007.us.oracle.com">Verify VM</a>
+	  <a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/ESPS+Environments+Contact+Summary"><hyb>Env Contacts</hyb></a>
+	  <a href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.do_edit_report?rpt_title=MOSINFRA%20unassigned&fcont_arr=9776%2C%209449&fid_arr=1&fcont_arr=111&fid_arr=2&fcont_arr=78&fid_arr=42&fcont_arr=%3D&fid_arr=159&fcont_arr=MOSINFRA&fid_arr=6&fcont_arr=&fid_arr=122&fcont_arr=AND&fid_arr=136&fcont_arr=&fid_arr=138&fcont_arr=INTERNAL%25&fid_arr=200&fcont_arr=&fid_arr=10&fcont_arr=off&fid_arr=157&fcont_arr=N&fid_arr=161&fcont_arr=2&fid_arr=100&cid_arr=2&cid_arr=3&cid_arr=15&cid_arr=9&cid_arr=8&cid_arr=7&cid_arr=30&cid_arr=11&cid_arr=6&cid_arr=51&cid_arr=13&cid_arr=46&cid_arr=47&f_count=13&c_count=13&query_type=2"><hyb>MOS BUGs</hyb></a>
+	  <a href="https://bug.oraclecorp.com/pls/bug/webbug_reports.Saved_Search?id=ESPS-Open-P1-Bugs"><hyb>P1 BUGs</hyb></a>
+	  <a href="https://myhelp.oracle.com/AgentWeb/Bookmark/Report/160951"><hyb>P1 SRs</hyb></a>
+	  <a href="http://amomv0242.us.oracle.com:8001/search/admin/schedules/schedules.jsp"><hyb>SES Admin</hyb></a>
+	  <a href="https://entrueiadc.us.oracle.com/ruei/"><hbb>MOS RUEI</hbb></a>
+	  <a href="https://cssem.appoci.oraclecorp.com/em/console/reports/render?action=restore&versionID=latest_copy&reportID=A63B832046F76428E05307407264D127"><hyb>CSSEM</hyb></a>
+	  <a href="http://emcc.us.oracle.com/em/console/reports/render?event=refresh&action=generate&reportID=87703147C96FA480E053CE36548C645F"><hyb>EMCC</hyb></a>
+	  </td><td>
+	  <table style="margin-left: 0px; color: rgb(51, 51, 51); border-collapse: collapse; width: 100%; border: 2px solid #aaa;">
+  		<tr><td>
+		<tr style="background-color: #eee;" >
+		 <td><a href="https://sca-iad1.appoci.oracle.com/sgd/index.jsp?langSelected=en&clientmode=installed"><hrb>Secure Global Desktop-IAD</hrb></a></br>https://sca-iad1.appoci.oracle.com/sgd/index.jsp?langSelected=en&clientmode=installed</td>
+		<tr style="background-color: #fff;" >
+		 <td><a href="https://sca-phx1.appoci.oracle.com/sgd/index.jsp?langSelected=en&clientmode=installed"><hrb>Secure Global Desktop-PHX</hrb></a></br>https://sca-phx1.appoci.oracle.com/sgd/index.jsp?langSelected=en&clientmode=installed</td>
+		</td><td>
+		<tr style="background-color: #eee;" >
+		 <td ><a href="https://console.us-ashburn-1.oraclecloud.com/"><hyb>ashburn</hyb></a></td></tr>
+		<tr style="background-color: #fff;" >
+		 <td ><a href="https://console.us-phoenix-1.oraclecloud.com/"><hyb>phoenix</hyb></a></td>
+		</tr></td></tr>
+		<tr style="background-color: #eee;" >
+		 <td >
+			<hr>
+			<a href=" https://peo-document-repository.appoci.oraclecorp.com/display/POOG/4.7.4+Enterprise+Tenancies+in+OCI+and+Shared+Services+Inventory-v1">List Tenancies</a>
+		    <a href="https://confluence.oraclecorp.com/confluence/display/OCIMIG/Access+Request">Access Request</a>
+		    <a href="https://confluence.oraclecorp.com/confluence/display/RUNBOOKS/Access+Request+and+Instructions+To+OIT+OCI+Tenancies+For+Development+Teams">Access Request for DEV</a>
+		    <a href="https://peo-document-repository.appoci.oraclecorp.com/pages/viewpage.action?spaceKey=POOG&title=Access+Instructions">Access Instructions</a>
+		    <a href="https://confluence.oraclecorp.com/confluence/display/OCIMIG/Compute+Access+Instructions">Compute Access Instructions (Bastian Lists)</a>
+			<hr>
+			<a href="ssh://ch3-c-fa-bastion-01.us2.oraclecloud.com')">CDC</a>
+			<a href="ssh://am2-c-fa-bastion-01.em2.oraclecloud.com')">AMS</a>					
+			<a href="ssh://ord12-p-fa-bastion-01.pp1.oraclecloud.com')">PP1</a>
+			<hr>
+			<a href="ssh://138.1.159.140')">PRD - CRS,SPR</a>
+			<a href="ssh://130.35.81.51')">STG - CRS,SPR</a>
+			<a href="ssh://144.25.94.145')">DEV - CRS,SPR,EDP,AIS</a>
+			<a href="ssh://100.111.236.50')">POC - MOS</a>
+		 </td></tr>
+		</table></br>
+       </td></tr></table>
+	 </div>
+  </div>
+
+ 
+  <div class="clock">
+     <span id="hr">00</span>
+     <span>:</span>
+     <span id="min">00</span>
+     <span>:</span>
+     <span id="sec">00</span>
+  </div>
+
+  
+
+
+  <div class="dropdown" style="min-width: 30%; ">&nbsp;</div>
+	
+  <div class="dropdown" style="float:right">
+    <!--<a class="dropbtnA" href="#" target="_self" ><font color=#aaa>&#9671;</font>ABOUT<font color=#aaa>&#9671;</font></a>-->
+	<a class="dropbtnA" href="#" target="_self" style="line-height: 150%;">ABOUT</a>
+    <div class="dropdown-content" style="right: 1px; left:auto; padding: 1px 1px; font-size: 16px;">
+	</br>&nbsp;&nbsp;&nbsp;&nbsp;Last modified Apr 18,2019 10:44 AM by&nbsp;<strong>Troy Mace</strong>&nbsp;&nbsp;&nbsp;&nbsp;</br></br>
+	</div>
+  </div>
+
+  <div class="dropdown" style="float:right">
+	<a class="dropbtnS" href="CSSLinks.htm" target="_self" style="line-height: 150%;">&nbsp;CSS&nbsp;&#9662;</a>
+    <div class="dropdown-content">
+    <strong>CSS</strong>
+	<ul>
+	  <li><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=26195071"><cr>Core / UI Apps</cr></a></li>
+	  <li><a href="https://pdit-document-repository.oraclecorp.com/display/CMPD/manifest_prod.cfg">Prod Manifest (server list)</a></li>
+	  <li><a href="https://pdit-document-repository.oraclecorp.com/display/CMPD/manifest_test.cfg">Test Manifest (server list)</a></li>
+	  <li><a href="https://pdit-document-repository.oraclecorp.com/display/CMPD/manifest_ue_stage_mos.cfg">Stage Manifest (server list)</a></li>
+	  <li><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/ESPS+Environments+Contact+Summary">Contact List</a></li>
+	  <li><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=54836276">Combined on-call</a></li>
+	</ul>
+    </div>
+  </div>
+  
+  <div class="dropdown" style="float:right">
+    <a class="dropbtnK" href="KMLinks.htm" target="_self" style="line-height: 150%;">&nbsp;&nbsp;KM&nbsp;&#9662;</a>
+    <div class="dropdown-content" >
+	<strong>KM</strong>
+    <ul>
+	  <li><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1554832.1"><hyb>QUICK LINKS</hyb> (Doc ID 1554832.1)</a></li>
+	  <li><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=2275546.1">AMS/TMS SOP (Doc ID 2275546.1)</a></li>
+	  <li><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1959082.1">NGCCR: RFM Job (1959082.1)</a></li>
+	  <li><a href="https://amomv0163.oracle.com:7799/em/">NGCCR: https://amomv0163.oracle.com:7799/em/</a></li>
+	  <li><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1629531.1">ORA-XXX error list</a></li>
+	  <li><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1670756.1">MOS CORE: Inquira General Troubleshooting (Doc ID 1670756.1)</a></li>
+	  <li><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1605263.1">MOS CORE: Inquira Falure Alert (Doc ID 1605263.1) </a></li>
+    </ul>
+    </div>
+  </div>
+  
+  <div class="dropdown" style="float:right">
+    <a class="dropbtnC" href="CDLinks.htm" target="_self"style="line-height: 150%;">&nbsp;SonP&nbsp;</a>
+  </div>
+  
+  <div class="dropdown" style="float:right">
+	<a class="dropbtnA" href="#" target="_self" style="line-height: 150%;">&nbsp;&nbsp;Me&nbsp;&#9662;</a>
+    <div class="dropdown-content">
+	<strong>Me</strong>
+	<ul>
+		<li><a href="http://mail.yahoo.com">Yahoo Mail</a></li>
+		<li><a href="http://gmail.com">GMail</a></li>
+		<li><a href="http://amazon.com">Amazon</a></li>
+		<li><a href="https://feedly.com/i/latest">Feedly</a></li>
+		<li><a href="http://keep.google.com">Keep</a></li>
+	</ul>
+    </div>
+  </div>    
+
+  <div class="dropdown"style="float:right">
+	<div class="valueToCopy"><input type="text" value="http://emcc.us.oracle.com/em/console/reports/render?event=refresh&action=generate&reportID=87703147C96FA480E053CE36548C645F" id="myEInput"></div>
+     <a class="dropbtnB" href="#" target="_self" onclick="myCopyFunctionE();beep(50, 999, 75)"">copy</br>emcc</a>
+  </div> 
+  
+  <div class="dropdown" >&nbsp;</div>
+   <div class="dropdown" style="float:right" >
+   	<div class="valueToCopy"><input type="text" value="https://oracle.zoom.us/my/troy.mace" id="myBInput"></div>
+    <a class="dropbtnB" href="#" target="_self" onclick="myCopyFunctionB();beep(50, 750, 75)"">copy</br>zoom</a>
+   </div>
+ 
+</div class="navbar">   
+</div class="header">
+	<script>
+	//copy buttons;
+	function myCopyFunctionE() {
+	  var copyText = document.getElementById("myEInput");
+	  copyText.select();
+	  document.execCommand("copy");
+	//  alert("Copied the text: " + copyText.value);
+	}
+	function myCopyFunctionB() {
+	  var copyText = document.getElementById("myBInput");
+	  copyText.select();
+	  document.execCommand("copy");
+	//  alert("Copied the text: " + copyText.value);
+	}
+	</script>
+	<script type="text/javascript">
+	//button sounds
+	a=new AudioContext()
+	function beep(vol, freq, duration){
+	 v=a.createOscillator()
+	 u=a.createGain()
+	 v.connect(u)
+	 v.frequency.value=freq
+	 v.type="square"
+	 u.connect(a.destination)
+	 u.gain.value=vol*0.01
+	 v.start(a.currentTime)
+	 v.stop(a.currentTime+duration*0.001)
+	}
+	</script>
+	<script>
+	//scroll header- not used
+	window.onscroll = function() {myFunction()};
+	 var header = document.getElementById("myHeader");
+	 var sticky = header.offsetTop;
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
+
+    <script type="text/javascript" language="javascript">
+        function Runlcmd() {
+		WshShell = new ActiveXObject("WScript.Shell");
+		WshShell.Run("C://OracleDocs/MyWorkStuff/lcmd.ahk", 1, false);
+        }
+    </script>
+
+<!--END MENU-->
+<!--
+
+Start of real content
+
+-->
+<div class="content">
+<table width="100%">
+ <tbody>
+  <tr>
+   <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; border-style: none solid solid solid; background-color: #fff; ">
+<!-- start --->
+
+
+
+
+  	  <ul style="list-style: none; padding: 0px 0px 0px 25px;"></br>
+		<strong>Top Links</strong>
+		<li style="list-style: disc;"><a href="https://occn-jira.oraclecorp.com/secure/RapidBoard.jspa?rapidView=2206&view=planning&selectedIssue=EMW-152&epics=visible">Aqua Scrum</a></li>
+	    <nav><ul><li style="list-style: disc;"><hyb>Other VMs&#9662;</hyb>
+				<ul style="margin: -20px">
+					<li style="list-style: disc;"><a href="ssh://trmace@den01fhy.us.oracle.com"><hyb>My Dev VM</hyb></a></li>
+					<li style="list-style: disc;"><a href="ssh://trmace@amts514.us.oracle.com"><hyb>Patch VM</hyb></a></li>
+					<li style="list-style: disc;"><a href="ssh://trmace@aubgv0008.us.oracle.com"><hyb>esps getxxx VM</hyb></a></li>
+					<li style="list-style: disc;"><a href="ssh://trmace@aingv0007.us.oracle.com"><hyb>esps verify VM</hyb></a></li>
+				</ul></li></ul></nav>
+	    <nav><ul><li style="list-style: disc;"><hy>ESPS Support&#9662;</hy>
+				<ul style="margin: -20px">
+					<li><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/ESPS+Environments+Contact+Summary"><hyb>Env Contacts</hyb></a></li>
+					<li><a href="https://emcc.us.oracle.com/em/faces/sdk/nonFacesWrapper?_em.coBM=%2Fconsole%2Freports%2Frender%3Faction%3Drestore%26versionID%3Dlatest_copy%26reportID%3D5510ED00E8DAD1BDE053CF36548C92DE"><hyb>ESPS EMCC</hyb></a></li>
+					<li><a href="https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.Saved_Search?id=529341290319020748"><hyb>MOS Bugs</hyb></a></li>
+					<li><a href="https://entrueiadc.us.oracle.com/ruei/"><hyb>MOS RUEI</hyb></a></li>
+					<li><a href="https://app.thousandeyes.com/dashboard/?dashboardId=5c94f93347656f0050640b27">ThounsandEyes</a></li>
+				</ul></li></ul></nav>
+		<nav><ul><li style="list-style: disc;"><hyb>Cloud Env&#9662;</hyb>
+				<ul style="width: 900px; margin: -20px">
+				  <div style="column-count: 4; column-rule: 2px dotted;">
+					 <li style="display: inline-block;">espsociprodext
+					 <a href="https://idcs-bf2a2bf7e44c411f973736859b8dc8da.identity.oraclecloud.com/ui/v1/adminconsole"><hyb>ProdExt IDCS</hyb></a>
+					 <a href="https://myservices-espsociprodext.console.oraclecloud.com/mycloud/cloudportal/dashboard">ProdExt Dashboard</a></li>
+					 <li style="display: inline-block;">espsnonprodint
+					 <a href="https://idcs-d1ace174ba8b415288911b775acf0185.identity.oraclecloud.com/ui/v1/adminconsole"><hyb>NonProdInt IDCS</hyb></a>
+					 <a href="https://myservices-espsnonprodint.console.oraclecloud.com/mycloud/cloudportal/dashboard">NonProdInt Dashboard</a></li>
+					 <li style="display: inline-block;">corpnonprod
+					 <a href="https://idcs-da8ff394a6fe4a3ebf496a32ae4b1cf8.identity.oraclecloud.com/ui/v1/adminconsole"><hyb>CorpNonProd IDCS</hyb></a>
+					 <a href="https://myservices-espsocicorpnonprod.console.oraclecloud.com/mycloud/cloudportal/dashboard">CorpNonProd Dashboard</a></li>
+					 <li style="display: inline-block;">Cloud Consoles
+					 <a href="https://console.us-ashburn-1.oraclecloud.com/">ashburn console</a>
+					 <a href="https://console.us-phoenix-1.oraclecloud.com/">phoenix console</a></li>
+				  </div>
+					</ul></li></ul></nav>
+		<nav><ul><li style="list-style: disc;"><hyb>MOS Cloud&#9662;</hyb>
+					<ul style="width: 600px; margin: -20px"><div style="column-count: 3; column-rule: 2px dotted; ">
+					<li style="display: inline-block;">VBCS/ICS 
+					 <a href="https://inmosnpmt-ics-espsocicorpnonprod.integration.ocp.oraclecloud.com/ic/home/">INMOSNPMT-ICS</a></li>
+					 <a href="https://inmosnpmt-ics-espsocicorpnonprod.integration.ocp.oraclecloud.com/ic/builder/?root=application&application=MOSPOCCustomer-1.0&artifact=Settings&section=application">MOS POC in VBCS</a></li>
+					<li style="display: inline-block;">Registration Bot 
+					 <a href="https://mosregodaprod-espsociprodext.botmxp.ocp.oraclecloud.com/botsui/">REGprod</a>
+					 <a href="https://mosodauat-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">REGuat</a>
+					 <a href="https://mosregodastg-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">REGstg</a>
+					 <a href="https://mosregodapsr-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">REGpsr</a>
+					 <a href="https://mosregodadev-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">REGdev</a>
+					 <a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/Registration+Chatbot">KM</a></li>
+					<li style="display: inline-block;">NonTech SR Bot
+					 <a href="https://mosnsrodaprod-espsociprodext.botmxp.ocp.oraclecloud.com/botsui/">NSRprod</a>
+					 <a href="https://mosnsrodauat-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">NSRuat</a>
+					 <a href="https://mosnsrodastg-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">NSRstg</a>
+					 <a href="https://mosnsrodapsr-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">NSRpsr</a>
+					 <a href="https://mosnsrodadev-espsnonprodint.botmxp.ocp.oraclecloud.com/botsui/">NSRdev</a>
+					 <a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/Non-Tech+SR+Chatbot">KM</a></li>
+					 </div>
+					 <hr>
+						<li>HUB Sandbox</li>
+						<a href="https://inmosnpmt-odasb-espsocicorpnonprod.botmxp.ocp.oraclecloud.com/botsui/">INMOSNPMT-ODASB</a>
+						<a href="https://inmosnpmt-odasb2-espsocicorpnonprod.botmxp.ocp.oraclecloud.com/botsui/">INMOSNPMT-ODASB2</a>
+	    </ul></li></ul></nav>
+<!--
+		
+		<input type="button" id="MyPass" value="LockBox" onclick="AHK('MyPass" style="width: 150px; font-size: 20px;"></br>
+		<button onclick="Runlcmd()" style="width: 150px; font-size: 20px;">MyLinuxCmd</button></br>
+		<input type="button" id="MyLinuxCmd" value="LinuxCmd" onclick="AHK('MyLinuxCmd" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="SiV" value="PSafe" onclick="AHK('SiV" style="width: 150px; font-size: 20px;"></br>		
+		<input type="button" id="SiVq" value="PSafe-Query" onclick="AHK('SiVSearch" style="width: 150px; font-size: 20px;"></br>		
+		<input type="button" id="SSHOpen" value="SSH" onclick="AHK('SSHOpen" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="KMOpen" value="KM" onclick="AHK('KMOpen" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="bugOpen" value="Bug" onclick="AHK('bugOpen" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="ldapSearch" value="LDAP" onclick="AHK('ldapSearch" style="width: 150px; font-size: 20px;"></br>
+	    <input type="button" id="MOSPutty" value="MOSPutty" onclick="AHK('MOSputty" style="width: 150px; font-size: 20px;"></br>		
+		<input type="button" id="pbrun" value="PBRUN" onclick="AHK('pbrun" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="Putty" value="Putty" onclick="AHK('Putty" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="RemoteNG" value="RemoteNG" onclick="AHK('RemoteNG" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="NotePad" value="NotePad++" onclick="AHK('NotePad" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="CMD" value="CMD" onclick="AHK('CMD" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="SoapUI" value="SoapUI" onclick="AHK('SoapUI" style="width: 150px; font-size: 20px;"></br>
+	    <input type="button" id="MyTouch" value="TouchCmd" onclick="AHK('MyTouch" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="Tunnel" value="Tunnel" onclick="AHK('Tunnel" style="width: 150px; font-size: 20px;"></br>
+		<input type="button" id="MyList" value="MyList" onclick="AHK('MyList" style="width: 150px; font-size: 20px;"></br>
+-->
+	  </ul>
+	  
+</td>
+   <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; border-style: none solid solid solid; background-color: #fff; ">
+<!-- start --->
+
+
+
+</br>
+  <strong>Prod</strong></br>
+	<table style="background-color: #ccc;">
+	<tbody>
+		<tr style="background-color: #fff;">
+		 <td style="width: 25%;"><strong>OHS</strong></td>
+		 <td style="width: 15%;"></td>
+		 <!--<td style="width: 15%;"></td>
+		 <td style="width: 10%;"><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=78696911">km</a></td>-->
+		 <td style="width: 10%;"><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EWT	  
+					<li><a href="ssh://trmace@amomv0229.oracle.com">0229</a></li>
+					<li><a href="ssh://trmace@amomv0233.oracle.com">0233</a></li>
+					<li><a href="ssh://trmace@amomv0237.oracle.com">0237</a></li>
+					IWT
+					<li><a href="ssh://trmace@amomv0019.us.oracle.com">0019</a></li>
+					<li><a href="ssh://trmace@amomv0024.us.oracle.com">0024</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://ml3-callcenter.us.oracle.com/callcenter_enu/">CC</a></td>
+		 <td></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-PROD-CALLCENTERSERVER%2Fsiebsrvr">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=76855946">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CC
+					<li><a href="ssh://trmace@wd2057.us.oracle.com">2057</a></li>
+					<li><a href="ssh://trmace@wd3007.us.oracle.com">3007</a></li>
+					<li><a href="ssh://trmace@wd3009.us.oracle.com">3009</a></li>
+					<li><a href="ssh://trmace@wd3010.us.oracle.com">3010-log</a></li>
+					<li><a href="ssh://trmace@wd3030.us.oracle.com">3030</a></li>
+					<li><a href="ssh://trmace@wd3036.us.oracle.com">3036</a></li>
+					<li><a href="ssh://trmace@wd3037.us.oracle.com">3037</a></li>
+					<li><a href="ssh://trmace@wd3038.us.oracle.com">3038</a></li>
+					<li><a href="ssh://trmace@wd3116.us.oracle.com">3116</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="http://support.us.oracle.com/">ISP</a></td>
+		 <td><nav><ul><li>em&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="http://wd3093.us.oracle.com:7777/em">3093AS1</a></li>
+					<li><a href="http://wd3093.us.oracle.com:7778/em">3093AS2</a></li>
+					<li><a href="http://wd3094.us.oracle.com:7777/em">3094AS1</a></li>
+					<li><a href="http://wd3094.us.oracle.com:7778/em">3094AS2</a></li>
+					<li><a href="http://wd3095.us.oracle.com:7777/em">3095AS1</a></li>
+					<li><a href="http://wd3095.us.oracle.com:7778/em">3095AS2</a></li>
+					<li><a href="http://wd3096.us.oracle.com:7777/em">3096AS1</a></li>					
+					<li><a href="http://wd3096.us.oracle.com:7778/em">3096AS2</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-IP%2Fias">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=78696911">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="ssh://trmace@wd3093.us.oracle.com">3093</a></li>
+					<li><a href="ssh://trmace@wd3094.us.oracle.com">3094</a></li>
+					<li><a href="ssh://trmace@wd3095.us.oracle.com">3095</a></li>
+					<li><a href="ssh://trmace@wd3096.us.oracle.com">3096</a></li>					
+					<li><a href="ssh://trmace@wd2016.us.oracle.com">2016BKUP</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>EP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="https://mosemp.us.oracle.com/">MOSEMP</a></li>
+					<li><a href="https://mosemp.us.oracle.com/mosspui/src/main/container/index.html">NSP</a></li>
+					<li><a href="https://mosemp.us.oracle.com/mobi">Mobile</a></li>
+					<li><a href="https://mosemp-lite.us.oracle.com/kmlite/faces/ui/sp/SRViewer.jspx">SR Lite</a></li>
+					<li><a href="https://mosemp-lite.us.oracle.com/">KM Lite-Int</a></li>
+					<li><a href="https://mosemp.us.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://amomv0018.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-MOSEP%2Fmosemp">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=78696911">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EP
+					<li><a href="ssh://trmace@amomv0018.us.oracle.com">Admin0018</a></li>
+					<li><a href="ssh://trmace@amomv0010.us.oracle.com">0010</a></li>
+					<li><a href="ssh://trmace@amomv0012.us.oracle.com">0012</a></li>
+					<li><a href="ssh://trmace@amomv0014.us.oracle.com">0014</a></li>
+					<li><a href="ssh://trmace@amomv0016.us.oracle.com">0016</a></li>
+					<li><a href="ssh://trmace@amomv0021.us.oracle.com">0021</a></li>
+					<li><a href="ssh://trmace@amomv0022.us.oracle.com">0022</a></li>
+					<li><a href="ssh://trmace@amomv0023.us.oracle.com">0023</a></li>
+					<li><a href="ssh://trmace@amomv0020.us.oracle.com">PFS0020</a></li>
+					<li><a href="ssh://trmace@amomv0030.us.oracle.com">PFS0040</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>CP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="http://support.oracle.com/">MOSCP</a></li>
+					<li><a href="http://support.oracle.mobi/">Mobile</a></li>
+					<li><a href="https://support-lite.oracle.com/">KM Lite-Ext</a></li>
+					<li><a href="https://support.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://amomv0017.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-MOSCP%2Fmosp">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=78696911">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CP
+					<li><a href="ssh://trmace@amomv0017.us.oracle.com">Admin0017</a></li>
+					<li><a href="ssh://trmace@amomv0001.us.oracle.com">0001</a></li>
+					<li><a href="ssh://trmace@amomv0002.us.oracle.com">0002</a></li>
+					<li><a href="ssh://trmace@amomv0003.us.oracle.com">0003</a></li>
+					<li><a href="ssh://trmace@amomv0004.us.oracle.com">0004</a></li>
+					<li><a href="ssh://trmace@amomv0005.us.oracle.com">0005</a></li>
+					<li><a href="ssh://trmace@amomv0006.us.oracle.com">0006</a></li>
+					<li><a href="ssh://trmace@amomv0007.us.oracle.com">0007</a></li>
+					<li><a href="ssh://trmace@amomv0009.us.oracle.com">0009</a></li>
+					<li><a href="ssh://trmace@amomv0011.us.oracle.com">0011</a></li>
+					<li><a href="ssh://trmace@amomv0013.us.oracle.com">0013</a></li>
+					<li><a href="ssh://trmace@amomv0015.us.oracle.com">0015</a></li>
+					<li><a href="ssh://trmace@amomv0271.us.oracle.com">0271</a></li>
+					<li><a href="ssh://trmace@amomv0272.us.oracle.com">0272</a></li>
+					<li><a href="ssh://trmace@amomv0039.us.oracle.com">API0039</a></li>
+					<li><a href="ssh://trmace@amomv0057.us.oracle.com">API0057</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><strong>VOX</strong></td>
+		 <td><a href="https://amomv2100.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-VOXDASH%2Fvox">SiV</a></td>
+		 <td><a href=""></a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 1;">
+					<li><a href="ssh://trmace@amomv2100.us.oracle.com">Admin2100</a></li>
+					<li><a href="ssh://trmace@amomv2101.us.oracle.com">2101</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="https://updatecenter.oracle.com/apps/WebSearch/updatecenter.jsp">JDE</a></td>
+		 <td><a href="https://amomv0041.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-JDEUC%2FUC">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=93028871">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					JDE-OHS
+					<li><a href="ssh://trmace@amomv0247.oracle.com">OHS0247</a></li>
+					<li><a href="ssh://trmace@amomv0248.oracle.com">OHS0248</a></li>
+					JDE-WLS
+					<li><a href="ssh://trmace@amomv0041.us.oracle.com">Admin0041</a></li>
+					<li><a href="ssh://trmace@amomv0042.us.oracle.com">0042</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://edp.oraclecorp.com/edp/faces/home">EDP</a></td>
+		 <td><a href="https://amomv0046.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-EDP%2Fedp">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=91225786">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EDP-OHS
+					<li><a href="ssh://trmace@amomv0133.us.oracle.com">OHS0133</a></li>
+					<li><a href="ssh://trmace@amomv0137.us.oracle.com">OHS0137</a></li>
+					EDP-WLS
+					<li><a href="ssh://trmace@amomv0046.us.oracle.com">Admin0046</a></li>
+					<li><a href="ssh://trmace@amomv0047.us.oracle.com">0047</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>NGCCR&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					NGCCR
+					<li><a href="https://amomv0163.oracle.com:7799/em">0163</a></li>
+					<li><a href="https://amomv0167.oracle.com:7799/em">0167</a></li>
+					<li><a href="https://amomv0171.oracle.com:7799/em">0171</a></li>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CONTDIAG
+					<li><a href="https://amomv0209.us.oracle.com:7501/console">0209</a></li>
+					<li><a href="https://amomv0216.us.oracle.com:7501/console">OD0216</a></li>
+					NGCCR
+					<li><a href="https://amomv0163.oracle.com:7501/console">0163</a></li>
+				</ul></ul></li></nav></td>
+		 <!--<td><nav><ul><li>SiV&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-NGCCRCONTDIAG%2Fngccr">contdiag</a></li>
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-NGCCR%2Ffmw">ngccr-weblogic</a></li>
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-NGCCRDB%2Fccrems">ngccr-sysman</a></li>
+				</ul></ul></li></nav></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/NGCCR">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CONTDIAG OD
+					<li><a href="ssh://trmace@amomv0164.oracle.com">OHS0164</a></li>
+					<li><a href="ssh://trmace@amomv0168.oracle.com">OHS0168</a></li>
+					<li><a href="ssh://trmace@amomv0216.us.oracle.com">Admin0216</a></li>
+					<li><a href="ssh://trmace@amomv0221.us.oracle.com">0221</a></li>
+					CONTDIAG
+					<li><a href="ssh://trmace@amomv0162.oracle.com">OHS0162</a></li>
+					<li><a href="ssh://trmace@amomv0166.oracle.com">OHS0166</a></li>
+					<li><a href="ssh://trmace@amomv0170.oracle.com">OHS0170</a></li>
+					<li><a href="ssh://trmace@amomv0209.us.oracle.com">Admin0209</a></li>
+					<li><a href="ssh://trmace@amomv0214.us.oracle.com">0214</a></li>
+					<li><a href="ssh://trmace@amomv0220.us.oracle.com">0220</a></li>
+					NGCCR
+					<li><a href="ssh://trmace@amomv0165.oracle.com">0165</a></li>
+					<li><a href="ssh://trmace@amomv0169.oracle.com">0169</a></li>
+					<li><a href="ssh://trmace@amomv0163.oracle.com">Admin0163</a></li>
+					<li><a href="ssh://trmace@amomv0167.oracle.com">0167</a></li>
+					<li><a href="ssh://trmace@amomv0171.oracle.com">0171</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>NGSES&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+				<div style="column-count: 2;">
+					BackEnd Search
+					<li><a href="http://amomv0241.us.oracle.com:8001/search/query">0241</a></li>
+					<li><a href="http://amomv0242.us.oracle.com:8001/search/query">0242</a></li>
+					Admin
+					<li><a href="http://amomv0241.us.oracle.com:8001/search/admin">0241</a></li>
+					<li><a href="http://amomv0242.us.oracle.com:8001/search/admin">0242</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://amomv0241.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><nav><ul><li>SiV&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-NGSES%2Forases">weblogic</a></li>
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-NGSESDB%2Fsesems">searchsys</a></li>
+				</ul></ul></li></nav></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=93029221">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SES
+					<li><a href="ssh://trmace@amomv0241.us.oracle.com">Admin0241</a></li>
+					<li><a href="ssh://trmace@amomv0242.us.oracle.com">0242</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li>InQuira&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					InQuira
+					<li><a href="http://amomv0195.us.oracle.com:8001/inquirawb/app">KBCMTY</a></li>
+					<li><a href="http://amomv0252.us.oracle.com:8001/inquirawb/app">DOC</a></li>
+					<li><a href="http://amomv0254.us.oracle.com:8001/inquirawb/app">PATCH</a></li>
+				</ul></li></ul></nav></td>
+ 		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 500px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="https://amomv0195.us.oracle.com:7501/console"><strong>KbCmty</strong>SW</a></li>
+					<li><a href="https://amomv0199.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt71~rt73</hyb></a></li>
+					<li><a href="https://amomv0201.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt7~rt9</hyb></a></li>
+					<li><a href="https://amomv0213.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt31~rt32</hyb></a></li>
+					<li><a href="https://amomv0224.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt41~rt42</hyb></a></li>
+					<li><a href="https://amomv0226.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt51~rt52</hyb></a></li>
+					<li><a href="https://amomv0227.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt61~rt62</hyb></a></li>
+					<li><a href="https://amomv0252.us.oracle.com:7501/console"><strong>Doc</strong>SW</a></li>
+					<li><a href="https://amomv0251.us.oracle.com:7501/console"><strong>Doc</strong><hyb>rt11~rt12</hyb></a></li>
+					<li><a href="https://amomv0257.us.oracle.com:7501/console"><strong>Doc</strong><hyb>rt21~rt22</hyb></a></li>
+					<li><a href="https://amomv0254.us.oracle.com:7501/console"><strong>Patch</strong>SW</a></li>
+					<li><a href="https://amomv0253.us.oracle.com:7501/console"><strong>Patch</strong><hyb>rt11~rt12</hyb></a></li>
+					<li><a href="https://amomv0258.us.oracle.com:7501/console"><strong>Patch</strong><hyb>rt21~rt22</hyb></a></li>
+				</div>
+				</ul></ul></li></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-PROD-INQRTKBCM%2Fknowledge">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/Inquira">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="ssh://trmace@amomv0195.us.oracle.com"><strong>0195-KbCmty</strong>SW</a></li>
+					<li><a href="ssh://trmace@amomv0199.us.oracle.com"><strong>0199-KbCmty</strong><hyb>rt71~rt73</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0201.us.oracle.com"><strong>0201-KbCmty</strong><hyb>rt7~rt9</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0213.us.oracle.com"><strong>0213-KbCmty</strong><hyb>rt31~rt32</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0224.us.oracle.com"><strong>0224-KbCmty</strong><hyb>rt41~rt42</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0226.us.oracle.com"><strong>0226-KbCmty</strong><hyb>rt51~rt52</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0227.us.oracle.com"><strong>0227-KbCmty</strong><hyb>rt61~rt62</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0252.us.oracle.com"><strong>0252-Doc</strong>SW</a></li>
+					<li><a href="ssh://trmace@amomv0251.us.oracle.com"><strong>0251-Doc</strong><hyb>rt11~rt12</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0257.us.oracle.com"><strong>0257-Doc</strong><hyb>rt21~rt22</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0254.us.oracle.com"><strong>0254-Patch</strong>SW</a></li>
+					<li><a href="ssh://trmace@amomv0253.us.oracle.com"><strong>0253-Patch</strong><hyb>rt11~rt12</hyb></a></li>
+					<li><a href="ssh://trmace@amomv0258.us.oracle.com"><strong>0258-Patch</strong><hyb>rt21~rt22</hyb></a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>Elastic Search</td>
+		 <td><a href="http://mos-km-es-search.us.oracle.com">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-KMELASTIC%2Fkmelastic">SiV</a></td> 
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=93028914">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Elastic Search
+					<li><a href="ssh://trmace@amomv0212.us.oracle.com">Admin0212</a></li>
+					<li><a href="ssh://trmace@amomv0215.us.oracle.com">0215</a></li>
+					<li><a href="ssh://trmace@amomv0219.us.oracle.com">0219</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>GR</td>
+		 <td><a href="https://wd3141.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-GR%2Fmosgr">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=78696924">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					GR
+					<li><a href="ssh://trmace@wd3141.us.oracle.com">Admin3141</a></li>
+					<li><a href="ssh://trmace@wd3142.us.oracle.com">3142</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>HERMES</td>
+		 <td><a href="https://amomv0203.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-HERMES/hermes">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/Hermes">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					HERMES
+					<li><a href="ssh://trmace@amomv0203.us.oracle.com">Admin0203</a></li>
+					<li><a href="ssh://trmace@amomv0204.us.oracle.com">0204</a></li>
+					<li><a href="ssh://trmace@amomv0207.us.oracle.com">0207</a></li>
+					<li><a href="ssh://trmace@amomv0211.us.oracle.com">0211</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>PCore/WLS</td>
+		 <td><a href="https://wd3039.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-KMCORE%2Fpcore">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=70532842">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					PCore/KMCore
+					<li><a href="ssh://trmace@wd3039.us.oracle.com">Admin3039</a></li>
+					<li><a href="ssh://trmace@wd3040.us.oracle.com">3040</a></li>
+					<li><a href="ssh://trmace@wd3041.us.oracle.com">3041</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li>WSM&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					WSM Report
+					<li><a href="http://wd3085.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=int&env=prod">Int</a></li>
+					<li><a href="http://wd3085.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=ext&env=prod">Ext</a></li>
+				</ul></li></ul></nav></td>
+		 <td></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-WSMEXT%2Fias">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/MOS+WSM">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					WSM-EXT
+					<li><a href="ssh://trmace@wd3086.us.oracle.com">3086</a></li>
+					<li><a href="ssh://trmace@wd3087.us.oracle.com">3087</a></li>
+					WSM-INT
+					<li><a href="ssh://trmace@wd3084.us.oracle.com">3084</a></li>
+					<li><a href="ssh://trmace@wd3085.us.oracle.com">3085</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>BPEL</td>
+		 <td><a href="https://wd3083.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-BPEL%2Fmosbpel">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/MOS+BPEL">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					BPEL
+					<li><a href="ssh://trmace@wd3083.us.oracle.com">Admin3083</a></li>
+					<li><a href="ssh://trmace@wd3013.us.oracle.com">3013</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>KM11g</td>
+		 <td><a href="https://amomv0243.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-MOSKM%2Fmoskm">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/KMCore+11g">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					KM11g
+					<li><a href="ssh://trmace@amomv0243.us.oracle.com">Admin0243</a></li>
+					<li><a href="ssh://trmace@amomv0244.us.oracle.com">0244</a></li>
+					<li><a href="ssh://trmace@amomv0269.us.oracle.com">0269</a></li>
+					<li><a href="ssh://trmace@amomv0270.us.oracle.com">0270</a></li>				
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>SDK</td>
+		 <td><a href="https://amomv0261.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-MOSSDK%2Fmossdk">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/MOS+SDK">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SDK
+					<li><a href="ssh://trmace@amomv0261.us.oracle.com">Admin0261</a></li>
+					<li><a href="ssh://trmace@amomv0262.us.oracle.com">0262</a></li>				
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>OSuggest</td>
+		 <td><a href="https://wd3532.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-OSUGGEST%2Fosuggest">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/display/EKBA/OSuggests">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					OSuggest
+					<li><a href="ssh://trmace@wd3532.oracle.com">Admin3532</a></li>
+					<li><a href="ssh://trmace@wd3533.oracle.com">3533</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td colspan="5"></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>FM</td>
+		 <td><a href="https://amomv0114.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-MOSFM%2Fmosfm">SiV</a></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					FM-OHS
+					<li><a href="ssh://trmace@amomv0131.us.oracle.com">OHS0131</a></li>
+					<li><a href="ssh://trmace@amomv0135.us.oracle.com">OHS0135</a></li>
+					FM-WLS
+					<li><a href="ssh://trmace@amomv0114.us.oracle.com">Admin0114</a></li>
+					<li><a href="ssh://trmace@amomv0116.us.oracle.com">0116</a></li>
+					<li><a href="ssh://trmace@amomv0118.us.oracle.com">0118</a></li>
+					<li><a href="ssh://trmace@amomv0130.us.oracle.com">0130</a></li>
+					<li><a href="ssh://trmace@amomv0134.us.oracle.com">0134</a></li>
+					<li><a href="ssh://trmace@amomv0141.us.oracle.com">0141</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>PAC/ORAS</td>
+		 <td><a href="https://amomv0245.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-PROD-PAC%2Fportal_oel">SiV</a></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Glassfish
+					<li><a href="ssh://trmace@amogg0005.us.oracle.com">sun-0005</a></li>
+					<li><a href="ssh://trmace@amogg0006.us.oracle.com">sun-0006</a></li>
+					Linux
+					<li><a href="ssh://trmace@amomv0245.us.oracle.com">Admin0245</a></li>
+					<li><a href="ssh://trmace@amomv0246.us.oracle.com">0246</a></li>
+					JPs/Cachers/Zippers/BPs
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0001</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0002</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0003</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0004</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0005</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0006</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0007</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0008</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0009</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0010</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0011</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0012</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0013</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0014</a></li>
+					<li><a href="ssh://trmace@amomz0001.us.oracle.com">z0015</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>DXFSOL/OEL</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="margin: -20px">
+					<li><a href="https://amogg0005.us.oracle.com:7501/console">DXFSOL-Sun</s></li>
+					<li><a href="https://amomv0034.us.oracle.com:7501/console">DXFOEL-Linux</a></li>
+				</ul></li></ul></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-PROD-DXF%2Fdxfsol">SiV</a></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					DXFSOL-Sun
+					<li><a href="ssh://trmace@amogg0005.us.oracle.com">Admin0005-sras</a></li>
+					<li><a href="ssh://trmace@amogg0006.us.oracle.com">0006-sras</a></li>
+					DXFOEL-Linux
+					<li><a href="ssh://trmace@amomv0034.us.oracle.com">Admin0034</a></li>
+					<li><a href="ssh://trmace@amomv0036.us.oracle.com">0036</a></li>
+
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>TDS</td>
+		 <td><a href="https://amomv0105.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-PROD-TDS%2Ftds">SiV</a></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TDS
+					<li><a href="ssh://trmace@amomv0105.us.oracle.com">Admin0105</a></li>
+					<li><a href="ssh://trmace@amomv0107.us.oracle.com">0107</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://transport.oracle.com/SCRK/test/ping">Transport</a></td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="margin: -20px">
+					<li><a href="https://amomv0183.oracle.com:7501/console">External</a></li>
+					<li><a href="https://amomv0140.us.oracle.com:7501/console">Internal</a></li>
+				</ul></li></ul></nav></td>
+		 <!--<td><nav><ul><li>SiV&#9662;
+				<ul style="margin: -20px">
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-TRANSEXT%2Ftransport">External</a></li>
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-TRANSINT%2Ftransport">Internal</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Transport-EXT
+					<li><a href="ssh://trmace@amomv0182.oracle.com">OHS0182</a></li>
+					<li><a href="ssh://trmace@amomv0186.oracle.com">OHS0186</a></li>
+					<li><a href="ssh://trmace@amomv0183.oracle.com">Admin0183</a></li>
+					<li><a href="ssh://trmace@amomv0184.oracle.com">0184</a></li>
+					<li><a href="ssh://trmace@amomv0185.oracle.com">0185</a></li>
+					<li><a href="ssh://trmace@amomv0187.oracle.com">0187</a></li>
+					<li><a href="ssh://trmace@amomv0188.oracle.com">0188</a></li>
+					<li><a href="ssh://trmace@amomv0189.oracle.com">0189</a></li>
+					Transport-INT
+					<li><a href="ssh://trmace@amomv0139.us.oracle.com">OHS0139</a></li>
+					<li><a href="ssh://trmace@amomv0143.us.oracle.com">OHS0143</a></li>
+					<li><a href="ssh://trmace@amomv0140.us.oracle.com">Admin0140</a></li>
+					<li><a href="ssh://trmace@amomv0138.us.oracle.com">0138</a></li>
+					<li><a href="ssh://trmace@amomv0142.us.oracle.com">0142</a></li>
+					<li><a href="ssh://trmace@amomv0144.us.oracle.com">0144</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>ASR-FEMS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="margin: -20px">
+					<li><a href="https://amomv0159.us.oracle.com:7501/console">ASRFEMS-0159</a></li>
+					<li><a href="https://amomv0152.us.oracle.com:7501/console">ARSPORTAL-0152</a></li>
+					<li><a href="https://amomv0160.us.oracle.com:7501/console">ARSCORE-0160</a></li>
+				</ul></li></ul></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-PROD-NGASR%2Fasrfems">SiV</a></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					ASRFEMS
+					<li><a href="ssh://trmace@amomv0159.us.oracle.com">ASRFEMS-0159-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0156.us.oracle.com">ASRFEMS-0156</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0158.us.oracle.com">ASRFEMS-0158</a></li>
+					<li><a href="ssh://trmace@amomv0119.us.oracle.com">ASRFEMS-0119</a></li>
+					<li><a href="ssh://trmace@amomv0120.us.oracle.com">ASRFEMS-0120</a></li>
+					ASRPORTAL
+					<li><a href="ssh://trmace@amomv0152.us.oracle.com">ASRPORTAL-0152-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0157.us.oracle.com">ASRPORTAL-0157</a></li>
+					ASRCORE
+					<li><a href="ssh://trmace@amomv0160.us.oracle.com">ASRCORE-0160-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0155.us.oracle.com">ASRCORE-0155</a></li>
+					ASRIWT
+					<li><a href="ssh://trmace@amomv0154.us.oracle.com">ASRIWT-0154</a></li>
+					<li><a href="ssh://trmace@amomv0161.us.oracle.com">ASRIWT-0161</a></li>
+					ASREWT
+					<li><a href="ssh://trmace@amomv0177.oracle.com">ASREWT-0177</a></li>
+					<li><a href="ssh://trmace@amomv0178.oracle.com">ASREWT-0178</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://spruce-prod.us.oracle.com/controller.jsp">SPRUCE</a></td>
+		 <td></td>
+		 <!--<td></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td><!--<nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SPRUCE
+					<li><a href="ssh://trmace@amomv0025.us.oracle.com">OHS0025</a></li>
+					<li><a href="ssh://trmace@amomv0026.us.oracle.com">OHS0026</a></li>
+					<li><a href="ssh://trmace@amomv0032.us.oracle.com">Admin0032</a></li>
+					<li><a href="ssh://trmace@amomv0035.us.oracle.com">0035</a></li>
+				</div>
+				</ul></li></ul></nav>--></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>SHAREDSHELL</td>
+		 <td></td>
+		 <!--<td></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>ISDE</td>
+		 <td></td>
+		 <!--<td></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="http://mos-poirot.us.oracle.com/">Poirot</a></td>
+		 <td></td>
+		 <!--<td></td>
+		 <td><a href="https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?id=1919631.1">km</a></td>-->
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>TFA</td>
+		 <td></td>
+		 <!--<td></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=93029268">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TFA
+					<li><a href="ssh://trmace@amomv0900.us.oracle.com">0900</a></li>
+					<li><a href="ssh://trmace@amomv0901.us.oracle.com">0901</a></li>
+					<li><a href="ssh://trmace@amomv0902.us.oracle.com">0902</a></li>
+					<li><a href="ssh://trmace@amomv0903.us.oracle.com">0903</a></li>
+					<li><a href="ssh://trmace@amomv0904.us.oracle.com">0904</a></li>
+					<li><a href="ssh://trmace@amomv0905.us.oracle.com">0905</a></li>
+					<li><a href="ssh://trmace@amomv0906.us.oracle.com">0906</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>AIS</td>
+		 <td><a href="https://amomv0037.us.oracle.com:7501/console">console</a></td>
+		 <!--<td></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=91225415">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					AIS
+					<li><a href="ssh://trmace@amomv0037.us.oracle.com">0037</a></li>
+					<li><a href="ssh://trmace@amomv0038.us.oracle.com">0038</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>CRS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CRS
+					<li><a href="https://amomv0049.us.oracle.com:7501/console">cnsl0049</a></li>
+					<li><a href="https://amomv0045.us.oracle.com:7501/console">mgmt0045</a></li>
+				</ul></li></ul></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-CRS%2FITAS">SiV</a></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=91225765">km</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CRS
+					<li><a href="ssh://trmace@amomv0044.us.oracle.com">0044</a></li>
+					<li><a href="ssh://trmace@amomv0045.us.oracle.com">0045</a></li>
+					<li><a href="ssh://trmace@amomv0048.us.oracle.com">0048</a></li>
+					<li><a href="ssh://trmace@amomv0049.us.oracle.com">0049</a></li>
+					<li><a href="ssh://trmace@amomv0050.us.oracle.com">0050</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>MYST</td>
+		 <td></td>
+		 <!--<td></td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/pages/viewpage.action?pageId=78696911"></a>.</td>-->
+		 <td></td>
+		</tr>
+
+
+    </tbody>
+  </table></br>
+
+
+<!-- end -->
+</td>
+   <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; border-style: none solid solid solid; background-color: #fff; ">
+<!-- start --->
+
+</br>
+  <strong>UAT</strong></br>
+	<table>
+	<tbody>
+		<tr style="background-color: #fff;">
+		 <td style="width: 25%;">OHS</td>
+		 <td style="width: 15%;"></td>
+		 <!--<td style="width: 10%;"></td>-->
+		 <td style="width: 10%;"><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EWT	  
+					<li><a href="ssh://trmace@wd2437.us.oracle.com">2437</a></li>
+					IWT
+					<li><a href="ssh://trmace@wd2390.us.oracle.com">2390</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://uat-callcenter.us.oracle.com/callcenter_enu/">CC</a></td>
+		 <td></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-CALLCENTERSERVER%2Fsiebsrvr">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CC
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="http://uat-metalink3.us.oracle.com/">ISP</a></td>
+		 <td><nav><ul><li>em&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="http://wd2005.us.oracle.com:7777/em">2005AS1</a></li>
+					<li><a href="http://wd2257.us.oracle.com:7777/em">2257AS1</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-IP%2Fias">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="ssh://trmace@wd2005.us.oracle.com">2005</a></li>
+					<li><a href="ssh://trmace@wd2257.us.oracle.com">2257</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>EP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="https://uat-mosemp.us.oracle.com/">MOSEMP</a></li>
+					<li><a href="https://uat-mosemp.us.oracle.com/mosspui/src/main/container/index.html">NSP</a></li>
+					<li><a href="https://uat-mosemp.us.oracle.com/mobi">Mobile</a></li>
+					<li><a href="https://uat-mosemp-lite.us.oracle.com/kmlite/faces/ui/sp/SRViewer.jspx">SR Lite</a></li>
+					<li><a href="https://uat-mosemp-lite.us.oracle.com/">KM Lite-Int</a></li>
+					<li><a href="https://uat-mosemp.us.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://wd2423.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-MOSEP%2Fmosemp">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EP
+					<li><a href="ssh://trmace@wd2423.us.oracle.com">Admin2423</a></li>
+					<li><a href="ssh://trmace@wd2426.us.oracle.com">2426</a></li>
+					<li><a href="ssh://trmace@umomp4001.us.oracle.com">PFS4001</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>CP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="http://uat-support.us.oracle.com/">MOSCP</a></li>
+					<li><a href="http://uat-support.us.oracle.mobi/">Mobile</a></li>
+					<li><a href="https://uat-support-lite.us.oracle.com/">KM Lite-Ext</a></li>
+					<li><a href="https://uat-support.us.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://wd2411.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-MOSCP%2Fmosp">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CP
+					<li><a href="ssh://trmace@wd2411.us.oracle.com">Admin2411</a></li>
+					<li><a href="ssh://trmace@wd2413.us.oracle.com">2413</a></li>
+					<li><a href="ssh://trmace@umomv2104.us.oracle.com">API2104</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><strong>VOX</strong></td>
+		 <td><a href="https://umomv2100.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-VOXDASH%2Fvox">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 1;">
+					<li><a href="ssh://trmace@umomv2100.us.oracle.com">admin2100</a></li>
+					<li><a href="ssh://trmace@umomv2101.us.oracle.com">2101</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="https://updatecenter-uat.us.oracle.com/apps/WebSearch/updatecenter.jsp">JDE</a></td>
+		 <td><a href="https://umomv3253.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-JDEUC%2FUC">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					JDE-OHS
+					<li><a href="ssh://trmace@stm122.us.oracle.com">OHS122</a></li>
+					<li><a href="ssh://trmace@stm123.us.oracle.com">OHS123</a></li>
+					JDE-WLS
+					<li><a href="ssh://trmace@umomv3253.us.oracle.com">Admin3253</a></li>
+					<li><a href="ssh://trmace@umomv3254.us.oracle.com">3254</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="http://slc03qpt.us.oracle.com:8001/edp/faces/home">EDP</a></td>
+		 <td><a href="http://slc03qpt.us.oracle.com:7001/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-EDP%2Fedp">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EDP-WLS
+					<li><a href="ssh://trmace@slc03qpt.us.oracle.com">slc03qpt</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>NGCCR&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					CONTDIAG
+					<li><a href="https://umomv4164.us.oracle.com:7799/em">4164</a></li>
+					NGCCR
+					<li><a href="https://umomv4199.us.oracle.com:7799/em">4199</a></li>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CONTDIAG
+					<li><a href="https://umomv4164.us.oracle.com:7501/console">4164</a></li>
+					NGCCR
+					<li><a href="https://umomv4199.us.oracle.com:7501/console">4199</a></li>
+				</ul></ul></li></nav></td>
+		 <!--<td><nav><ul><li>SiV&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-NGCCRCONTDIAG%2Fngccr">contdiag</a></li>
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-NGCCR%2Ffmw">ngccr-weblogic</a></li>
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-NGCCRDB%2Fccrems">ngccr-sysman</a></li>
+				</ul></ul></li></nav></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CONTDIAG
+					<li><a href="ssh://trmace@umomv4160.us.oracle.com">OHS4160</a></li>
+					<li><a href="ssh://trmace@umomv4161.us.oracle.com">OHS4161</a></li>
+					<li><a href="ssh://trmace@umomv4164.us.oracle.com">Admin4164</a></li>
+					<li><a href="ssh://trmace@umomv4165.us.oracle.com">4165</a></li>
+					NGCCR
+					<li><a href="ssh://trmace@umomv4199.us.oracle.com">Admin4199</a></li>
+					<li><a href="ssh://trmace@umomv4200.us.oracle.com">4200-down</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>NGSES&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+				<div style="column-count: 2;">
+					BackEnd Search
+					<li><a href="http://umomv4296.us.oracle.com:8001/search/query">4296</a></li>
+					<li><a href="http://umomv4297.us.oracle.com:8001/search/query">4297</a></li>
+					Admin
+					<li><a href="http://umomv4296.us.oracle.com:8001/search/admin">4296</a></li>
+					<li><a href="http://umomv4297.us.oracle.com:8001/search/admin">4297</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <td><a href="http://umomv4296.us.oracle.com:7001/console">console</a></td>
+		 <!--<td><nav><ul><li>SiV&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-NGSES%2Forases">weblogic</a></li>
+					<li><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-NGSESDB%2Fsesems">searchsys</a></li>
+				</ul></ul></li></nav></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SES
+					<li><a href="ssh://trmace@umomv4296.us.oracle.com">Admin4296</a></li>
+					<li><a href="ssh://trmace@umomv4297.us.oracle.com">4297</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li>InQuira&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					InQuira
+					<li><a href="http://umomv4323.us.oracle.com:8001/inquirawb/app">KBCMTY</a></li>
+					<li><a href="http://umomv4324.us.oracle.com:8001/inquirawb/app">DOC</a></li>
+					<li><a href="http://umomv4326.us.oracle.com:8001/inquirawb/app">PATCH</a></li>
+				</ul></li></ul></nav></td>
+ 		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 600px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="https://umomv4323.us.oracle.com:7501/console"><strong>KbCmty:</strong>SW</a></li>
+					<li><a href="https://umomv4327.us.oracle.com:7501/console"><strong>KbCmty:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="https://umomv4324.us.oracle.com:7501/console"><strong>Doc:</strong>SW</a></li>
+					<li><a href="https://umomv4328.us.oracle.com:7501/console"><strong>Doc:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="https://umomv4326.us.oracle.com:7501/console"><strong>Patch:</strong>SW</a></li>
+					<li><a href="https://umomv4330.us.oracle.com:7501/console"><strong>Patch:</strong><hyb>rt1</hyb></a></li>
+				</div>
+				</ul></ul></li></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-INQRTKBCM%2Fknowledge">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="ssh://trmace@umomv4323.us.oracle.com"><strong>4323-KbCmty:</strong>SW</a></li>
+					<li><a href="ssh://trmace@umomv4327.us.oracle.com"><strong>4327-KbCmty:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="ssh://trmace@umomv4324.us.oracle.com"><strong>4324-Doc:</strong>SW</a></li>
+					<li><a href="ssh://trmace@umomv4328.us.oracle.com"><strong>4328-Doc:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="ssh://trmace@umomv4326.us.oracle.com"><strong>4326-Patch:</strong>SW</a></li>
+					<li><a href="ssh://trmace@umomv4330.us.oracle.com"><strong>4330-Patch:</strong><hyb>rt1</hyb></a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+
+		<tr style="background-color: #eee;">
+		 <td>Elastic Search</td>
+		 <td><a href="http://uat-mos-km-es-search.us.oracle.com">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-KMELASTIC%2Fkmelastic">SiV</a></td> -->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Elastic Search
+					<li><a href="ssh://trmace@umomv4384.us.oracle.com">Admin4384</a></li>
+					<li><a href="ssh://trmace@umomv4385.us.oracle.com">4385</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>GR</td>
+		 <td><a href="https://wd2359.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-GR%2Fmosgr">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					GR
+					<li><a href="ssh://trmace@wd2359.us.oracle.com">Admin2359</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>HERMES</td>
+		 <td><a href="https://umomv4210.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-HERMES%2Fhermes">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					HERMES
+					<li><a href="ssh://trmace@umomv4210.us.oracle.com">Admin4210</a></li>
+					<li><a href="ssh://trmace@umomv4211.us.oracle.com">4211</a></li>
+					<li><a href="ssh://trmace@umomv4212.us.oracle.com">4212</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>PCore/WLS</td>
+		 <td><a href="https://wd2042.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-KMCORE%2Fpcore">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					PCore/KMcore
+					<li><a href="ssh://trmace@wd2042.us.oracle.com">Admin2042</a></li>
+					<li><a href="ssh://trmace@wd2262.us.oracle.com">2262</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li>WSM&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					WSM Report
+					<li><a href="http://wd2006.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=int">Int</a></li>
+					<li><a href="http://wd2006.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=ext">Ext</a></li>
+				</ul></li></ul></nav></td>
+		 <td></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-WSMEXT%2Fias">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					WSM-EXT
+					<li><a href="ssh://trmace@wd2264.us.oracle.com">2264</a></li>
+					<li><a href="ssh://trmace@wd2265.us.oracle.com">2265</a></li>
+					WSM-INT
+					<li><a href="ssh://trmace@wd2263.us.oracle.com">2263</a></li>
+					<li><a href="ssh://trmace@wd2006.us.oracle.com">2006</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>BPEL</td>
+		 <td><a href="https://wd2245.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-BPEL%2Fmosbpel">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					BPEL
+					<li><a href="ssh://trmace@wd2245.us.oracle.com">Admin2245</a></li>
+					<li><a href="ssh://trmace@wd2266.us.oracle.com">2266</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>KM11g</td>
+		 <td><a href="https://umomv4294.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-MOSKM%2Fmoskm">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					KM11g
+					<li><a href="ssh://trmace@umomv4294.us.oracle.com">Admin4294</a></li>
+					<li><a href="ssh://trmace@umomv4295.us.oracle.com">4295</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>SDK</td>
+		 <td><a href="https://umomv4333.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-MOSSDK%2Fmossdk">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SDK
+					<li><a href="ssh://trmace@umomv4333.us.oracle.com">Admin4333</a></li>
+					<li><a href="ssh://trmace@umomv4334.us.oracle.com">4334</a></li>				
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>OSuggest</td>
+		 <td><a href="https://wd2363.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-UAT-OSUGGEST%2Fosuggest">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					OSuggest
+					<li><a href="ssh://trmace@wd2363.us.oracle.com">Admin2363</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td colspan="5"></td>
+		</tr>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>FM</td>
+		 <td><a href="https://wd2267.us.oracle.com:7501/console">console</a></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-MOSFM%2Fmosfm">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					FM-OHS
+					<li><a href="ssh://trmace@umomv4197.us.oracle.com">4197</a></li>
+					<li><a href="ssh://trmace@amomv0135.us.oracle.com"></a></li>
+					FM-WLS
+					<li><a href="ssh://trmace@wd2267.us.oracle.com">Admin2267</a></li>
+					<li><a href="ssh://trmace@wd2268.us.oracle.com">2268</a></li>
+					<li><a href="ssh://trmace@umomv2103.us.oracle.com">2103</a></li>
+					<li><a href="ssh://trmace@umomv5197.us.oracle.com">5197</a></li>
+					<li><a href="ssh://trmace@umomv5198.us.oracle.com">5198</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-PAC/ORAS</td>
+		 <td><a href="https://amomv0245.oracle.com:7501/console">console</a></td>
+		 <!--<td></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ORAS
+					<li><a href="ssh://trmace@amomv0245.us.oracle.com">Admin0245</a></li>
+					<li><a href="ssh://trmace@amomv0246.us.oracle.com">0246</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-DXFSOL/OEL</td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					CXFOEL
+					<li><a href="ssh://trmace@amomv0034.us.oracle.com">Admin0034</a></li>
+					<li><a href="ssh://trmace@amomv0036.us.oracle.com">0036</a></li>
+					<li><a href="ssh://trmace@amogg0005.us.oracle.com">amogg0005-sras</a></li>
+					<li><a href="ssh://trmace@amogg0006.us.oracle.com">amogg0006-sras</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-TDS</td>
+		 <td><a href="https://amomv0105.us.oracle.com:7501/console">console</a></td>
+		 <!--<td></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TDS
+					<li><a href="ssh://trmace@amomv0105.us.oracle.com">Admin0105</a></li>
+					<li><a href="ssh://trmace@amomv0107.us.oracle.com">0107</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://transport.oracle.com/SCRK/test/ping">-Transport</a></td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Transport-EXT
+					<li><a href="ssh://trmace@amomv0182.oracle.com">OHS0182</a></li>
+					<li><a href="ssh://trmace@amomv0186.oracle.com">OHS0186</a></li>
+					<li><a href="ssh://trmace@amomv0183.oracle.com">Admin0183</a></li>
+					<li><a href="ssh://trmace@amomv0184.oracle.com">0184</a></li>
+					<li><a href="ssh://trmace@amomv0185.oracle.com">0185</a></li>
+					<li><a href="ssh://trmace@amomv0187.oracle.com">0187</a></li>
+					<li><a href="ssh://trmace@amomv0188.oracle.com">0188</a></li>
+					<li><a href="ssh://trmace@amomv0189.oracle.com">0189</a></li>
+					Transport-INT
+					<li><a href="ssh://trmace@amomv0139.us.oracle.com">OHS0139</a></li>
+					<li><a href="ssh://trmace@amomv0143.us.oracle.com">OHS0143</a></li>
+					<li><a href="ssh://trmace@amomv0140.us.oracle.com">Admin0140</a></li>
+					<li><a href="ssh://trmace@amomv0138.us.oracle.com">0138</a></li>
+					<li><a href="ssh://trmace@amomv0142.us.oracle.com">0142</a></li>
+					<li><a href="ssh://trmace@amomv0144.us.oracle.com">0144</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-ASR-FEMS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					<li><a href="https://amomv0159.us.oracle.com:7501/console">ASRFEMS-0159</a></li>
+					<li><a href="https://amomv0152.us.oracle.com:7501/console">ARSPORTAL-0152</a></li>
+					<li><a href="https://amomv0160.us.oracle.com:7501/console">ARSCORE-0160</a></li>
+				</ul></li></ul></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-PROD-NGASR%2Fasrfems">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					ASRFEMS
+					<li><a href="ssh://trmace@amomv0159.us.oracle.com">ASRFEMS-0159-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0156.us.oracle.com">ASRFEMS-0156</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0158.us.oracle.com">ASRFEMS-0158</a></li>
+					<li><a href="ssh://trmace@amomv0119.us.oracle.com">ASRFEMS-0119</a></li>
+					<li><a href="ssh://trmace@amomv0120.us.oracle.com">ASRFEMS-0120</a></li>
+					ASRPORTAL
+					<li><a href="ssh://trmace@amomv0152.us.oracle.com">ASRPORTAL-0152-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0157.us.oracle.com">ASRPORTAL-0157</a></li>
+					ASRCORE
+					<li><a href="ssh://trmace@amomv0160.us.oracle.com">ASRCORE-0160-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0155.us.oracle.com">ASRCORE-0155</a></li>
+					ASRIWT
+					<li><a href="ssh://trmace@amomv0154.us.oracle.com">ASRIWT-0154</a></li>
+					<li><a href="ssh://trmace@amomv0161.us.oracle.com">ASRIWT-0161</a></li>
+					ASREWT
+					<li><a href="ssh://trmace@amomv0177.oracle.com">ASREWT-0177</a></li>
+					<li><a href="ssh://trmace@amomv0178.oracle.com">ASREWT-0178</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://spruce-stage.us.oracle.com/controller.jsp">SPRUCE</a></td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td><!--<nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SPRUCE
+					<li><a href="ssh://trmace@amomv0025.us.oracle.com">OHS0025</a></li>
+					<li><a href="ssh://trmace@amomv0026.us.oracle.com">OHS0026</a></li>
+					<li><a href="ssh://trmace@amomv0032.us.oracle.com">Admin0032</a></li>
+					<li><a href="ssh://trmace@amomv0035.us.oracle.com">0035</a></li>
+				</div>
+				</ul></li></ul></nav>--></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-SS</td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-ISDE</td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="http://mos-poirot.us.oracle.com/">-Poirot</a></td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-TFA</td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TFA
+					<li><a href="ssh://trmace@amomv0900.us.oracle.com">0900</a></li>
+					<li><a href="ssh://trmace@amomv0901.us.oracle.com">0901</a></li>
+					<li><a href="ssh://trmace@amomv0902.us.oracle.com">0902</a></li>
+					<li><a href="ssh://trmace@amomv0903.us.oracle.com">0903</a></li>
+					<li><a href="ssh://trmace@amomv0904.us.oracle.com">0904</a></li>
+					<li><a href="ssh://trmace@amomv0905.us.oracle.com">0905</a></li>
+					<li><a href="ssh://trmace@amomv0906.us.oracle.com">0906</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-AIS</td>
+		 <td><a href="https://amomv0037.us.oracle.com:7501/console">console</a></td>
+		 <!--<td></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					AIS
+					<li><a href="ssh://trmace@amomv0037.us.oracle.com">0037</a></li>
+					<li><a href="ssh://trmace@amomv0038.us.oracle.com">0038</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-CRS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CRS
+					<li><a href="https://amomv0049.us.oracle.com:7501/console">cnsl0049</a></li>
+					<li><a href="https://amomv0045.us.oracle.com:7501/console">mgmt0045</a></li>
+				</ul></li></ul></nav></td>
+		 <!--<td><a href="https://SiV.oraclecorp.com/eEye.RetinaCS.Server/PasswordSafe/#/accounts/accounts/status=Systems&system=PDIT-MOS-Prod-CRS%2FITAS">SiV</a></td>-->
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CRS
+					<li><a href="ssh://trmace@amomv0044.us.oracle.com">0044</a></li>
+					<li><a href="ssh://trmace@amomv0045.us.oracle.com">0045</a></li>
+					<li><a href="ssh://trmace@amomv0048.us.oracle.com">0048</a></li>
+					<li><a href="ssh://trmace@amomv0049.us.oracle.com">0049</a></li>
+					<li><a href="ssh://trmace@amomv0050.us.oracle.com">0050</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-MYST</td>
+		 <td></td>
+		 <!--<td></td>-->
+		 <td></td>
+		</tr>
+    </tbody>
+  </table></br>
+
+
+<!-- end -->
+</td>
+   <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; border-style: none solid solid solid; background-color: #fff; ">
+<!-- start --->
+
+
+</br>
+  <strong>Stage</strong></br>
+	<table>
+	<tbody>
+		<tr style="background-color: #fff;">
+		 <td style="width: 25%;">OHS</td>
+		 <td style="width: 15%;"></td>
+		 <td style="width: 10%;"><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 1;">
+					EWT	  
+					<li><a href="ssh://oracle@slce26vm128.us.oracle.com">128</a></li>
+					IWT
+					<li><a href="ssh://oracle@slce26vm296.us.oracle.com">296</a></li>
+					Ext-STG
+					<li><a href="ssh://umomv0070.oracle.com'">0070</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://ue-stage-mos-callcenter.us.oracle.com/callcenter_enu">CC</a></td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CC Gateway
+					<li><a href="ssh://oracle@slce26vm069.us.oracle.com">069</a></li>
+					CC Server
+					<li><a href="ssh://oracle@slce26vm097.us.oracle.com">097</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="https://ue-stage-mos-metalink3.us.oracle.com/">ISP</a></td>
+		 <td><nav><ul><li>em&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="http://slce26vm147.us.oracle.com:7777/em">147AS1</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="ssh://oracle@slce26vm147.us.oracle.com">147</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>EP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="https://ue-stage-mos-emp.us.oracle.com/">MOSEMP</a></li>
+					<li><a href="https://ue-stage-mos-emp.us.oracle.com/mosspui/src/main/container/index.html">NSP</a></li>
+					<li><a href="https://ue-stage-mos-emp.us.oracle.com/mobi">Mobile</a></li>
+					<li><a href="https://ue-stage-mosemp-lite.us.oracle.com/kmlite/faces/ui/sp/SRViewer.jspx">SR Lite</a></li>
+					<li><a href="https://ue-stage-mosemp-lite.us.oracle.com/">KM Lite-Int</a></li>
+					<li><a href="https://ue-stage-mos-emp.us.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://slce26vm093.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EP
+					<li><a href="ssh://oracle@slce26vm093.us.oracle.com">093</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>CP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="http://ue-stage-mos-support.us.oracle.com/">MOSCP</a></li>
+					<li><a href="http://ue-stage-mos-support.us.oracle.mobi/">Mobile</a></li>
+					<li><a href="https://ue-stage-support-lite.us.oracle.com/">KM Lite-Ext</a></li>
+					<li><a href="https://ue-stage-mos-support.us.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://slce26vm121.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CP
+					<li><a href="ssh://oracle@slce26vm121.us.oracle.com">097</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><strong>VOX</strong></td>
+		 <td><a href="http://umems001.us.oracle.com:7001/console">console</a></td>
+		 <td><a href="ssh://oracle@umems001.us.oracle.com">ssh</a></td>		
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="https://updatecenter-uat.us.oracle.com/apps/WebSearch/updatecenter.jsp">-JDE</a></td>
+		 <td><a href="https://umomv3253.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					JDE-OHS
+					<li><a href="ssh://trmace@stm122.us.oracle.com">OHS122</a></li>
+					<li><a href="ssh://trmace@stm123.us.oracle.com">OHS123</a></li>
+					JDE-WLS
+					<li><a href="ssh://trmace@umomv3253.us.oracle.com">Admin3253</a></li>
+					<li><a href="ssh://trmace@umomv3254.us.oracle.com">3254</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="http://slc03qpt.us.oracle.com:8001/edp/faces/home">-EDP</a></td>
+		 <td><a href="http://slc03qpt.us.oracle.com:7001/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EDP-WLS
+					<li><a href="ssh://trmace@slc03qpt.us.oracle.com">slc03qpt</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>NGCCR&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					CONTDIAG
+					<li><a href="https://slce26vm043.us.oracle.com:7799/em">043</a></li>
+					NGCCR
+					<li><a href="https://slce26vm432.us.oracle.com:7799/em">432</a></li>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CONTDIAG
+					<li><a href="https://slce26vm043.us.oracle.com:7501/console">043</a></li>
+					NGCCR
+					<li><a href="https://umems432.us.oracle.com:7501/console">432</a></li>
+				</ul></ul></li></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CONTDIAG
+					<li><a href="ssh://oracle@slce26vm043.us.oracle.com">043</a></li>
+					NGCCR
+					<li><a href="ssh://oracle@umems432.us.oracle.com">432</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>NGSES&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+				<div style="column-count: 2;">
+					BackEnd Search
+					<li><a href="http://slce26vm284.us.oracle.com:8001/search/query">284</a></li>
+					Admin
+					<li><a href="http://slce26vm284.us.oracle.com:8001/search/admin">284</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <td><a href="http://slce26vm284.us.oracle.com:7001/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SES
+					<li><a href="ssh://oracle@slce26vm284.us.oracle.com">284</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li>-InQuira&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					InQuira
+					<li><a href="http://umomv4323.us.oracle.com:8001/inquirawb/app">KBCMTY</a></li>
+					<li><a href="http://umomv4324.us.oracle.com:8001/inquirawb/app">DOC</a></li>
+					<li><a href="http://umomv4326.us.oracle.com:8001/inquirawb/app">PATCH</a></li>
+				</ul></li></ul></nav></td>
+ 		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 600px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="https://umomv4323.us.oracle.com:7501/console"><strong>KbCmty:</strong>SW</a></li>
+					<li><a href="https://umomv4327.us.oracle.com:7501/console"><strong>KbCmty:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="https://umomv4324.us.oracle.com:7501/console"><strong>Doc:</strong>SW</a></li>
+					<li><a href="https://umomv4328.us.oracle.com:7501/console"><strong>Doc:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="https://umomv4326.us.oracle.com:7501/console"><strong>Patch:</strong>SW</a></li>
+					<li><a href="https://umomv4330.us.oracle.com:7501/console"><strong>Patch:</strong><hyb>rt1</hyb></a></li>
+				</div>
+				</ul></ul></li></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="ssh://trmace@umomv4323.us.oracle.com"><strong>4323-KbCmty:</strong>SW</a></li>
+					<li><a href="ssh://trmace@umomv4327.us.oracle.com"><strong>4327-KbCmty:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="ssh://trmace@umomv4324.us.oracle.com"><strong>4324-Doc:</strong>SW</a></li>
+					<li><a href="ssh://trmace@umomv4328.us.oracle.com"><strong>4328-Doc:</strong><hyb>rt1</hyb></a></li>
+					<li><a href="ssh://trmace@umomv4326.us.oracle.com"><strong>4326-Patch:</strong>SW</a></li>
+					<li><a href="ssh://trmace@umomv4330.us.oracle.com"><strong>4330-Patch:</strong><hyb>rt1</hyb></a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+
+		<tr style="background-color: #eee;">
+		 <td>-MOSES</td>
+		 <td><a href="http://uat-mos-km-es-search.us.oracle.com">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Elastic Search
+					<li><a href="ssh://trmace@umomv4384.us.oracle.com">Admin4384</a></li>
+					<li><a href="ssh://trmace@umomv4385.us.oracle.com">4385</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-GR</td>
+		 <td><a href="https://wd2359.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					GR
+					<li><a href="ssh://trmace@wd2359.us.oracle.com">Admin2359</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-HERMES</td>
+		 <td><a href="https://umomv4210.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					HERMES
+					<li><a href="ssh://trmace@umomv4210.us.oracle.com">Admin4210</a></li>
+					<li><a href="ssh://trmace@umomv4211.us.oracle.com">4211</a></li>
+					<li><a href="ssh://trmace@umomv4212.us.oracle.com">4212</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-PCore/WLS</td>
+		 <td><a href="https://wd2042.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					PCore/KMcore
+					<li><a href="ssh://trmace@wd2042.us.oracle.com">Admin2042</a></li>
+					<li><a href="ssh://trmace@wd2262.us.oracle.com">2262</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li>-WSM&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					WSM Report
+					<li><a href="http://wd2006.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=int">Int</a></li>
+					<li><a href="http://wd2006.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=ext">Ext</a></li>
+				</ul></li></ul></nav></td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					WSM-EXT
+					<li><a href="ssh://trmace@wd2264.us.oracle.com">2264</a></li>
+					<li><a href="ssh://trmace@wd2265.us.oracle.com">2265</a></li>
+					WSM-INT
+					<li><a href="ssh://trmace@wd2263.us.oracle.com">2263</a></li>
+					<li><a href="ssh://trmace@wd2006.us.oracle.com">2006</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-BPEL</td>
+		 <td><a href="https://wd2245.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					BPEL
+					<li><a href="ssh://trmace@wd2245.us.oracle.com">Admin2245</a></li>
+					<li><a href="ssh://trmace@wd2266.us.oracle.com">2266</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-KM11g</td>
+		 <td><a href="https://umomv4294.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					KM11g
+					<li><a href="ssh://trmace@umomv4294.us.oracle.com">Admin4294</a></li>
+					<li><a href="ssh://trmace@umomv4295.us.oracle.com">4295</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-SDK</td>
+		 <td><a href="https://umomv4333.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SDK
+					<li><a href="ssh://trmace@umomv4333.us.oracle.com">Admin4333</a></li>
+					<li><a href="ssh://trmace@umomv4334.us.oracle.com">4334</a></li>				
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-OSuggest</td>
+		 <td><a href="https://wd2363.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					OSuggest
+					<li><a href="ssh://trmace@wd2363.us.oracle.com">Admin2363</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td colspan="5"></td>
+		</tr>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-FM</td>
+		 <td><a href="https://amomv0114.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					FM-OHS
+					<li><a href="ssh://trmace@amomv0131.us.oracle.com">OHS0131</a></li>
+					<li><a href="ssh://trmace@amomv0135.us.oracle.com">OHS0135</a></li>
+					FM-WLS
+					<li><a href="ssh://trmace@amomv0114.us.oracle.com">Admin0114</a></li>
+					<li><a href="ssh://trmace@amomv0116.us.oracle.com">0116</a></li>
+					<li><a href="ssh://trmace@amomv0118.us.oracle.com">0118</a></li>
+					<li><a href="ssh://trmace@amomv0130.us.oracle.com">0130</a></li>
+					<li><a href="ssh://trmace@amomv0134.us.oracle.com">0134</a></li>
+					<li><a href="ssh://trmace@amomv0141.us.oracle.com">0141</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-PAC/ORAS</td>
+		 <td><a href="https://amomv0245.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ORAS
+					<li><a href="ssh://trmace@amomv0245.us.oracle.com">Admin0245</a></li>
+					<li><a href="ssh://trmace@amomv0246.us.oracle.com">0246</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-DXFSOL/OEL</td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					CXFOEL
+					<li><a href="ssh://trmace@amomv0034.us.oracle.com">Admin0034</a></li>
+					<li><a href="ssh://trmace@amomv0036.us.oracle.com">0036</a></li>
+					<li><a href="ssh://trmace@amogg0005.us.oracle.com">amogg0005-sras</a></li>
+					<li><a href="ssh://trmace@amogg0006.us.oracle.com">amogg0006-sras</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-TDS</td>
+		 <td><a href="https://amomv0105.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TDS
+					<li><a href="ssh://trmace@amomv0105.us.oracle.com">Admin0105</a></li>
+					<li><a href="ssh://trmace@amomv0107.us.oracle.com">0107</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://transport.oracle.com/SCRK/test/ping">-Transport</a></td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Transport-EXT
+					<li><a href="ssh://trmace@amomv0182.oracle.com">OHS0182</a></li>
+					<li><a href="ssh://trmace@amomv0186.oracle.com">OHS0186</a></li>
+					<li><a href="ssh://trmace@amomv0183.oracle.com">Admin0183</a></li>
+					<li><a href="ssh://trmace@amomv0184.oracle.com">0184</a></li>
+					<li><a href="ssh://trmace@amomv0185.oracle.com">0185</a></li>
+					<li><a href="ssh://trmace@amomv0187.oracle.com">0187</a></li>
+					<li><a href="ssh://trmace@amomv0188.oracle.com">0188</a></li>
+					<li><a href="ssh://trmace@amomv0189.oracle.com">0189</a></li>
+					Transport-INT
+					<li><a href="ssh://trmace@amomv0139.us.oracle.com">OHS0139</a></li>
+					<li><a href="ssh://trmace@amomv0143.us.oracle.com">OHS0143</a></li>
+					<li><a href="ssh://trmace@amomv0140.us.oracle.com">Admin0140</a></li>
+					<li><a href="ssh://trmace@amomv0138.us.oracle.com">0138</a></li>
+					<li><a href="ssh://trmace@amomv0142.us.oracle.com">0142</a></li>
+					<li><a href="ssh://trmace@amomv0144.us.oracle.com">0144</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-ASR-FEMS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					<li><a href="https://amomv0159.us.oracle.com:7501/console">ASRFEMS-0159</a></li>
+					<li><a href="https://amomv0152.us.oracle.com:7501/console">ARSPORTAL-0152</a></li>
+					<li><a href="https://amomv0160.us.oracle.com:7501/console">ARSCORE-0160</a></li>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					ASRFEMS
+					<li><a href="ssh://trmace@amomv0159.us.oracle.com">ASRFEMS-0159-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0156.us.oracle.com">ASRFEMS-0156</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0158.us.oracle.com">ASRFEMS-0158</a></li>
+					<li><a href="ssh://trmace@amomv0119.us.oracle.com">ASRFEMS-0119</a></li>
+					<li><a href="ssh://trmace@amomv0120.us.oracle.com">ASRFEMS-0120</a></li>
+					ASRPORTAL
+					<li><a href="ssh://trmace@amomv0152.us.oracle.com">ASRPORTAL-0152-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0157.us.oracle.com">ASRPORTAL-0157</a></li>
+					ASRCORE
+					<li><a href="ssh://trmace@amomv0160.us.oracle.com">ASRCORE-0160-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0155.us.oracle.com">ASRCORE-0155</a></li>
+					ASRIWT
+					<li><a href="ssh://trmace@amomv0154.us.oracle.com">ASRIWT-0154</a></li>
+					<li><a href="ssh://trmace@amomv0161.us.oracle.com">ASRIWT-0161</a></li>
+					ASREWT
+					<li><a href="ssh://trmace@amomv0177.oracle.com">ASREWT-0177</a></li>
+					<li><a href="ssh://trmace@amomv0178.oracle.com">ASREWT-0178</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://spruce-stage.us.oracle.com/controller.jsp">SPRUCE</a></td>
+		 <td></td>
+		 <td><!--<nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SPRUCE
+					<li><a href="ssh://trmace@amomv0025.us.oracle.com">OHS0025</a></li>
+					<li><a href="ssh://trmace@amomv0026.us.oracle.com">OHS0026</a></li>
+					<li><a href="ssh://trmace@amomv0032.us.oracle.com">Admin0032</a></li>
+					<li><a href="ssh://trmace@amomv0035.us.oracle.com">0035</a></li>
+				</div>
+				</ul></li></ul></nav>--></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-SS</td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-ISDE</td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="http://mos-poirot.us.oracle.com/">-Poirot</a></td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-TFA</td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TFA
+					<li><a href="ssh://trmace@amomv0900.us.oracle.com">0900</a></li>
+					<li><a href="ssh://trmace@amomv0901.us.oracle.com">0901</a></li>
+					<li><a href="ssh://trmace@amomv0902.us.oracle.com">0902</a></li>
+					<li><a href="ssh://trmace@amomv0903.us.oracle.com">0903</a></li>
+					<li><a href="ssh://trmace@amomv0904.us.oracle.com">0904</a></li>
+					<li><a href="ssh://trmace@amomv0905.us.oracle.com">0905</a></li>
+					<li><a href="ssh://trmace@amomv0906.us.oracle.com">0906</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-AIS</td>
+		 <td><a href="https://amomv0037.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					AIS
+					<li><a href="ssh://trmace@amomv0037.us.oracle.com">0037</a></li>
+					<li><a href="ssh://trmace@amomv0038.us.oracle.com">0038</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-CRS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CRS
+					<li><a href="https://amomv0049.us.oracle.com:7501/console">cnsl0049</a></li>
+					<li><a href="https://amomv0045.us.oracle.com:7501/console">mgmt0045</a></li>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CRS
+					<li><a href="ssh://trmace@amomv0044.us.oracle.com">0044</a></li>
+					<li><a href="ssh://trmace@amomv0045.us.oracle.com">0045</a></li>
+					<li><a href="ssh://trmace@amomv0048.us.oracle.com">0048</a></li>
+					<li><a href="ssh://trmace@amomv0049.us.oracle.com">0049</a></li>
+					<li><a href="ssh://trmace@amomv0050.us.oracle.com">0050</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-MYST</td>
+		 <td></td>
+		 <td></td>
+		</tr>
+
+    </tbody>
+  </table></br>
+
+<!-- end -->
+</td>
+   <td style="margin: 0px; padding: 10px; border: 1px solid #aaa; border-style: none solid solid solid; background-color: #fff; ">
+<!-- start --->
+
+
+</br>
+  <strong>DR</strong></br>
+	<table>
+	<tbody>
+		<tr style="background-color: #fff;">
+		 <td style="width: 25%;">OHS</td>
+		 <td style="width: 15%;"></td>
+		 <td style="width: 10%;"><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EWT	  
+					<li><a href="ssh://trmace@umomv3077.oracle.com">3077</a></li>
+					<li><a href="ssh://trmace@umomv3078.oracle.com">3078</a></li>
+					<li><a href="ssh://trmace@umomv3079.oracle.com">3079</a></li>
+					IWT
+					<li><a href="ssh://trmace@umomv3011.us.oracle.com">3011</a></li>
+					<li><a href="ssh://trmace@umomv3011.us.oracle.com">3012</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://uat-callcenter.us.oracle.com/callcenter_enu/">CC</a></td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CC
+				</div>
+				</ul></li></ul></nav></td>
+
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="http://uat-metalink3.us.oracle.com/">ISP</a></td>
+		 <td><nav><ul><li>em&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="http://umomv3093.us.oracle.com:7777/em">3093AS1</a></li>
+					<li><a href="http://umomv3093.us.oracle.com:7778/em">3093AS2</a></li>
+					<li><a href="http://umomv3094.us.oracle.com:7777/em">3094AS1</a></li>
+					<li><a href="http://umomv3094.us.oracle.com:7778/em">3094AS2</a></li>
+					<li><a href="http://umomv3095.us.oracle.com:7777/em">3095AS1</a></li>
+					<li><a href="http://umomv3095.us.oracle.com:7778/em">3095AS2</a></li>
+					<li><a href="http://umomv3096.us.oracle.com:7777/em">3096AS1</a></li>
+					<li><a href="http://umomv3096.us.oracle.com:7778/em">3096AS2</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ISP
+					<li><a href="ssh://trmace@umomv3093.us.oracle.com">3093</a></li>
+					<li><a href="ssh://trmace@umomv3094.us.oracle.com">3094</a></li>
+					<li><a href="ssh://trmace@umomv3095.us.oracle.com">3095</a></li>
+					<li><a href="ssh://trmace@umomv3096.us.oracle.com">3096</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>EP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="https://dr-mosemp.us.oracle.com/">MOSEMP</a></li>
+					<li><a href="https://dr-mosemp.us.oracle.com/mosspui/src/main/container/index.html">NSP</a></li>
+					<li><a href="https://dr-mosemp.us.oracle.com/mobi">Mobile</a></li>
+					<li><a href="https://dr-mosemp-lite.us.oracle.com/kmlite/faces/ui/sp/SRViewer.jspx">SR Lite</a></li>
+					<li><a href="https://dr-mosemp-lite.us.oracle.com/">KM Lite-Int</a></li>
+					<li><a href="https://dr-mosemp.us.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://umomv3144.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					EP
+					<li><a href="ssh://trmace@umomv3144.us.oracle.com">Admin3144</a></li>
+					<li><a href="ssh://trmace@umomv3147.us.oracle.com">3147</a></li>
+					<li><a href="ssh://trmace@umomv3069.us.oracle.com">3069</a></li>
+					<li><a href="ssh://trmace@umomv3076.us.oracle.com">3076</a></li>
+					<li><a href="ssh://trmace@umomv3574.us.oracle.com">3574</a></li>
+					<li><a href="ssh://trmace@umomv3575.us.oracle.com">3575</a></li>
+					<li><a href="ssh://trmace@umomv3153.us.oracle.com">3153PFS</a></li>
+					<li><a href="ssh://trmace@umomv3162.us.oracle.com">3162PFS</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>CP&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					<li><a href="http://dr-support.us.oracle.com/">MOSCP</a></li>
+					<li><a href="http://dr-support.us.oracle.mobi/">Mobile</a></li>
+					<li><a href="https://dr-support-lite.us.oracle.com/">KM Lite-Ext</a></li>
+					<li><a href="https://dr-support.us.oracle.com/pac">PAC</a></li>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://umomv3143.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CP
+					<li><a href="ssh://trmace@umomv3143.us.oracle.com">Admin3143</a></li>
+					<li><a href="ssh://trmace@umomv3033.us.oracle.com">3033</a></li>
+					<li><a href="ssh://trmace@umomv3034.us.oracle.com">3034</a></li>
+					<li><a href="ssh://trmace@umomv3099.us.oracle.com">3099</a></li>
+					<li><a href="ssh://trmace@umomv3100.us.oracle.com">3100</a></li>
+					<li><a href="ssh://trmace@umomv3135.us.oracle.com">3135</a></li>
+					<li><a href="ssh://trmace@umomv3136.us.oracle.com">3136</a></li>
+					<li><a href="ssh://trmace@umomv3137.us.oracle.com">3137</a></li>
+					<li><a href="ssh://trmace@umomv3138.us.oracle.com">3138</a></li>
+					<li><a href="ssh://trmace@umomv3139.us.oracle.com">3139</a></li>
+					<li><a href="ssh://trmace@umomv3140.us.oracle.com">3140</a></li>
+					<li><a href="ssh://trmace@umomv3606.us.oracle.com">3606</a></li>
+					<li><a href="ssh://trmace@umomv3607.us.oracle.com">3607</a></li>
+					<li><a href="ssh://trmace@umomv0079.us.oracle.com">API0079</a></li>
+					<li><a href="ssh://trmace@umomv0080.us.oracle.com">API0080</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><strong>VOX</strong></td>
+		 <td><a href=""></a></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="https://updatecenter.oracle.com/apps/WebSearch/updatecenter.jsp">-JDE</a></td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://edp.oraclecorp.com/edp/faces/home">-EDP</a></td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li><hb>NGCCR&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+					CONTDIAG
+					NGCCR
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CONTDIAG
+					NGCCR
+				</ul></ul></li></nav></td>	
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					NGCCR
+					<li><a href="ssh://trmace@umomv3548.oracle.com">OHS3548</a></li>
+					<li><a href="ssh://trmace@umomv3549.oracle.com">OHS3549</a></li>
+					<li><a href="ssh://trmace@umomv3550.oracle.com">OHS3550</a></li>
+					<li><a href="ssh://trmace@umomv3554.us.oracle.com">3554</a></li>
+					<li><a href="ssh://trmace@umomv3555.us.oracle.com">3555</a></li>
+					OD
+					<li><a href="ssh://trmace@umomv3551.oracle.com">Admin3551</a></li>
+					<li><a href="ssh://trmace@umomv3552.oracle.com">3552</a></li>
+					<li><a href="ssh://trmace@umomv3553.oracle.com">3553</a></li>
+					<li><a href="ssh://trmace@umomv3556.us.oracle.com">3556od</a></li>
+					<li><a href="ssh://trmace@umomv3557.us.oracle.com">3557od</a></li>
+					CONTDIAG
+					<li><a href="ssh://trmace@umomv0012.us.oracle.com">Admin0012</a></li>
+					<li><a href="ssh://trmace@umomv0025.us.oracle.com">0025</a></li>
+					<li><a href="ssh://trmace@umomv0029.us.oracle.com">0029</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li><hb>NGSES&#9662;</hb>
+				<ul style="width: 300px; margin: -20px -100px;">
+				<div style="column-count: 2;">
+					BackEnd Search
+					<li><a href="http://umomv3564.us.oracle.com:8001/search/query">3564</a></li>
+					<li><a href="http://umomv3565.us.oracle.com:8001/search/query">3565</a></li>
+					Admin
+					<li><a href="http://umomv3564.us.oracle.com:8001/search/admin">3564</a></li>
+					<li><a href="http://umomv3565.us.oracle.com:8001/search/admin">3565</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		 <td><a href="https://umomv3564.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SES
+					<li><a href="ssh://trmace@umomv3564.us.oracle.com">Admin3564</a></li>
+					<li><a href="ssh://trmace@umomv3565.us.oracle.com">3565</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><nav><ul><li>InQuira&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					InQuira
+					<li><a href="http://umomv3150.us.oracle.com:8001/inquirawb/app">KBCMTY</a></li>
+					<li><a href="http://umomv3596.us.oracle.com:8001/inquirawb/app">DOC</a></li>
+					<li><a href="http://umomv3598.us.oracle.com:8001/inquirawb/app">PATCH</a></li>
+				</ul></li></ul></nav></td>
+ 		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 600px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="https://umomv3150.us.oracle.com:7501/console"><strong>KbCmty</strong>SW</a></li>
+					<li><a href="https://umomv3154.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt11-13</hyb></a></li>
+					<li><a href="https://umomv3156.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt21-23</hyb></a></li>
+					<li><a href="https://umomv3568.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt31-32</hyb></a></li>
+					<li><a href="https://umomv3569.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt41-42</hyb></a></li>
+					<li><a href="https://umomv3570.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt51-52</hyb></a></li>
+					<li><a href="https://umomv3571.us.oracle.com:7501/console"><strong>KbCmty</strong><hyb>rt61-62<hyb></a></li>
+					<li><a href="https://umomv3596.us.oracle.com:7501/console"><strong>Doc</strong><hyb>SW<hyb></a></li>
+					<li><a href="https://umomv3595.us.oracle.com:7501/console"><strong>Doc</strong><hyb>rt11-12<hyb></a></li>
+					<li><a href="https://umomv3601.us.oracle.com:7501/console"><strong>Doc</strong><hyb>rt21-22<hyb></a></li>
+					<li><a href="https://umomv3598.us.oracle.com:7501/console"><strong>Patch</strong><hyb>SW<hyb></a></li>
+					<li><a href="https://umomv3597.us.oracle.com:7501/console"><strong>Patch</strong><hyb>rt11-12<hyb></a></li>
+					<li><a href="https://umomv3602.us.oracle.com:7501/console"><strong>Patch</strong><hyb>rt21-22<hyb></a></li>
+				</div>
+				</ul></ul></li></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					InQuira
+					<li><a href="ssh://trmace@umomv3150.us.oracle.com"><strong>3150KbCmty</strong><hyb>SW</hyb></a></li>
+					<li><a href="ssh://trmace@umomv3154.us.oracle.com"><strong>3154KbCmty</strong><hyb>rt11-13</hyb></a></li>
+					<li><a href="ssh://trmace@umomv3156.us.oracle.com"><strong>3156KbCmty</strong><hyb>rt21-23</hyb></a></li>
+					<li><a href="ssh://trmace@umomv3568.us.oracle.com"><strong>3568KbCmty</strong><hyb>rt31-32</hyb></a></li>
+					<li><a href="ssh://trmace@umomv3569.us.oracle.com"><strong>3569KbCmty</strong><hyb>rt41-42</hyb></a></li>
+					<li><a href="ssh://trmace@umomv3570.us.oracle.com"><strong>3570KbCmty</strong><hyb>rt51-52</hyb></a></li>
+					<li><a href="ssh://trmace@umomv3571.us.oracle.com"><strong>3571KbCmty</strong><hyb>rt61-62<hyb></a></li>
+					<li><a href="ssh://trmace@umomv3596.us.oracle.com"><strong>3596Doc</strong><hyb>SW<hyb></a></li>
+					<li><a href="ssh://trmace@umomv3595.us.oracle.com"><strong>3595Doc</strong><hyb>rt11-12<hyb></a></li>
+					<li><a href="ssh://trmace@umomv3601.us.oracle.com"><strong>3601Doc</strong><hyb>rt21-22<hyb></a></li>
+					<li><a href="ssh://trmace@umomv3598.us.oracle.com"><strong>3598Patch</strong><hyb>SW<hyb></a></li>
+					<li><a href="ssh://trmace@umomv3597.us.oracle.com"><strong>3597Patch</strong><hyb>rt11-12<hyb></a></li>
+					<li><a href="ssh://trmace@umomv3602.us.oracle.com"><strong>3602Patch</strong><hyb>rt21-22<hyb></a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+
+		<tr style="background-color: #eee;">
+		 <td>?MOSES</td>
+		 <td><a href="http://dr-mos-km-es-search.us.oracle.com">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Elastic Search
+					<li><a href="ssh://trmace@umomv0003.us.oracle.com">Admin0003</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>GR</td>
+		 <td><a href="https://umomv3141.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					GR
+					<li><a href="ssh://trmace@umomv3141.us.oracle.com">Admin3141</a></li>
+					<li><a href="ssh://trmace@umomv3142.us.oracle.com">3142</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>HERMES</td>
+		 <td><a href="https://umomv3155.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					HERMES
+					<li><a href="ssh://trmace@umomv3155.us.oracle.com">Admin3155</a></li>
+					<li><a href="ssh://trmace@umomv3158.us.oracle.com">3158</a></li>
+					<li><a href="ssh://trmace@umomv3159.us.oracle.com">3159</a></li>
+					<li><a href="ssh://trmace@umomv3160.us.oracle.com">3160</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>PCore/WLS</td>
+		 <td><a href="https://umomv3039.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					PCore/KMcore
+					<li><a href="ssh://trmace@umomv3039.us.oracle.com">Admin3039</a></li>
+					<li><a href="ssh://trmace@umomv3040.us.oracle.com">3040</a></li>
+					<li><a href="ssh://trmace@umomv3041.us.oracle.com">3041</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><nav><ul><li>WSM&#9662;
+				<ul style="width: 300px; margin: -20px -100px;">
+					WSM Report
+					<li><a href="http://umomv3085.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=int&env=prod">Int</a></li>
+					<li><a href="http://umomv3085.us.oracle.com:7777/cgi-bin/wsmservicereport.pl?gateway=ext&env=prod">Ext</a></li>
+				</ul></li></ul></nav></td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					WSM-EXT
+					<li><a href="ssh://trmace@umomv3086.us.oracle.com">3086</a></li>
+					<li><a href="ssh://trmace@umomv3087.us.oracle.com">3087</a></li>
+					WSM-INT
+					<li><a href="ssh://trmace@umomv3084.us.oracle.com">3084</a></li>
+					<li><a href="ssh://trmace@umomv3085.us.oracle.com">3085</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>BPEL</td>
+		 <td><a href="https://umomv3083.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					BPEL
+					<li><a href="ssh://trmace@umomv3083.us.oracle.com">Admin3083</a></li>
+					<li><a href="ssh://trmace@umomv3013.us.oracle.com">3013</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>KM11g</td>
+		 <td><a href="https://umomv3566.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					KM11g
+					<li><a href="ssh://trmace@umomv3566.us.oracle.com">Admin3566</a></li>
+					<li><a href="ssh://trmace@umomv3567.us.oracle.com">3567</a></li>
+					<li><a href="ssh://trmace@umomv3613.us.oracle.com">3613</a></li>
+					<li><a href="ssh://trmace@umomv3614.us.oracle.com">3614</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>SDK</td>
+		 <td><a href="https://umomv3604.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SDK
+					<li><a href="ssh://trmace@umomv3604.us.oracle.com">Admin3604</a></li>
+					<li><a href="ssh://trmace@umomv3605.us.oracle.com">3605</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>OSuggest</td>
+		 <td><a href="https://umomv3532.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					OSuggest
+					<li><a href="ssh://trmace@umomv3532.us.oracle.com">Admin3532</a></li>
+					<li><a href="ssh://trmace@umomv3533.us.oracle.com">3533</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td colspan="5"></td>
+		</tr>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>FM</td>
+		 <td><a href="https://umomv3103.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					FM-OHS
+					<li><a href="ssh://trmace@umomv3145.us.oracle.com">OHS3145</a></li>
+					<li><a href="ssh://trmace@umomv3146.us.oracle.com">OHS3146</a></li>
+					FM-WLS
+					<li><a href="ssh://trmace@umomv3103.us.oracle.com">Admin3103</a></li>
+					<li><a href="ssh://trmace@umomv0119.us.oracle.com">0119</a></li>
+					<li><a href="ssh://trmace@umomv0023.us.oracle.com">0023</a></li>
+					<li><a href="ssh://trmace@umomv3107.us.oracle.com">3107</a></li>
+					<li><a href="ssh://trmace@umomv3148.us.oracle.com">3148</a></li>
+					<li><a href="ssh://trmace@umomv3149.us.oracle.com">3149</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-PAC/ORAS</td>
+		 <td><a href="https://amomv0245.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					ORAS
+					<li><a href="ssh://trmace@amomv0245.us.oracle.com">Admin0245</a></li>
+					<li><a href="ssh://trmace@amomv0246.us.oracle.com">0246</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-DXFSOL/OEL</td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					CXFOEL
+					<li><a href="ssh://trmace@amomv0034.us.oracle.com">Admin0034</a></li>
+					<li><a href="ssh://trmace@amomv0036.us.oracle.com">0036</a></li>
+					<li><a href="ssh://trmace@amogg0005.us.oracle.com">amogg0005-sras</a></li>
+					<li><a href="ssh://trmace@amogg0006.us.oracle.com">amogg0006-sras</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-TDS</td>
+		 <td><a href="https://umomv0008.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TDS
+					<li><a href="ssh://trmace@amomv0105.us.oracle.com">Admin0105</a></li>
+					<li><a href="ssh://trmace@amomv0107.us.oracle.com">0107</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://transport.oracle.com/SCRK/test/ping">-Transport</a></td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					Transport-EXT
+					<li><a href="ssh://trmace@amomv0182.oracle.com">OHS0182</a></li>
+					<li><a href="ssh://trmace@amomv0186.oracle.com">OHS0186</a></li>
+					<li><a href="ssh://trmace@umomv0015.oracle.com">Admin0015</a></li>
+					<li><a href="ssh://trmace@amomv0184.oracle.com">0184</a></li>
+					<li><a href="ssh://trmace@amomv0185.oracle.com">0185</a></li>
+					<li><a href="ssh://trmace@amomv0187.oracle.com">0187</a></li>
+					<li><a href="ssh://trmace@amomv0188.oracle.com">0188</a></li>
+					<li><a href="ssh://trmace@amomv0189.oracle.com">0189</a></li>
+					Transport-INT
+					<li><a href="ssh://trmace@amomv0139.us.oracle.com">OHS0139</a></li>
+					<li><a href="ssh://trmace@amomv0143.us.oracle.com">OHS0143</a></li>
+					<li><a href="ssh://trmace@umomv0140.us.oracle.com">Admin0061</a></li>
+					<li><a href="ssh://trmace@amomv0138.us.oracle.com">0138</a></li>
+					<li><a href="ssh://trmace@amomv0142.us.oracle.com">0142</a></li>
+					<li><a href="ssh://trmace@amomv0144.us.oracle.com">0144</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-ASR-FEMS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					<li><a href="https://amomv0159.us.oracle.com:7501/console">ASRFEMS-0159</a></li>
+					<li><a href="https://amomv0152.us.oracle.com:7501/console">ARSPORTAL-0152</a></li>
+					<li><a href="https://amomv0160.us.oracle.com:7501/console">ARSCORE-0160</a></li>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 500px; margin: -20px -500px;">
+				<div style="column-count: 2;">
+					ASRFEMS
+					<li><a href="ssh://trmace@amomv0159.us.oracle.com">ASRFEMS-0159-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0156.us.oracle.com">ASRFEMS-0156</a></li>
+					<li><a href="ssh://trmace@amomv0153.us.oracle.com">ASRFEMS-0153</a></li>
+					<li><a href="ssh://trmace@amomv0158.us.oracle.com">ASRFEMS-0158</a></li>
+					<li><a href="ssh://trmace@amomv0119.us.oracle.com">ASRFEMS-0119</a></li>
+					<li><a href="ssh://trmace@amomv0120.us.oracle.com">ASRFEMS-0120</a></li>
+					ASRPORTAL
+					<li><a href="ssh://trmace@amomv0152.us.oracle.com">ASRPORTAL-0152-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0157.us.oracle.com">ASRPORTAL-0157</a></li>
+					ASRCORE
+					<li><a href="ssh://trmace@amomv0160.us.oracle.com">ASRCORE-0160-Adm</a></li>
+					<li><a href="ssh://trmace@amomv0155.us.oracle.com">ASRCORE-0155</a></li>
+					ASRIWT
+					<li><a href="ssh://trmace@amomv0154.us.oracle.com">ASRIWT-0154</a></li>
+					<li><a href="ssh://trmace@amomv0161.us.oracle.com">ASRIWT-0161</a></li>
+					ASREWT
+					<li><a href="ssh://trmace@amomv0177.oracle.com">ASREWT-0177</a></li>
+					<li><a href="ssh://trmace@amomv0178.oracle.com">ASREWT-0178</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td><a href="https://spruce-prod.us.oracle.com/controller.jsp">SPRUCE</a></td>
+		 <td></td>
+		 <td><!--<nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					SPRUCE
+					<li><a href="ssh://trmace@amomv0025.us.oracle.com">OHS0025</a></li>
+					<li><a href="ssh://trmace@amomv0026.us.oracle.com">OHS0026</a></li>
+					<li><a href="ssh://trmace@amomv0032.us.oracle.com">Admin0032</a></li>
+					<li><a href="ssh://trmace@amomv0035.us.oracle.com">0035</a></li>
+				</div>
+				</ul></li></ul></nav>--></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-SS</td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-ISDE</td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td><a href="http://mos-poirot.us.oracle.com/">-Poirot</a></td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-TFA</td>
+		 <td></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					TFA
+					<li><a href="ssh://trmace@amomv0900.us.oracle.com">0900</a></li>
+					<li><a href="ssh://trmace@amomv0901.us.oracle.com">0901</a></li>
+					<li><a href="ssh://trmace@amomv0902.us.oracle.com">0902</a></li>
+					<li><a href="ssh://trmace@amomv0903.us.oracle.com">0903</a></li>
+					<li><a href="ssh://trmace@amomv0904.us.oracle.com">0904</a></li>
+					<li><a href="ssh://trmace@amomv0905.us.oracle.com">0905</a></li>
+					<li><a href="ssh://trmace@amomv0906.us.oracle.com">0906</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-AIS</td>
+		 <td><a href="https://amomv0037.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					AIS
+					<li><a href="ssh://trmace@amomv0037.us.oracle.com">0037</a></li>
+					<li><a href="ssh://trmace@amomv0038.us.oracle.com">0038</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>-CRS</td>
+		 <td><nav><ul><li>console&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+					CRS
+					<li><a href="https://amomv0049.us.oracle.com:7501/console">cnsl0049</a></li>
+					<li><a href="https://amomv0045.us.oracle.com:7501/console">mgmt0045</a></li>
+				</ul></li></ul></nav></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					CRS
+					<li><a href="ssh://trmace@amomv0044.us.oracle.com">0044</a></li>
+					<li><a href="ssh://trmace@amomv0045.us.oracle.com">0045</a></li>
+					<li><a href="ssh://trmace@amomv0048.us.oracle.com">0048</a></li>
+					<li><a href="ssh://trmace@amomv0049.us.oracle.com">0049</a></li>
+					<li><a href="ssh://trmace@amomv0050.us.oracle.com">0050</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+		<tr style="background-color: #fff;">
+		 <td>-MYST</td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		<tr style="background-color: #eee;">
+		 <td>KM-LITE</td>
+		 <td><a href="https://umomv3544.us.oracle.com:7501/console">console</a></td>
+		 <td><nav><ul><li>ssh&#9662;
+				<ul style="width: 300px; margin: -20px -300px;">
+				<div style="column-count: 2;">
+					KM11g
+					<li><a href="ssh://trmace@umomv3544.us.oracle.com">Admin3544</a></li>
+					<li><a href="ssh://trmace@umomv3547.us.oracle.com">3547</a></li>
+				</div>
+				</ul></li></ul></nav></td>
+		</tr>
+    </tbody>
+  </table></br>
+
+
+
+
+
+
+
+   </td>
+  </tr>
+  <tr style="background-color: #fff;">
+  <td colspan="5"><center>
+  <strong>More MOS URLs</strong></br>
+	<table  style="background-color: #eee;">
+	<tbody>
+
+
+		<tr>      
+		 <td>BUGDatabase</td>
+		 <td><a href="http://bug.oraclecorp.com/">prod</a></td>
+		 <td><a href="https://ue-stage-mos-bug.us.oracle.com/">stg</a></td>
+		 <td><a href="http://bugau.oraclecorp.com/">uat</a></td>
+		</tr>
+		<tr>      
+		 <td>BUGExt Partner Access</td>
+		 <td><a href="https://bug.oraclecorp.com/ext/index.html">prod</a></td>
+		 <td><a href=""></a>.</td>
+		 <td><a href="https://bugau.oraclecorp.com/ext/">uat</a></td>
+		</tr>
+		<tr>      
+		 <td>BUGMobile</td>
+		 <td><a href=""></a>.</td>
+		 <td><a href=""></a>.</td>
+		 <td><a href="https://uat-bugmobile.us.oracle.com/">uat</a></td>
+		</tr>
+		<tr>      
+		 <td>BUGiBug</td>
+		 <td><a href="https://bug.oraclecorp.com/ibug/src/main/container/index.html">prod</a></td>
+		 <td><a href=""></a>.</td>
+		 <td><a href="https://bugau.oraclecorp.com/ibug/src/main/container/index.html">uat</a></td>
+		</tr>
+		<tr>      
+		 <td>ALM JIRA</td>
+		 <td><a href="https://jira.oraclecorp.com/">prod</a></td>
+		 <td><a href=""></a>.</td>
+		 <td><a href="https://jira-uat.us.oracle.com/">uat</a></td>
+		</tr>
+		<tr>      
+		 <td>ALM Confluence</td>
+		 <td><a href="https://confluence.oraclecorp.com/">prod</a></td>
+		 <td><a href=""></a>.</td>
+		 <td><a href="https://confluence-uat.us.oracle.com/">uat</a></td>
+		</tr>
+		<tr>      
+		 <td>PDR-PDIT Doc Repo</td>
+		 <td><a href="https://pdit-document-repository.oraclecorp.com/">prod</a></td>
+		 <td><a href="https://stage-pdit-document-repository.oraclecorp.com/">stg</a></td>
+		 <td><a href=""></a>.</td>
+		</tr>
+		<tr>      
+		 <td>OCCNJIRA-Change Mngt</td>
+		 <td><a href="https://occn-jira.oraclecorp.com/">prod</a></td>
+		 <td><a href="https://occn-jira-stg.oraclecorp.com/">stg</a></td>
+		 <td><a href=""></a>.</td>
+		</tr>
+		<tr>      
+		 <td>TAS</td>
+		 <td><a href="https://paging.oraclecorp.com/">prod</a></td>
+		 <td><a href="https://ue-stage-mos-paging.us.oracle.com/">stg</a></td>
+		 <td><a href="https://uat-paging.us.oracle.com/">uat</a></td>
+		</tr>
+
+	 </tbody>
+   </table></br>
+</td></tr>
+
+ </tbody>
+ </table>
+
+
+</div class="content">
+<cr><p align="right" id="version"></p></cr>
+</br>
+ <script language="javascript">
+ function myVersion() {
+	var today = new Date();
+	var d = new Date(document.lastModified); 
+	var datestring = d.getFullYear() + "." + (d.getMonth()+1) + d.getDate() + d.getHours() + ":" + d.getMinutes();     
+	document.getElementById("version").innerHTML = today + "v" + datestring;
+	}
+ </script>
+ </body>
+</html>
