@@ -1,5 +1,5 @@
 /*Links.css */
-html	{font-size: 17px;}
+html	{font-family: sans-serif; font-size: 17px;}
 CB   	{color: blue;}
 CR   	{color: red; font-weight: bold;}
 H1		{background-color: #eee; text-align: center}
