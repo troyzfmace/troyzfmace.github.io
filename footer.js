@@ -11,7 +11,7 @@ class Footer extends HTMLElement {
 	<a href="/index.html">&#169; 2021 Troy Mace </a><div style="float:right"><a href="/index.html">7/18/21 8:38am</a></div>
 	
  </div>
- </br></br></br></br></br></br></br></br></br></br>
+
  <!--<p align="right"><cr><script language="javascript">var today = new Date();document.write(today);</script></cr></p>-->
 
 
