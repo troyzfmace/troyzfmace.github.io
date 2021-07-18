@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
 
  <div class="pagelayer-copyright">
-	<a href="/index.html">&#169; 2020/2021 Highland Central Stake </a><div style="float:right"><a href="/index.html">This website is not affiliated with the Church of Jesus Christ of Latter-day Saints.</a></div>
+	<a href="/index.html">&#169; 2021 Troy Mace </a><div style="float:right"><a href="/index.html">7/18/21 8:38am</a></div>
 	
  </div>
  </br></br></br></br></br></br></br></br></br></br>
