@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
 
  <div class="pagelayer-copyright">
-	<a href="/index.html">&#169; 2021 Troy Mace </a><div style="float:right"><a href="/index.html">7/18/21 8:38am</a></div>
+	<a href="/index.html">&#169; 2021 Troy Mace </a><div style="float:right"><a href="/index.html">7/18/21 8:40am</a></div>
 	
  </div>
 
