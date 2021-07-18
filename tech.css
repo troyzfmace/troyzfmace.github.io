@@ -141,6 +141,7 @@ td nav {color: #326ca6; cursor: pointer; font-size: 20px;}
 .pagelayer-col-holder{align-content: flex-start;}
 .pagelayer-col-holder>div{width: 100%;}
 .pagelayer-bgimg-slider{position: absolute;top: 0;left: 0;height: 100%;width: 100%;}
+.container {position: relative;  text-align: center;  color: white;}
 .pagelayer-bgimg-slide {position: absolute;width: 100%;top: 0;left: 0;height: 100%;transition: all 1s ease-in-out;background-position: center center;background-repeat: no-repeat;background-size: cover;opacity: 0;}
 .pagelayer-slide-show {opacity: 1;}
 .pagelayer-heading-holder *,
